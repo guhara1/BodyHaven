@@ -161,7 +161,7 @@ def make_breadcrumb_schema(crumbs) -> dict:
 
 def make_webpage_schema(title: str, desc: str, canonical: str, image: str) -> dict:
     base = BASE_URL.rstrip("/")
-    obj = {
+    return {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": title,
@@ -170,13 +170,11 @@ def make_webpage_schema(title: str, desc: str, canonical: str, image: str) -> di
         "inLanguage": "ko",
         "isPartOf": {"@id": base + "/#organization"},
         "publisher": {"@id": base + "/#organization"},
+        "primaryImageOfPage": {"@type": "ImageObject", "url": base + image},
     }
-    if image:
-        obj["primaryImageOfPage"] = {"@type": "ImageObject", "url": base + image}
-    return obj
 
 
-def make_image_schema(image: str, alt: str, canonical: str) -> dict:
+def make_image_schema(image: str, alt: str, w: int, h: int) -> dict:
     """선호 썸네일 지정 — schema.org ImageObject (og:image와 함께 사용)."""
     base = BASE_URL.rstrip("/")
     return {
@@ -186,8 +184,8 @@ def make_image_schema(image: str, alt: str, canonical: str) -> dict:
         "url": base + image,
         "caption": alt,
         "representativeOfPage": True,
-        "width": 800,
-        "height": 600,
+        "width": w,
+        "height": h,
     }
 
 
@@ -287,15 +285,17 @@ def render_page(page: dict) -> str:
     toc_html = render_toc(toc_items)
     layout_cls = "page-layout has-toc" if toc_html else "page-layout"
 
-    # 스키마 자동 주입.
+    # 스키마 자동 주입. 선호 썸네일(ImageObject)은 모든 페이지에 출력하되,
+    # 페이지별 4:3 히어로 이미지가 지정되면 그 이미지를(800x600), 없으면 기본 OG 이미지를(1200x630) 사용한다.
+    pref_image = image or DEFAULT_OG_IMAGE
+    img_w, img_h = (800, 600) if image else (1200, 630)
     blocks = [
         make_org_schema(),
-        make_webpage_schema(title, desc, canonical, image),
+        make_webpage_schema(title, desc, canonical, pref_image),
     ]
     if crumbs:
         blocks.append(make_breadcrumb_schema(crumbs))
-    if image:
-        blocks.append(make_image_schema(image, alt, canonical))
+    blocks.append(make_image_schema(pref_image, alt, img_w, img_h))
     auto_schema = "".join(_ld(b) for b in blocks)
 
     return f"""<!DOCTYPE html>
