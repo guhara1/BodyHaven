@@ -7,7 +7,7 @@ _WHO = "이 페이지는 부천 지역 방문형 관리 서비스 안내 콘텐�
 
 
 def _crumb(name):
-    return [("부천", "/bucheon/"), ("예약 전 확인", "/bucheon/check/address/"), (name, "")]
+    return [("부천", "/"), ("예약 전 확인", "/check/address/"), (name, "")]
 
 
 # ───────── 1. 방문 주소 확인 ─────────
@@ -20,7 +20,7 @@ _addr_faq, _addr_head = faq_block([
      "역세권은 출구·인접 건물에 따라 동선이 달라, 가까운 역과 함께 정확한 도로명 주소와 건물 유형을 알려주시면 더 명확합니다."),
 ])
 PAGES.append(page(
-    path="bucheon/check/address/",
+    path="check/address/",
     title="방문 주소 확인｜부천 예약 전 구·행정동·생활권 안내",
     desc="부천 방문 예약 전 구·행정동·생활권·지하철역별 주소 확인 차이를 정리했습니다.",
     h1="방문 주소 확인 · 부천 구·행정동·생활권 안내",
@@ -38,16 +38,16 @@ PAGES.append(page(
 <p>부천은 원미구·소사구·오정구 세 개 구가 좁은 면적 안에 붙어 있고, 1호선·7호선·서해선이 함께 지나면서 같은 동 이름이 인접 구에 나뉘어 존재하는 경우가 있습니다. 역곡은 원미구 역곡1·2동과 소사구 역곡3동으로, 심곡은 원미구 심곡1·2동과 소사구 심곡본동으로 갈라집니다. 구 단위를 함께 확인하지 않으면 이름이 비슷한 다른 생활권으로 위치가 오인될 수 있어, 부천에서는 구·행정동을 묶어 확인하는 것이 특히 중요합니다.</p></section>
 
 <section><h2>구별·행정동별·생활권별 차이</h2>
-<p><a href="/bucheon/wonmi-gu/">원미구</a>는 중동·신중동 상권, 상동·부천시청 신도시, 부천역·심곡 원도심으로 나뉘어 같은 구라도 건물 형태가 크게 다릅니다. <a href="/bucheon/sosa-gu/">소사구</a>는 부천역·심곡본 상권, 소사·소사본 환승권, 송내 주거권, 범박·옥길 아파트 단지로 이어집니다. <a href="/bucheon/ojeong-gu/">오정구</a>는 원종·고강·오정·성곡으로 나뉘며 역과 거리가 있는 지역이 많습니다. 행정동까지 좁히면 같은 생활권 안에서도 도로명 주소대가 달라져 위치가 명확해집니다.</p></section>
+<p><a href="/wonmi-gu/">원미구</a>는 중동·신중동 상권, 상동·부천시청 신도시, 부천역·심곡 원도심으로 나뉘어 같은 구라도 건물 형태가 크게 다릅니다. <a href="/sosa-gu/">소사구</a>는 부천역·심곡본 상권, 소사·소사본 환승권, 송내 주거권, 범박·옥길 아파트 단지로 이어집니다. <a href="/ojeong-gu/">오정구</a>는 원종·고강·오정·성곡으로 나뉘며 역과 거리가 있는 지역이 많습니다. 행정동까지 좁히면 같은 생활권 안에서도 도로명 주소대가 달라져 위치가 명확해집니다.</p></section>
 
 <section><h2>지하철역별 차이</h2>
-<p>같은 역세권이라도 출구와 인접 건물에 따라 동선이 달라집니다. <a href="/bucheon/station/bucheon-station/">부천역</a>·<a href="/bucheon/station/songnae-station/">송내역</a>은 상권·주거가 섞여 건물명 확인이 중요하고, <a href="/bucheon/station/sinjungdong-station/">신중동역</a> 일대는 오피스텔이 밀집해 동호수까지 함께 정리하는 것이 좋습니다. 환승역인 소사역·부천종합운동장역은 역명 기준으로 안내하되 정확한 도로명 주소를 함께 알려주시면 더 명확합니다.</p></section>
+<p>같은 역세권이라도 출구와 인접 건물에 따라 동선이 달라집니다. <a href="/station/bucheon-station/">부천역</a>·<a href="/station/songnae-station/">송내역</a>은 상권·주거가 섞여 건물명 확인이 중요하고, <a href="/station/sinjungdong-station/">신중동역</a> 일대는 오피스텔이 밀집해 동호수까지 함께 정리하는 것이 좋습니다. 환승역인 소사역·부천종합운동장역은 역명 기준으로 안내하되 정확한 도로명 주소를 함께 알려주시면 더 명확합니다.</p></section>
 
 <section><h2>호텔·오피스텔·자택 기준</h2>
-<p><a href="/bucheon/use/hotel/">호텔·숙소</a>는 숙소명과 객실 번호, 프런트 경유 여부를 함께 확인합니다. <a href="/bucheon/use/officetel/">오피스텔</a>은 건물명·동·호수와 공동현관 위치를, <a href="/bucheon/use/home/">자택</a>은 아파트 단지명·동호수 또는 다세대 건물의 정확한 호수를 확인하는 것이 좋습니다. 건물 유형에 따라 출입 방식이 달라지므로 주소와 함께 <a href="/bucheon/check/building-access/">건물 출입 방식</a>을 같이 확인하세요.</p></section>
+<p><a href="/use/hotel/">호텔·숙소</a>는 숙소명과 객실 번호, 프런트 경유 여부를 함께 확인합니다. <a href="/use/officetel/">오피스텔</a>은 건물명·동·호수와 공동현관 위치를, <a href="/use/home/">자택</a>은 아파트 단지명·동호수 또는 다세대 건물의 정확한 호수를 확인하는 것이 좋습니다. 건물 유형에 따라 출입 방식이 달라지므로 주소와 함께 <a href="/check/building-access/">건물 출입 방식</a>을 같이 확인하세요.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>부천은 서울 구로·온수·강서와 인천 부평이 경계에 맞닿아 있어, 주소가 부천이라도 실제 이동 동선이 인접 지역을 끼는 경우가 있습니다. 역곡·고강 일대는 서울 쪽, 송내·상동 일대는 인천 부평 쪽 동선이 이어질 수 있으므로 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 안내가 명확해집니다.</p></section>
+<p>부천은 서울 구로·온수·강서와 인천 부평이 경계에 맞닿아 있어, 주소가 부천이라도 실제 이동 동선이 인접 지역을 끼는 경우가 있습니다. 역곡·고강 일대는 서울 쪽, 송내·상동 일대는 인천 부평 쪽 동선이 이어질 수 있으므로 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 <a href="/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 안내가 명확해집니다.</p></section>
 
 {checklist("방문 주소는 아래 순서로 좁혀 확인하면 안내가 정확합니다.", items=[
     "구(원미·소사·오정)를 확인했나요?",
@@ -67,9 +67,9 @@ PAGES.append(page(
   "이름이 비슷한 인접 동·생활권으로 위치가 오인되는 것을 막아 정확한 방문 안내를 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역·확인 링크</h2>
-<p>생활권 — <a href="/bucheon/life/bucheon-station-simgok/">부천역·심곡 생활권</a> · <a href="/bucheon/life/songnae/">송내 생활권</a> · <a href="/bucheon/life/yeokgok/">역곡 생활권</a></p>
-<p>이용 장소 — <a href="/bucheon/use/officetel/">오피스텔 이용</a> · <a href="/bucheon/use/home/">자택 이용</a></p>
-<p>다음 확인 — <a href="/bucheon/check/building-access/">건물 출입 방식</a> · <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>생활권 — <a href="/life/bucheon-station-simgok/">부천역·심곡 생활권</a> · <a href="/life/songnae/">송내 생활권</a> · <a href="/life/yeokgok/">역곡 생활권</a></p>
+<p>이용 장소 — <a href="/use/officetel/">오피스텔 이용</a> · <a href="/use/home/">자택 이용</a></p>
+<p>다음 확인 — <a href="/check/building-access/">건물 출입 방식</a> · <a href="/check/travel-fee/">추가 이동비 기준</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_addr_faq}
 """
@@ -86,7 +86,7 @@ _acc_faq, _acc_head = faq_block([
      "오피스텔은 공동현관·엘리베이터 카드 보안이 많고, 아파트는 단지 정문·동 현관 단계가 있어 건물 유형별로 확인 항목이 다릅니다."),
 ])
 PAGES.append(page(
-    path="bucheon/check/building-access/",
+    path="check/building-access/",
     title="건물 출입 방식｜부천 공동현관·엘리베이터·경비 확인",
     desc="부천 방문 예약 전 공동현관·엘리베이터·경비·자동문 등 건물 출입 방식을 확인하세요.",
     h1="건물 출입 방식 확인 · 공동현관·엘리베이터·경비",
@@ -104,16 +104,16 @@ PAGES.append(page(
 <p>부천은 신도시 아파트 단지, 상권 오피스텔, 원도심 다세대·상가 건물이 좁은 범위 안에 섞여 있어 같은 생활권에서도 출입 방식이 제각각입니다. 상동·중동신도시는 단지 정문 차단기와 동 현관 보안이 함께 있는 경우가 많고, 신중동·부천역 상권의 오피스텔은 공동현관과 엘리베이터 카드 보안이 흔합니다. 원도심 다세대는 공동현관이 없거나 호수 표기가 명확하지 않은 경우가 있어, 부천에서는 건물 유형별 출입 방식을 미리 확인하는 것이 특히 도움이 됩니다.</p></section>
 
 <section><h2>구별·행정동별·생활권별 차이</h2>
-<p><a href="/bucheon/life/sangdong-bucheon-cityhall/">상동·부천시청</a>과 <a href="/bucheon/life/jungdong-newtown/">중동신도시</a>는 대단지 아파트가 많아 정문·동 현관 두 단계 출입이 일반적입니다. <a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동</a>은 오피스텔 공동현관·엘리베이터 보안 확인이 핵심이고, <a href="/bucheon/life/bucheon-station-simgok/">부천역·심곡</a> 원도심은 다세대·상가 혼합이라 정확한 호수와 출입구 위치 확인이 중요합니다. <a href="/bucheon/life/beombak-okgil/">범박·옥길</a> 아파트 단지는 단지 정문 등록 절차를 함께 보면 좋습니다.</p></section>
+<p><a href="/life/sangdong-bucheon-cityhall/">상동·부천시청</a>과 <a href="/life/jungdong-newtown/">중동신도시</a>는 대단지 아파트가 많아 정문·동 현관 두 단계 출입이 일반적입니다. <a href="/life/jungdong-sinjungdong/">중동·신중동</a>은 오피스텔 공동현관·엘리베이터 보안 확인이 핵심이고, <a href="/life/bucheon-station-simgok/">부천역·심곡</a> 원도심은 다세대·상가 혼합이라 정확한 호수와 출입구 위치 확인이 중요합니다. <a href="/life/beombak-okgil/">범박·옥길</a> 아파트 단지는 단지 정문 등록 절차를 함께 보면 좋습니다.</p></section>
 
 <section><h2>지하철역별 차이</h2>
-<p><a href="/bucheon/station/sinjungdong-station/">신중동역</a>·<a href="/bucheon/station/bucheon-cityhall-station/">부천시청역</a> 주변은 오피스텔 보안 출입이 많고, <a href="/bucheon/station/sangdong-station/">상동역</a> 일대는 신도시 단지 차단기와 동 현관이 함께 있습니다. <a href="/bucheon/station/bucheon-station/">부천역</a> 원도심권은 건물마다 출입 형태가 달라 도착 전 출입구 위치를 함께 확인하는 것이 좋습니다.</p></section>
+<p><a href="/station/sinjungdong-station/">신중동역</a>·<a href="/station/bucheon-cityhall-station/">부천시청역</a> 주변은 오피스텔 보안 출입이 많고, <a href="/station/sangdong-station/">상동역</a> 일대는 신도시 단지 차단기와 동 현관이 함께 있습니다. <a href="/station/bucheon-station/">부천역</a> 원도심권은 건물마다 출입 형태가 달라 도착 전 출입구 위치를 함께 확인하는 것이 좋습니다.</p></section>
 
 <section><h2>호텔·오피스텔·자택 기준</h2>
-<p><a href="/bucheon/use/hotel/">호텔·숙소</a>는 프런트 경유 여부와 객실 출입 가능 여부를 먼저 확인합니다. <a href="/bucheon/use/officetel/">오피스텔</a>은 공동현관 호출·비밀번호와 엘리베이터 카드 보안, 그리고 관리 규정을 확인하는 것이 좋습니다. <a href="/bucheon/use/home/">자택</a>은 아파트라면 단지 정문·동 현관 출입을, 다세대라면 공동현관 유무와 정확한 호수를 확인하세요. 출입 방식은 <a href="/bucheon/check/address/">방문 주소</a>와 함께 정리하면 도착 동선이 매끄럽습니다.</p></section>
+<p><a href="/use/hotel/">호텔·숙소</a>는 프런트 경유 여부와 객실 출입 가능 여부를 먼저 확인합니다. <a href="/use/officetel/">오피스텔</a>은 공동현관 호출·비밀번호와 엘리베이터 카드 보안, 그리고 관리 규정을 확인하는 것이 좋습니다. <a href="/use/home/">자택</a>은 아파트라면 단지 정문·동 현관 출입을, 다세대라면 공동현관 유무와 정확한 호수를 확인하세요. 출입 방식은 <a href="/check/address/">방문 주소</a>와 함께 정리하면 도착 동선이 매끄럽습니다.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>서울 구로·강서, 인천 부평과 인접한 경계 단지는 진입로가 부천 외 도로와 이어지는 경우가 있어, 단지 정문 위치와 출입 절차를 더 분명히 확인하면 좋습니다. <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 함께 보세요.</p></section>
+<p>서울 구로·강서, 인천 부평과 인접한 경계 단지는 진입로가 부천 외 도로와 이어지는 경우가 있어, 단지 정문 위치와 출입 절차를 더 분명히 확인하면 좋습니다. <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 함께 보세요.</p></section>
 
 {checklist("건물 출입은 유형에 맞는 항목만 골라 아래처럼 확인하면 됩니다.", items=[
     "공동현관 출입 방법(호출·비밀번호·개방)을 확인했나요?",
@@ -132,9 +132,9 @@ PAGES.append(page(
   "도착 후 출입 단계에서 생기는 대기와 혼선을 줄여 방문이 자연스럽게 이어지도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역·확인 링크</h2>
-<p>생활권 — <a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동 생활권</a> · <a href="/bucheon/life/sangdong-bucheon-cityhall/">상동·부천시청 생활권</a></p>
-<p>이용 장소 — <a href="/bucheon/use/officetel/">오피스텔 이용</a> · <a href="/bucheon/use/hotel/">호텔·숙소 이용</a></p>
-<p>다음 확인 — <a href="/bucheon/check/address/">방문 주소 확인</a> · <a href="/bucheon/check/time/">예약 가능 시간</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>생활권 — <a href="/life/jungdong-sinjungdong/">중동·신중동 생활권</a> · <a href="/life/sangdong-bucheon-cityhall/">상동·부천시청 생활권</a></p>
+<p>이용 장소 — <a href="/use/officetel/">오피스텔 이용</a> · <a href="/use/hotel/">호텔·숙소 이용</a></p>
+<p>다음 확인 — <a href="/check/address/">방문 주소 확인</a> · <a href="/check/time/">예약 가능 시간</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_acc_faq}
 """
@@ -151,7 +151,7 @@ _fee_faq, _fee_head = faq_block([
      "이 안내는 적용 기준만 설명하며 금액은 표기하지 않습니다. 실제 비용은 주소를 확인한 뒤 예약 시 전화로 안내받으시면 됩니다."),
 ])
 PAGES.append(page(
-    path="bucheon/check/travel-fee/",
+    path="check/travel-fee/",
     title="추가 이동비 기준｜부천 외곽·인접권 이동 안내",
     desc="부천 방문 예약 전 기본 이동권과 외곽·서울·인천 인접권 추가 이동 기준을 확인하세요.",
     h1="추가 이동비 기준 · 부천 외곽·인접권 이동 안내",
@@ -169,16 +169,16 @@ PAGES.append(page(
 <p>부천은 면적이 넓지 않지만 1호선·7호선·서해선 역세권 밀집 지역과 역에서 떨어진 외곽 주거지가 함께 있고, 서울 구로·온수·강서와 인천 부평이 경계에 맞닿아 있습니다. 그래서 같은 부천이라도 신중동 상권처럼 역 중심부인지, 범박·옥길이나 오정구 외곽 주거지처럼 차량 이동이 필요한 곳인지에 따라 이동 동선이 크게 달라집니다. 부천에서는 방문 주소의 위치 성격을 먼저 확인하는 것이 이동 안내를 명확히 하는 출발점입니다.</p></section>
 
 <section><h2>구별·행정동별·생활권별 차이</h2>
-<p><a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동</a>, <a href="/bucheon/life/sangdong-bucheon-cityhall/">상동·부천시청</a>, <a href="/bucheon/life/bucheon-station-simgok/">부천역·심곡</a> 같은 역세권 중심부는 대체로 기본 이동권에 해당합니다. <a href="/bucheon/life/beombak-okgil/">범박·옥길</a>은 아파트 주거지이지만 역과 거리가 있어 차량 이동 거리가 변수입니다. <a href="/bucheon/ojeong-gu/">오정구</a>의 원종·고강·성곡 일대는 역과 떨어진 구간이 많아 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준을 함께 확인하는 것이 좋습니다.</p></section>
+<p><a href="/life/jungdong-sinjungdong/">중동·신중동</a>, <a href="/life/sangdong-bucheon-cityhall/">상동·부천시청</a>, <a href="/life/bucheon-station-simgok/">부천역·심곡</a> 같은 역세권 중심부는 대체로 기본 이동권에 해당합니다. <a href="/life/beombak-okgil/">범박·옥길</a>은 아파트 주거지이지만 역과 거리가 있어 차량 이동 거리가 변수입니다. <a href="/ojeong-gu/">오정구</a>의 원종·고강·성곡 일대는 역과 떨어진 구간이 많아 <a href="/use/outer-area/">외곽 지역 이용</a> 기준을 함께 확인하는 것이 좋습니다.</p></section>
 
 <section><h2>지하철역별 차이</h2>
-<p><a href="/bucheon/station/bucheon-station/">부천역</a>·<a href="/bucheon/station/sinjungdong-station/">신중동역</a>·<a href="/bucheon/station/songnae-station/">송내역</a>처럼 생활권 중심 역세권은 이동 동선이 짧은 편입니다. 반면 역과 거리가 있는 주거지는 가까운 역을 기준으로 삼아도 실제 차량 이동이 더해질 수 있으니, 가까운 역과 함께 정확한 도로명 주소를 알려주시면 기준이 분명해집니다.</p></section>
+<p><a href="/station/bucheon-station/">부천역</a>·<a href="/station/sinjungdong-station/">신중동역</a>·<a href="/station/songnae-station/">송내역</a>처럼 생활권 중심 역세권은 이동 동선이 짧은 편입니다. 반면 역과 거리가 있는 주거지는 가까운 역을 기준으로 삼아도 실제 차량 이동이 더해질 수 있으니, 가까운 역과 함께 정확한 도로명 주소를 알려주시면 기준이 분명해집니다.</p></section>
 
 <section><h2>호텔·오피스텔·자택 기준</h2>
-<p><a href="/bucheon/use/hotel/">호텔·숙소</a>와 <a href="/bucheon/use/officetel/">오피스텔</a>은 대부분 상권·역세권에 위치해 기본 이동권에 해당하는 경우가 많습니다. <a href="/bucheon/use/home/">자택</a>은 위치에 따라 차이가 커서, 신도시 단지인지 외곽 주거지인지에 따라 이동 기준이 달라집니다. 건물 유형보다 위치 성격이 이동 기준에 더 크게 작용하므로 <a href="/bucheon/check/address/">방문 주소 확인</a>을 먼저 마치는 것이 좋습니다.</p></section>
+<p><a href="/use/hotel/">호텔·숙소</a>와 <a href="/use/officetel/">오피스텔</a>은 대부분 상권·역세권에 위치해 기본 이동권에 해당하는 경우가 많습니다. <a href="/use/home/">자택</a>은 위치에 따라 차이가 커서, 신도시 단지인지 외곽 주거지인지에 따라 이동 기준이 달라집니다. 건물 유형보다 위치 성격이 이동 기준에 더 크게 작용하므로 <a href="/check/address/">방문 주소 확인</a>을 먼저 마치는 것이 좋습니다.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>역곡·괴안 일대는 서울 구로·온수, 고강 일대는 서울 강서·김포공항, 송내·상동 일대는 인천 부평과 인접합니다. 주소가 부천이라도 경계를 끼는 이동이 필요하면 거리에 따라 추가 이동이 안내될 수 있으므로, <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하세요. 모든 비용은 금액 표기 없이 예약 시 전화로 안내됩니다.</p></section>
+<p>역곡·괴안 일대는 서울 구로·온수, 고강 일대는 서울 강서·김포공항, 송내·상동 일대는 인천 부평과 인접합니다. 주소가 부천이라도 경계를 끼는 이동이 필요하면 거리에 따라 추가 이동이 안내될 수 있으므로, <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하세요. 모든 비용은 금액 표기 없이 예약 시 전화로 안내됩니다.</p></section>
 
 {checklist("이동 기준은 위치 성격을 중심으로 아래처럼 확인하면 됩니다.", items=[
     "방문지가 역세권 중심부인지 외곽 주거지인지 확인했나요?",
@@ -196,9 +196,9 @@ PAGES.append(page(
   "금액 대신 적용 기준을 미리 이해하도록 도와, 예약 시 이동 안내가 투명하게 진행되도록 작성했습니다.")}
 
 <section><h2>관련 지역·확인 링크</h2>
-<p>생활권 — <a href="/bucheon/life/beombak-okgil/">범박·옥길 생활권</a> · <a href="/bucheon/life/wonjong-gogang/">원종·고강 생활권</a> · <a href="/bucheon/life/songnae/">송내 생활권</a></p>
-<p>이용 장소 — <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> · <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a></p>
-<p>다음 확인 — <a href="/bucheon/check/address/">방문 주소 확인</a> · <a href="/bucheon/check/time/">예약 가능 시간</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>생활권 — <a href="/life/beombak-okgil/">범박·옥길 생활권</a> · <a href="/life/wonjong-gogang/">원종·고강 생활권</a> · <a href="/life/songnae/">송내 생활권</a></p>
+<p>이용 장소 — <a href="/use/outer-area/">외곽 지역 이용</a> · <a href="/use/adjacent-area/">서울·인천 인접권 이용</a></p>
+<p>다음 확인 — <a href="/check/address/">방문 주소 확인</a> · <a href="/check/time/">예약 가능 시간</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_fee_faq}
 """
@@ -215,7 +215,7 @@ _time_faq, _time_head = faq_block([
      "상담·예약 문의는 연중무휴로 받지만, 실제 방문 가능 시간대는 지역과 상황에 따라 달라질 수 있어 예약 시 확인이 필요합니다."),
 ])
 PAGES.append(page(
-    path="bucheon/check/time/",
+    path="check/time/",
     title="예약 가능 시간｜부천 시간대·야간 가능 여부 안내",
     desc="부천 방문 예약 전 시간대와 야간 가능 여부, 도착 시간 기준을 확인하세요.",
     h1="예약 가능 시간 · 부천 시간대·야간 안내",
@@ -233,16 +233,16 @@ PAGES.append(page(
 <p>부천은 역세권 중심부와 외곽 주거지, 서울·인천 경계 지역이 함께 있어 같은 시간에 출발해도 도착 시간이 달라질 수 있습니다. 신중동·부천역 상권처럼 접근이 빠른 곳과 오정구 외곽이나 범박·옥길처럼 차량 이동이 필요한 곳은 도착 시간 여유가 다릅니다. 또 늦은 시간대 방문은 지역에 따라 가능 여부가 달라질 수 있어, 부천에서는 시간대와 위치를 함께 확인하는 것이 도움이 됩니다.</p></section>
 
 <section><h2>구별·행정동별·생활권별 차이</h2>
-<p><a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동</a>, <a href="/bucheon/life/bucheon-station-simgok/">부천역·심곡</a> 같은 상권 중심부는 접근 동선이 짧아 시간대 조정이 비교적 유연합니다. <a href="/bucheon/life/beombak-okgil/">범박·옥길</a>이나 <a href="/bucheon/ojeong-gu/">오정구</a> 외곽은 차량 이동 시간이 더해져 도착 시간을 넉넉히 보는 것이 좋습니다. 신도시 단지는 야간 출입 절차가 있는 경우가 있어 시간대와 출입 방식을 함께 확인하면 좋습니다.</p></section>
+<p><a href="/life/jungdong-sinjungdong/">중동·신중동</a>, <a href="/life/bucheon-station-simgok/">부천역·심곡</a> 같은 상권 중심부는 접근 동선이 짧아 시간대 조정이 비교적 유연합니다. <a href="/life/beombak-okgil/">범박·옥길</a>이나 <a href="/ojeong-gu/">오정구</a> 외곽은 차량 이동 시간이 더해져 도착 시간을 넉넉히 보는 것이 좋습니다. 신도시 단지는 야간 출입 절차가 있는 경우가 있어 시간대와 출입 방식을 함께 확인하면 좋습니다.</p></section>
 
 <section><h2>지하철역별 차이</h2>
-<p><a href="/bucheon/station/sinjungdong-station/">신중동역</a>·<a href="/bucheon/station/bucheon-station/">부천역</a>·<a href="/bucheon/station/songnae-station/">송내역</a>처럼 역세권 중심 지역은 시간대별 접근이 수월합니다. 역과 거리가 있는 지역은 가까운 역을 기준 삼더라도 이동 시간이 더해질 수 있으니, 희망 시간과 도착 시간을 함께 확인하세요.</p></section>
+<p><a href="/station/sinjungdong-station/">신중동역</a>·<a href="/station/bucheon-station/">부천역</a>·<a href="/station/songnae-station/">송내역</a>처럼 역세권 중심 지역은 시간대별 접근이 수월합니다. 역과 거리가 있는 지역은 가까운 역을 기준 삼더라도 이동 시간이 더해질 수 있으니, 희망 시간과 도착 시간을 함께 확인하세요.</p></section>
 
 <section><h2>호텔·오피스텔·자택 기준</h2>
-<p><a href="/bucheon/use/hotel/">호텔·숙소</a>는 체크인 이후 객실 출입 가능 시간을, <a href="/bucheon/use/officetel/">오피스텔</a>은 야간 공동현관 보안 운영 시간을 함께 확인하면 좋습니다. <a href="/bucheon/use/home/">자택</a> 중 신도시 단지는 야간 차단기·출입 절차가 있을 수 있어 시간대와 <a href="/bucheon/use/night/">야간 예약</a> 기준을 함께 확인하세요.</p></section>
+<p><a href="/use/hotel/">호텔·숙소</a>는 체크인 이후 객실 출입 가능 시간을, <a href="/use/officetel/">오피스텔</a>은 야간 공동현관 보안 운영 시간을 함께 확인하면 좋습니다. <a href="/use/home/">자택</a> 중 신도시 단지는 야간 차단기·출입 절차가 있을 수 있어 시간대와 <a href="/use/night/">야간 예약</a> 기준을 함께 확인하세요.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>역곡·고강·송내처럼 서울·인천 경계에 가까운 지역은 시간대에 따라 이동 동선이 달라질 수 있어 도착 시간 여유를 더 두는 것이 좋습니다. <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 함께 확인하세요.</p></section>
+<p>역곡·고강·송내처럼 서울·인천 경계에 가까운 지역은 시간대에 따라 이동 동선이 달라질 수 있어 도착 시간 여유를 더 두는 것이 좋습니다. <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 함께 확인하세요.</p></section>
 
 {checklist("시간 관련 항목은 아래처럼 확인하면 일정이 어긋나지 않습니다.", items=[
     "희망 방문 시간대를 정했나요?",
@@ -260,9 +260,9 @@ PAGES.append(page(
   "희망 시간과 실제 도착 시간을 미리 맞춰 일정이 어긋나지 않도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역·확인 링크</h2>
-<p>생활권 — <a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동 생활권</a> · <a href="/bucheon/life/songnae/">송내 생활권</a></p>
-<p>이용 장소 — <a href="/bucheon/use/night/">야간 예약</a> · <a href="/bucheon/use/hotel/">호텔·숙소 이용</a></p>
-<p>다음 확인 — <a href="/bucheon/check/change-policy/">예약 변경 기준</a> · <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>생활권 — <a href="/life/jungdong-sinjungdong/">중동·신중동 생활권</a> · <a href="/life/songnae/">송내 생활권</a></p>
+<p>이용 장소 — <a href="/use/night/">야간 예약</a> · <a href="/use/hotel/">호텔·숙소 이용</a></p>
+<p>다음 확인 — <a href="/check/change-policy/">예약 변경 기준</a> · <a href="/check/travel-fee/">추가 이동비 기준</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_time_faq}
 """
@@ -279,7 +279,7 @@ _chg_faq, _chg_head = faq_block([
      "방문 주소가 바뀌면 이동 동선과 도착 시간이 달라질 수 있어, 새 주소를 구·행정동 단위까지 다시 확인하는 것이 좋습니다."),
 ])
 PAGES.append(page(
-    path="bucheon/check/change-policy/",
+    path="check/change-policy/",
     title="예약 변경 기준｜부천 변경·취소 절차 안내",
     desc="부천 방문 예약 전 예약 변경·취소 절차와 시간·위치 변경 기준을 확인하세요.",
     h1="예약 변경 기준 · 변경·취소 절차 안내",
@@ -297,16 +297,16 @@ PAGES.append(page(
 <p>부천은 역세권 중심부와 외곽 주거지, 서울·인천 경계 지역이 함께 있어 위치가 바뀌면 이동 동선이 크게 달라집니다. 신중동에서 오정구 외곽으로, 또는 부천 시내에서 서울·인천 인접권으로 주소가 바뀌면 도착 시간과 이동 기준이 함께 달라집니다. 그래서 부천에서는 단순한 시간 변경보다 주소 변경 시 위치를 다시 확인하는 것이 특히 중요합니다.</p></section>
 
 <section><h2>구별·행정동별·생활권별 차이</h2>
-<p>같은 <a href="/bucheon/wonmi-gu/">원미구</a> 안에서의 시간 조정은 동선 변화가 작지만, <a href="/bucheon/ojeong-gu/">오정구</a> 외곽이나 <a href="/bucheon/life/beombak-okgil/">범박·옥길</a>처럼 차량 이동이 필요한 곳으로 위치가 바뀌면 도착 시간이 함께 달라집니다. 위치를 바꿔 예약을 변경할 때는 새 주소의 구·행정동·생활권을 다시 확인하면 안내가 정확해집니다.</p></section>
+<p>같은 <a href="/wonmi-gu/">원미구</a> 안에서의 시간 조정은 동선 변화가 작지만, <a href="/ojeong-gu/">오정구</a> 외곽이나 <a href="/life/beombak-okgil/">범박·옥길</a>처럼 차량 이동이 필요한 곳으로 위치가 바뀌면 도착 시간이 함께 달라집니다. 위치를 바꿔 예약을 변경할 때는 새 주소의 구·행정동·생활권을 다시 확인하면 안내가 정확해집니다.</p></section>
 
 <section><h2>지하철역별 차이</h2>
-<p>역세권 중심부 안에서의 시간 변경은 비교적 유연하지만, <a href="/bucheon/station/wonjong-station/">원종역</a>·<a href="/bucheon/station/kkachiwool-station/">까치울역</a>처럼 외곽 접근권으로 위치가 바뀌면 이동 시간이 더해질 수 있습니다. 변경 시에도 가까운 역과 정확한 주소를 함께 알려주세요.</p></section>
+<p>역세권 중심부 안에서의 시간 변경은 비교적 유연하지만, <a href="/station/wonjong-station/">원종역</a>·<a href="/station/kkachiwool-station/">까치울역</a>처럼 외곽 접근권으로 위치가 바뀌면 이동 시간이 더해질 수 있습니다. 변경 시에도 가까운 역과 정확한 주소를 함께 알려주세요.</p></section>
 
 <section><h2>호텔·오피스텔·자택 기준</h2>
-<p><a href="/bucheon/use/hotel/">호텔·숙소</a>는 객실 변경 시 새 객실 번호와 프런트 경유 여부를, <a href="/bucheon/use/officetel/">오피스텔</a>·<a href="/bucheon/use/home/">자택</a>은 주소가 바뀌면 건물 유형과 출입 방식을 다시 확인하는 것이 좋습니다. 위치가 그대로이고 시간만 바뀌는 경우에는 희망 시간만 다시 알려주시면 됩니다.</p></section>
+<p><a href="/use/hotel/">호텔·숙소</a>는 객실 변경 시 새 객실 번호와 프런트 경유 여부를, <a href="/use/officetel/">오피스텔</a>·<a href="/use/home/">자택</a>은 주소가 바뀌면 건물 유형과 출입 방식을 다시 확인하는 것이 좋습니다. 위치가 그대로이고 시간만 바뀌는 경우에는 희망 시간만 다시 알려주시면 됩니다.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>변경된 주소가 서울·인천 경계를 끼게 되면 이동 동선과 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>이 달라질 수 있습니다. <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 변경 후 이동 안내가 명확해집니다.</p></section>
+<p>변경된 주소가 서울·인천 경계를 끼게 되면 이동 동선과 <a href="/check/travel-fee/">추가 이동비 기준</a>이 달라질 수 있습니다. <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 변경 후 이동 안내가 명확해집니다.</p></section>
 
 {checklist("예약 변경은 아래 항목을 정리해 알려주시면 안내가 수월합니다.", items=[
     "변경·취소를 예약 시 연락처로 요청했나요?",
@@ -324,9 +324,9 @@ PAGES.append(page(
   "일정이나 위치가 바뀌어도 이동 안내가 어긋나지 않도록 변경 절차를 미리 이해하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역·확인 링크</h2>
-<p>생활권 — <a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동 생활권</a> · <a href="/bucheon/life/wonjong-gogang/">원종·고강 생활권</a></p>
-<p>이용 장소 — <a href="/bucheon/use/home/">자택 이용</a> · <a href="/bucheon/use/officetel/">오피스텔 이용</a></p>
-<p>다음 확인 — <a href="/bucheon/check/time/">예약 가능 시간</a> · <a href="/bucheon/check/customer-notice/">고객 유의사항</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>생활권 — <a href="/life/jungdong-sinjungdong/">중동·신중동 생활권</a> · <a href="/life/wonjong-gogang/">원종·고강 생활권</a></p>
+<p>이용 장소 — <a href="/use/home/">자택 이용</a> · <a href="/use/officetel/">오피스텔 이용</a></p>
+<p>다음 확인 — <a href="/check/time/">예약 가능 시간</a> · <a href="/check/customer-notice/">고객 유의사항</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_chg_faq}
 """
@@ -343,7 +343,7 @@ _priv_faq, _priv_head = faq_block([
      "예약 안내 목적 외 불필요한 제공은 하지 않는 것을 원칙으로 하며, 자세한 내용은 개인정보 처리방침을 참고하세요."),
 ])
 PAGES.append(page(
-    path="bucheon/check/privacy/",
+    path="check/privacy/",
     title="개인정보 처리 기준｜부천 예약 정보 최소 수집 안내",
     desc="부천 방문 예약 전 개인정보 수집·이용·보관 최소화 기준을 확인하세요.",
     h1="개인정보 처리 기준 · 예약 정보 최소 수집 안내",
@@ -354,23 +354,23 @@ PAGES.append(page(
     extra_head=_priv_head,
     body=f"""
 <section><h2>확인 항목 설명</h2>
-<p>개인정보 처리 기준은 예약 과정에서 어떤 정보가 어떻게 다뤄지는지를 미리 확인하는 항목입니다. 예약 확인과 연락, 방문 안내에 필요한 최소한의 정보만 안내받고, 그 목적이 끝나면 보관을 최소화하는 것을 원칙으로 합니다. 이 페이지는 사용자가 예약 전에 이해하면 좋은 기준을 요약하며, 수집 항목·이용 목적·보관 기간 등 구체적인 내용은 운영 기준인 <a href="/bucheon/policy/privacy/">개인정보 처리방침</a>에서 확인할 수 있습니다.</p>
+<p>개인정보 처리 기준은 예약 과정에서 어떤 정보가 어떻게 다뤄지는지를 미리 확인하는 항목입니다. 예약 확인과 연락, 방문 안내에 필요한 최소한의 정보만 안내받고, 그 목적이 끝나면 보관을 최소화하는 것을 원칙으로 합니다. 이 페이지는 사용자가 예약 전에 이해하면 좋은 기준을 요약하며, 수집 항목·이용 목적·보관 기간 등 구체적인 내용은 운영 기준인 <a href="/policy/privacy/">개인정보 처리방침</a>에서 확인할 수 있습니다.</p>
 <p>확인할 항목은 수집되는 정보의 범위, 이용 목적, 보관 기간 최소화 원칙, 그리고 목적 외 제공을 하지 않는다는 점입니다. 방문 주소처럼 위치와 관련된 정보도 안내 목적에 한해 활용됩니다.</p></section>
 
 <section><h2>부천에서 왜 중요한지</h2>
 <p>방문형 안내는 주소와 연락처처럼 위치·연락에 관한 정보를 다루게 됩니다. 부천은 같은 동 이름이 인접 구에 나뉘어 있어 정확한 안내를 위해 구·행정동까지 확인하게 되는데, 이때 확인한 정보 역시 예약 안내 목적에 한해 최소한으로 다루는 것이 중요합니다. 위치 정보를 다루는 만큼 수집을 최소화하고 목적이 끝나면 보관을 줄이는 원칙이 사용자 신뢰의 바탕이 됩니다.</p></section>
 
 <section><h2>구별·행정동별·생활권별 차이</h2>
-<p>정보 처리 기준 자체는 <a href="/bucheon/wonmi-gu/">원미구</a>·<a href="/bucheon/sosa-gu/">소사구</a>·<a href="/bucheon/ojeong-gu/">오정구</a> 어디서나 동일하게 적용됩니다. 다만 정확한 안내를 위해 확인하는 주소의 상세 정도는 위치에 따라 다를 수 있는데, 이름이 비슷한 인접 동이 있는 지역은 구·행정동을 함께 확인하더라도 그 정보는 예약 안내 목적에만 사용됩니다.</p></section>
+<p>정보 처리 기준 자체는 <a href="/wonmi-gu/">원미구</a>·<a href="/sosa-gu/">소사구</a>·<a href="/ojeong-gu/">오정구</a> 어디서나 동일하게 적용됩니다. 다만 정확한 안내를 위해 확인하는 주소의 상세 정도는 위치에 따라 다를 수 있는데, 이름이 비슷한 인접 동이 있는 지역은 구·행정동을 함께 확인하더라도 그 정보는 예약 안내 목적에만 사용됩니다.</p></section>
 
 <section><h2>지하철역별 차이</h2>
-<p>역세권에서 가까운 역을 기준으로 위치를 안내하는 경우에도, 확인한 역·주소 정보는 방문 안내 목적에 한해 활용됩니다. <a href="/bucheon/station/bucheon-station/">부천역</a>·<a href="/bucheon/station/sinjungdong-station/">신중동역</a> 등 어느 역세권이든 정보 처리 기준은 같습니다.</p></section>
+<p>역세권에서 가까운 역을 기준으로 위치를 안내하는 경우에도, 확인한 역·주소 정보는 방문 안내 목적에 한해 활용됩니다. <a href="/station/bucheon-station/">부천역</a>·<a href="/station/sinjungdong-station/">신중동역</a> 등 어느 역세권이든 정보 처리 기준은 같습니다.</p></section>
 
 <section><h2>호텔·오피스텔·자택 기준</h2>
-<p><a href="/bucheon/use/hotel/">호텔·숙소</a>의 객실 번호, <a href="/bucheon/use/officetel/">오피스텔</a>·<a href="/bucheon/use/home/">자택</a>의 동호수처럼 상세 위치 정보도 예약 확인과 방문 안내에 필요한 범위에서만 안내받고, 목적이 끝나면 보관을 최소화합니다. 건물 유형과 무관하게 동일한 최소 수집 원칙이 적용됩니다.</p></section>
+<p><a href="/use/hotel/">호텔·숙소</a>의 객실 번호, <a href="/use/officetel/">오피스텔</a>·<a href="/use/home/">자택</a>의 동호수처럼 상세 위치 정보도 예약 확인과 방문 안내에 필요한 범위에서만 안내받고, 목적이 끝나면 보관을 최소화합니다. 건물 유형과 무관하게 동일한 최소 수집 원칙이 적용됩니다.</p></section>
 
 <section><h2>운영 기준 연결</h2>
-<p>이 페이지는 예약 전에 이해하면 좋은 요약 안내이며, 수집 항목·이용 목적·보관 기간·문의 방법 등 공식 기준은 운영 기준 문서에 정리되어 있습니다. 자세한 내용은 <a href="/bucheon/policy/privacy/">개인정보 처리방침</a>에서 확인하고, 서비스 운영 원칙은 <a href="/bucheon/policy/service-policy/">불법·선정적 서비스 불가 안내</a>를 함께 참고하세요.</p></section>
+<p>이 페이지는 예약 전에 이해하면 좋은 요약 안내이며, 수집 항목·이용 목적·보관 기간·문의 방법 등 공식 기준은 운영 기준 문서에 정리되어 있습니다. 자세한 내용은 <a href="/policy/privacy/">개인정보 처리방침</a>에서 확인하고, 서비스 운영 원칙은 <a href="/policy/service-policy/">불법·선정적 서비스 불가 안내</a>를 함께 참고하세요.</p></section>
 
 {checklist("개인정보 관련 항목은 아래처럼 이해해 두면 좋습니다.", items=[
     "수집되는 정보가 예약·연락에 필요한 최소한인지 확인했나요?",
@@ -388,9 +388,9 @@ PAGES.append(page(
   "위치·연락 정보를 다루는 방문형 안내에서 사용자가 정보 처리 기준을 예약 전에 이해하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역·확인 링크</h2>
-<p>운영 기준 — <a href="/bucheon/policy/privacy/">개인정보 처리방침</a> · <a href="/bucheon/policy/service-policy/">불법·선정적 서비스 불가 안내</a></p>
-<p>이용 장소 — <a href="/bucheon/use/home/">자택 이용</a> · <a href="/bucheon/use/officetel/">오피스텔 이용</a></p>
-<p>다음 확인 — <a href="/bucheon/check/service-policy/">불법·선정적 서비스 불가 안내</a> · <a href="/bucheon/check/customer-notice/">고객 유의사항</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>운영 기준 — <a href="/policy/privacy/">개인정보 처리방침</a> · <a href="/policy/service-policy/">불법·선정적 서비스 불가 안내</a></p>
+<p>이용 장소 — <a href="/use/home/">자택 이용</a> · <a href="/use/officetel/">오피스텔 이용</a></p>
+<p>다음 확인 — <a href="/check/service-policy/">불법·선정적 서비스 불가 안내</a> · <a href="/check/customer-notice/">고객 유의사항</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_priv_faq}
 """
@@ -407,7 +407,7 @@ _svc_faq, _svc_head = faq_block([
      "공식 운영 기준은 불법·선정적 서비스 불가 안내 문서에 정리되어 있으며, 개인정보 처리방침과 함께 확인할 수 있습니다."),
 ])
 PAGES.append(page(
-    path="bucheon/check/service-policy/",
+    path="check/service-policy/",
     title="불법·선정적 서비스 불가 안내｜부천 건전 관리 기준",
     desc="부천 방문 예약 전 건전한 관리 서비스만 제공하는 운영 기준을 확인하세요.",
     h1="불법·선정적 서비스 불가 안내 · 건전 관리 기준",
@@ -425,16 +425,16 @@ PAGES.append(page(
 <p>방문형 안내는 사용자의 거주지나 숙소로 직접 이동하는 형태이기 때문에, 제공 범위를 명확히 하는 것이 사용자와 운영 양쪽의 신뢰에 직결됩니다. 부천 전역 어디서 예약하든 안내되는 것은 건전한 관리 서비스로 한정되며, 지역·생활권·이용 장소가 달라져도 이 기준은 변하지 않습니다. 명확한 기준이 있어야 안내가 안전하고 투명하게 이어집니다.</p></section>
 
 <section><h2>구별·행정동별·생활권별 차이</h2>
-<p>서비스 운영 기준은 <a href="/bucheon/wonmi-gu/">원미구</a>·<a href="/bucheon/sosa-gu/">소사구</a>·<a href="/bucheon/ojeong-gu/">오정구</a>와 모든 생활권에서 동일하게 적용됩니다. 상권 중심의 중동·신중동이든 주거지의 범박·옥길이든, 또는 신도시든 원도심이든 안내 범위는 건전한 방문 관리로 같습니다. 지역에 따른 예외는 없습니다.</p></section>
+<p>서비스 운영 기준은 <a href="/wonmi-gu/">원미구</a>·<a href="/sosa-gu/">소사구</a>·<a href="/ojeong-gu/">오정구</a>와 모든 생활권에서 동일하게 적용됩니다. 상권 중심의 중동·신중동이든 주거지의 범박·옥길이든, 또는 신도시든 원도심이든 안내 범위는 건전한 방문 관리로 같습니다. 지역에 따른 예외는 없습니다.</p></section>
 
 <section><h2>지하철역별 차이</h2>
-<p><a href="/bucheon/station/bucheon-station/">부천역</a>·<a href="/bucheon/station/songnae-station/">송내역</a> 등 어느 역세권에서 예약하더라도 제공 서비스의 범위는 같습니다. 역세권이라는 위치 특성이 안내 범위를 바꾸지 않으며, 모든 방문은 정상적인 관리 목적에 한합니다.</p></section>
+<p><a href="/station/bucheon-station/">부천역</a>·<a href="/station/songnae-station/">송내역</a> 등 어느 역세권에서 예약하더라도 제공 서비스의 범위는 같습니다. 역세권이라는 위치 특성이 안내 범위를 바꾸지 않으며, 모든 방문은 정상적인 관리 목적에 한합니다.</p></section>
 
 <section><h2>호텔·오피스텔·자택 기준</h2>
-<p><a href="/bucheon/use/hotel/">호텔·숙소</a>, <a href="/bucheon/use/officetel/">오피스텔</a>, <a href="/bucheon/use/home/">자택</a> 등 이용 장소가 달라도 건전한 관리 서비스만 안내된다는 기준은 동일합니다. 장소가 사적인 공간이더라도 안내 범위는 정상적인 방문 관리에 한정되며, 그 밖의 요청에는 응하지 않습니다.</p></section>
+<p><a href="/use/hotel/">호텔·숙소</a>, <a href="/use/officetel/">오피스텔</a>, <a href="/use/home/">자택</a> 등 이용 장소가 달라도 건전한 관리 서비스만 안내된다는 기준은 동일합니다. 장소가 사적인 공간이더라도 안내 범위는 정상적인 방문 관리에 한정되며, 그 밖의 요청에는 응하지 않습니다.</p></section>
 
 <section><h2>운영 기준 연결</h2>
-<p>이 페이지는 예약 전에 이해하면 좋은 요약 안내이며, 공식 운영 기준은 <a href="/bucheon/policy/service-policy/">불법·선정적 서비스 불가 안내</a> 문서에 정리되어 있습니다. 정보 처리 원칙은 <a href="/bucheon/policy/privacy/">개인정보 처리방침</a>에서 함께 확인할 수 있습니다.</p></section>
+<p>이 페이지는 예약 전에 이해하면 좋은 요약 안내이며, 공식 운영 기준은 <a href="/policy/service-policy/">불법·선정적 서비스 불가 안내</a> 문서에 정리되어 있습니다. 정보 처리 원칙은 <a href="/policy/privacy/">개인정보 처리방침</a>에서 함께 확인할 수 있습니다.</p></section>
 
 {checklist("서비스 운영 기준은 아래처럼 이해해 두면 좋습니다.", items=[
     "건전한 방문 관리 서비스만 제공된다는 점을 확인했나요?",
@@ -452,9 +452,9 @@ PAGES.append(page(
   "방문형 안내에서 제공 범위에 대한 오해를 막고 안전하고 투명한 예약이 이뤄지도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역·확인 링크</h2>
-<p>운영 기준 — <a href="/bucheon/policy/service-policy/">불법·선정적 서비스 불가 안내</a> · <a href="/bucheon/policy/privacy/">개인정보 처리방침</a></p>
-<p>이용 장소 — <a href="/bucheon/use/hotel/">호텔·숙소 이용</a> · <a href="/bucheon/use/home/">자택 이용</a></p>
-<p>다음 확인 — <a href="/bucheon/check/privacy/">개인정보 처리 기준</a> · <a href="/bucheon/check/customer-notice/">고객 유의사항</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>운영 기준 — <a href="/policy/service-policy/">불법·선정적 서비스 불가 안내</a> · <a href="/policy/privacy/">개인정보 처리방침</a></p>
+<p>이용 장소 — <a href="/use/hotel/">호텔·숙소 이용</a> · <a href="/use/home/">자택 이용</a></p>
+<p>다음 확인 — <a href="/check/privacy/">개인정보 처리 기준</a> · <a href="/check/customer-notice/">고객 유의사항</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_svc_faq}
 """
@@ -471,7 +471,7 @@ _notice_faq, _notice_head = faq_block([
      "상담·예약 문의는 연중무휴 24시간 받지만, 실제 방문 가능 시간대는 지역과 상황에 따라 달라질 수 있어 예약 시 확인이 필요합니다."),
 ])
 PAGES.append(page(
-    path="bucheon/check/customer-notice/",
+    path="check/customer-notice/",
     title="고객 유의사항｜부천 예약 전 종합 확인 안내",
     desc="부천 방문 예약 전 주소·출입·시간·이동·개인정보 종합 유의사항을 확인하세요.",
     h1="고객 유의사항 · 부천 예약 전 종합 확인 안내",
@@ -489,16 +489,16 @@ PAGES.append(page(
 <p>부천은 원미구·소사구·오정구가 좁게 붙어 있고 1호선·7호선·서해선 역세권과 외곽 주거지, 서울·인천 경계가 함께 있어 위치마다 확인할 항목이 조금씩 다릅니다. 같은 동 이름이 인접 구에 나뉘어 있기도 해 주소 확인이 중요하고, 역과 거리가 있는 지역은 이동 시간과 기준을 함께 봐야 합니다. 종합 유의사항을 한 번 훑어두면 부천의 이런 특성을 빠짐없이 반영해 예약할 수 있습니다.</p></section>
 
 <section><h2>구별·행정동별·생활권별 차이</h2>
-<p><a href="/bucheon/wonmi-gu/">원미구</a> 상권·신도시, <a href="/bucheon/sosa-gu/">소사구</a> 상권·주거·환승권, <a href="/bucheon/ojeong-gu/">오정구</a> 외곽·접근권은 각각 확인의 무게가 다릅니다. 상권 중심부는 출입 방식이, 외곽 주거지는 이동 기준이, 인접권은 경계 이동이 핵심입니다. 자신의 생활권에 맞춰 해당 항목을 더 꼼꼼히 보면 좋습니다.</p></section>
+<p><a href="/wonmi-gu/">원미구</a> 상권·신도시, <a href="/sosa-gu/">소사구</a> 상권·주거·환승권, <a href="/ojeong-gu/">오정구</a> 외곽·접근권은 각각 확인의 무게가 다릅니다. 상권 중심부는 출입 방식이, 외곽 주거지는 이동 기준이, 인접권은 경계 이동이 핵심입니다. 자신의 생활권에 맞춰 해당 항목을 더 꼼꼼히 보면 좋습니다.</p></section>
 
 <section><h2>지하철역별 차이</h2>
-<p><a href="/bucheon/station/sinjungdong-station/">신중동역</a>·<a href="/bucheon/station/bucheon-station/">부천역</a> 같은 중심 역세권은 접근이 수월하고, <a href="/bucheon/station/wonjong-station/">원종역</a> 등 외곽 접근권은 이동 시간을 함께 봐야 합니다. 가까운 역과 정확한 주소를 함께 알려주시면 모든 안내가 명확해집니다.</p></section>
+<p><a href="/station/sinjungdong-station/">신중동역</a>·<a href="/station/bucheon-station/">부천역</a> 같은 중심 역세권은 접근이 수월하고, <a href="/station/wonjong-station/">원종역</a> 등 외곽 접근권은 이동 시간을 함께 봐야 합니다. 가까운 역과 정확한 주소를 함께 알려주시면 모든 안내가 명확해집니다.</p></section>
 
 <section><h2>호텔·오피스텔·자택 기준</h2>
-<p><a href="/bucheon/use/hotel/">호텔·숙소</a>는 프런트·객실 출입을, <a href="/bucheon/use/officetel/">오피스텔</a>은 공동현관·엘리베이터 보안을, <a href="/bucheon/use/home/">자택</a>은 단지·동호수와 출입 방식을 확인합니다. 이용 장소에 따라 챙길 항목이 달라지므로 해당 장소 안내를 함께 보세요.</p></section>
+<p><a href="/use/hotel/">호텔·숙소</a>는 프런트·객실 출입을, <a href="/use/officetel/">오피스텔</a>은 공동현관·엘리베이터 보안을, <a href="/use/home/">자택</a>은 단지·동호수와 출입 방식을 확인합니다. 이용 장소에 따라 챙길 항목이 달라지므로 해당 장소 안내를 함께 보세요.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>역곡·고강·송내처럼 서울·인천 경계에 가까운 지역은 이동 동선과 도착 시간이 달라질 수 있어 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 좋습니다.</p></section>
+<p>역곡·고강·송내처럼 서울·인천 경계에 가까운 지역은 이동 동선과 도착 시간이 달라질 수 있어 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 <a href="/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 좋습니다.</p></section>
 
 {checklist("예약 전 종합 점검은 아래 순서로 한 번에 확인하면 좋습니다.", items=[
     "방문 주소를 구·행정동까지 확인했나요?",
@@ -517,9 +517,9 @@ PAGES.append(page(
   "흩어진 확인 항목을 한 번에 점검하도록 도와 부천에서의 예약이 빠짐없이 이뤄지도록 작성했습니다.")}
 
 <section><h2>관련 지역·확인 링크</h2>
-<p>생활권 — <a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동 생활권</a> · <a href="/bucheon/life/songnae/">송내 생활권</a></p>
-<p>이용 장소 — <a href="/bucheon/use/home/">자택 이용</a> · <a href="/bucheon/use/hotel/">호텔·숙소 이용</a></p>
-<p>다음 확인 — <a href="/bucheon/check/address/">방문 주소 확인</a> · <a href="/bucheon/check/building-access/">건물 출입 방식</a> · <a href="/bucheon/check/privacy/">개인정보 처리 기준</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>생활권 — <a href="/life/jungdong-sinjungdong/">중동·신중동 생활권</a> · <a href="/life/songnae/">송내 생활권</a></p>
+<p>이용 장소 — <a href="/use/home/">자택 이용</a> · <a href="/use/hotel/">호텔·숙소 이용</a></p>
+<p>다음 확인 — <a href="/check/address/">방문 주소 확인</a> · <a href="/check/building-access/">건물 출입 방식</a> · <a href="/check/privacy/">개인정보 처리 기준</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_notice_faq}
 """

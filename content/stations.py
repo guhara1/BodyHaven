@@ -5,7 +5,7 @@ PAGES = []
 
 # 모든 역세권 페이지 공통 브레드크럼 (마지막 항목만 역명으로 교체)
 def _bc(station_name):
-    return [("부천", "/bucheon/"), ("지하철역", "/bucheon/station/bucheon-station/"), (station_name, "")]
+    return [("부천", "/"), ("지하철역", "/station/bucheon-station/"), (station_name, "")]
 
 _WHO = "이 페이지는 부천 지역 방문형 관리 서비스 안내 콘텐츠 담당자가 작성하고 운영 책임자가 검수합니다."
 
@@ -20,7 +20,7 @@ _faq, _head = faq_block([
      "아니요. 출구는 같은 역세권 안에서 방향만 다를 뿐 안내 기준이 동일하므로 역명 기준 한 개 페이지로 관리합니다."),
 ])
 PAGES.append(page(
-    path="bucheon/station/bucheon-station/",
+    path="station/bucheon-station/",
     title="부천역 역세권 출장마사지｜심곡·원미 원도심 안내",
     desc="부천역 출장마사지·홈타이 예약 전 1호선 심곡·원미 원도심 역세권을 확인하세요.",
     h1="부천역 역세권 출장마사지 · 심곡·원미 원도심 안내",
@@ -35,29 +35,29 @@ PAGES.append(page(
 <p>부천역 일대는 부천에서 가장 오래된 상권 중 하나로, 좁은 골목과 일방통행 구간이 많아 차량 진입과 주차 동선을 미리 가늠해 두면 방문 안내가 한결 수월합니다. 같은 역세권 안에서도 남부 상권과 북부 주거지의 분위기가 다르므로, 가까운 행정동을 함께 확인하면 위치를 빠르게 좁힐 수 있습니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>부천역 역세권은 행정구역상 <a href="/bucheon/wonmi-gu/">원미구</a>와 <a href="/bucheon/sosa-gu/">소사구</a> 경계에 걸쳐 있습니다. 역 북쪽은 원미구 심곡 일대, 남쪽은 소사구 심곡본 일대로 이어지므로, 방문 주소가 어느 구에 속하는지 함께 확인하면 안내가 정확합니다.</p></section>
+<p>부천역 역세권은 행정구역상 <a href="/wonmi-gu/">원미구</a>와 <a href="/sosa-gu/">소사구</a> 경계에 걸쳐 있습니다. 역 북쪽은 원미구 심곡 일대, 남쪽은 소사구 심곡본 일대로 이어지므로, 방문 주소가 어느 구에 속하는지 함께 확인하면 안내가 정확합니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/wonmi-gu/simgok-1-dong/">심곡1동</a> · <a href="/bucheon/wonmi-gu/simgok-2-dong/">심곡2동</a> — 역 북측 원도심 생활권</li>
-<li><a href="/bucheon/sosa-gu/simgokbon-dong/">심곡본동</a> — 역 남측 상권 생활권</li>
-<li><a href="/bucheon/wonmi-gu/jung-dong/">중동</a> — 역 동측 상권 연접 생활권</li>
+<li><a href="/wonmi-gu/simgok-1-dong/">심곡1동</a> · <a href="/wonmi-gu/simgok-2-dong/">심곡2동</a> — 역 북측 원도심 생활권</li>
+<li><a href="/sosa-gu/simgokbon-dong/">심곡본동</a> — 역 남측 상권 생활권</li>
+<li><a href="/wonmi-gu/jung-dong/">중동</a> — 역 동측 상권 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>부천역 역세권은 다음 생활권과 묶어 보면 위치가 분명해집니다 — <a href="/bucheon/life/bucheon-station-simgok/">부천역·심곡 생활권</a>(원도심·1호선·상권)을 중심으로, 동쪽 <a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동 생활권</a> 상권과 자연스럽게 이어집니다.</p></section>
+<p>부천역 역세권은 다음 생활권과 묶어 보면 위치가 분명해집니다 — <a href="/life/bucheon-station-simgok/">부천역·심곡 생활권</a>(원도심·1호선·상권)을 중심으로, 동쪽 <a href="/life/jungdong-sinjungdong/">중동·신중동 생활권</a> 상권과 자연스럽게 이어집니다.</p></section>
 
 <section><h2>환승 여부</h2>
-<p>부천역은 1호선 단일 노선 역으로, 7호선·서해선과의 환승은 없습니다. 7호선을 이용하려면 인근 <a href="/bucheon/station/sinjungdong-station/">신중동역</a> 방면으로, 서해선을 이용하려면 <a href="/bucheon/station/sosa-station/">소사역</a> 방면으로 이동해야 하므로, 다른 노선 접근이 필요한 경우 가까운 환승역을 함께 확인하세요.</p></section>
+<p>부천역은 1호선 단일 노선 역으로, 7호선·서해선과의 환승은 없습니다. 7호선을 이용하려면 인근 <a href="/station/sinjungdong-station/">신중동역</a> 방면으로, 서해선을 이용하려면 <a href="/station/sosa-station/">소사역</a> 방면으로 이동해야 하므로, 다른 노선 접근이 필요한 경우 가까운 환승역을 함께 확인하세요.</p></section>
 
 <section><h2>출구별 페이지를 만들지 않는 이유</h2>
 <p>부천역은 출구가 여러 방향으로 나 있지만, 출구는 같은 역세권 안에서 방향만 다를 뿐 방문 주소 확인·건물 출입·이동 기준이 모두 동일합니다. 출구별로 페이지를 나누면 같은 내용이 반복되어 오히려 확인이 번거로워지므로, 부천역은 역명 기준 한 개 페이지로 관리하고 정확한 위치는 건물명과 동·호수로 안내합니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>부천역 역세권은 다세대·상가 건물이 많아 <a href="/bucheon/use/home/">자택 이용</a> 시 정확한 동·호수와 건물 출입 방식을 먼저 확인해야 합니다. 신축 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 시에는 공동현관과 엘리베이터 카드, 관리실 규정을 함께 확인하세요. 출장·여행 방문이라면 <a href="/bucheon/use/station-area/">역세권 이용</a> 기준에 맞춰 건물명과 출구 방향을 명확히 안내하면 도착이 빨라집니다.</p></section>
+<p>부천역 역세권은 다세대·상가 건물이 많아 <a href="/use/home/">자택 이용</a> 시 정확한 동·호수와 건물 출입 방식을 먼저 확인해야 합니다. 신축 <a href="/use/officetel/">오피스텔 이용</a> 시에는 공동현관과 엘리베이터 카드, 관리실 규정을 함께 확인하세요. 출장·여행 방문이라면 <a href="/use/station-area/">역세권 이용</a> 기준에 맞춰 건물명과 출구 방향을 명확히 안내하면 도착이 빨라집니다.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>부천역은 1호선으로 서울 구로·인천 부평 방면 양쪽과 연결되는 길목입니다. 방문 주소가 부천역 인접권이라도 경계 쪽으로 이어지는 경우 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
+<p>부천역은 1호선으로 서울 구로·인천 부평 방면 양쪽과 연결되는 길목입니다. 방문 주소가 부천역 인접권이라도 경계 쪽으로 이어지는 경우 <a href="/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
 
 {checklist("부천역 역세권은 원도심 상권 특성상 건물 유형이 다양하므로 아래 항목을 먼저 확인하세요.")}
 
@@ -68,7 +68,7 @@ PAGES.append(page(
   "부천역 주변에서 방문형 서비스를 찾는 사용자가 정확한 위치와 이용 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/jungdong-station/">중동역</a> · <a href="/bucheon/station/sosa-station/">소사역</a> · <a href="/bucheon/station/yeokgok-station/">역곡역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/jungdong-station/">중동역</a> · <a href="/station/sosa-station/">소사역</a> · <a href="/station/yeokgok-station/">역곡역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """
@@ -85,7 +85,7 @@ _faq, _head = faq_block([
      "주거용 아파트·다세대와 근린 상가가 섞여 있어 자택 방문이 많습니다. 단지명과 동·호수, 공동현관 출입 방식을 먼저 확인하세요."),
 ])
 PAGES.append(page(
-    path="bucheon/station/jungdong-station/",
+    path="station/jungdong-station/",
     title="중동역 역세권 출장마사지｜1호선 중동 생활권 안내",
     desc="중동역 출장마사지·홈타이 예약 전 1호선 중동 주거·상가 생활권을 확인하세요.",
     h1="중동역 역세권 출장마사지 · 1호선 중동 생활권 안내",
@@ -100,29 +100,29 @@ PAGES.append(page(
 <p>중동역과 7호선 신중동역은 이름이 비슷해 혼동하기 쉽지만 서로 다른 역입니다. 같은 '중동'이라도 어느 역을 기준으로 하는지에 따라 이동 동선이 달라지므로, 예약 전에 노선과 역명을 함께 확인하면 도착 안내가 한결 정확해집니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>중동역 역세권은 행정구역상 <a href="/bucheon/wonmi-gu/">원미구</a> 중동 일대에 속합니다. 동쪽으로 송내·상동 방면, 서쪽으로 부천역 방면과 이어지므로 인접 생활권과 함께 위치를 좁혀 보면 좋습니다.</p></section>
+<p>중동역 역세권은 행정구역상 <a href="/wonmi-gu/">원미구</a> 중동 일대에 속합니다. 동쪽으로 송내·상동 방면, 서쪽으로 부천역 방면과 이어지므로 인접 생활권과 함께 위치를 좁혀 보면 좋습니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/wonmi-gu/jung-dong/">중동</a> — 중동역 중심 주거·상가 생활권</li>
-<li><a href="/bucheon/wonmi-gu/sang-dong/">상동</a> — 역 동측 신도시 연접 생활권</li>
-<li><a href="/bucheon/wonmi-gu/simgok-2-dong/">심곡2동</a> — 역 서측 부천역 연접 생활권</li>
+<li><a href="/wonmi-gu/jung-dong/">중동</a> — 중동역 중심 주거·상가 생활권</li>
+<li><a href="/wonmi-gu/sang-dong/">상동</a> — 역 동측 신도시 연접 생활권</li>
+<li><a href="/wonmi-gu/simgok-2-dong/">심곡2동</a> — 역 서측 부천역 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>중동역 역세권은 <a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동 생활권</a>의 1호선 축에 해당하며, 동쪽 <a href="/bucheon/life/sangdong-bucheon-cityhall/">상동·부천시청 생활권</a> 신도시권과 자연스럽게 이어집니다.</p></section>
+<p>중동역 역세권은 <a href="/life/jungdong-sinjungdong/">중동·신중동 생활권</a>의 1호선 축에 해당하며, 동쪽 <a href="/life/sangdong-bucheon-cityhall/">상동·부천시청 생활권</a> 신도시권과 자연스럽게 이어집니다.</p></section>
 
 <section><h2>환승 여부</h2>
-<p>중동역은 1호선 단일 노선 역으로 환승은 없습니다. 7호선이 필요하면 인근 <a href="/bucheon/station/sinjungdong-station/">신중동역</a>이나 <a href="/bucheon/station/bucheon-cityhall-station/">부천시청역</a> 방면으로 이동하는 것이 일반적이므로, 다른 노선 접근이 필요한 경우 가까운 7호선 역을 함께 확인하세요.</p></section>
+<p>중동역은 1호선 단일 노선 역으로 환승은 없습니다. 7호선이 필요하면 인근 <a href="/station/sinjungdong-station/">신중동역</a>이나 <a href="/station/bucheon-cityhall-station/">부천시청역</a> 방면으로 이동하는 것이 일반적이므로, 다른 노선 접근이 필요한 경우 가까운 7호선 역을 함께 확인하세요.</p></section>
 
 <section><h2>출구별 페이지를 만들지 않는 이유</h2>
 <p>중동역도 출구가 여러 방향으로 나 있지만, 출구는 같은 역세권 안에서 방향만 다를 뿐 방문 주소·건물 출입·이동 기준이 동일합니다. 출구별 페이지는 중복 안내가 되기 쉬워, 중동역은 역명 기준 한 개 페이지로 관리하고 정확한 위치는 단지명·동·호수로 안내합니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>중동역 역세권은 아파트·다세대 주거가 많아 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명과 동·호수, 공동현관 출입 방식을 먼저 확인하는 것이 중요합니다. 일부 신축 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 구간은 관리실 규정과 엘리베이터 카드 사용 여부를 함께 확인하세요. 상권 쪽 방문이라면 <a href="/bucheon/use/station-area/">역세권 이용</a> 기준에 따라 건물명을 명확히 안내하면 도착이 빠릅니다.</p></section>
+<p>중동역 역세권은 아파트·다세대 주거가 많아 <a href="/use/home/">자택 이용</a> 시 단지명과 동·호수, 공동현관 출입 방식을 먼저 확인하는 것이 중요합니다. 일부 신축 <a href="/use/officetel/">오피스텔 이용</a> 구간은 관리실 규정과 엘리베이터 카드 사용 여부를 함께 확인하세요. 상권 쪽 방문이라면 <a href="/use/station-area/">역세권 이용</a> 기준에 따라 건물명을 명확히 안내하면 도착이 빠릅니다.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>중동역은 1호선으로 인천 부평·서울 구로 방면 양쪽과 연결됩니다. 방문 주소가 송내 방면 경계에 가깝다면 인천 인접권 성격이 더해지므로, <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
+<p>중동역은 1호선으로 인천 부평·서울 구로 방면 양쪽과 연결됩니다. 방문 주소가 송내 방면 경계에 가깝다면 인천 인접권 성격이 더해지므로, <a href="/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
 
 {checklist("중동역 역세권은 주거 중심이라 단지·동호수 확인이 특히 중요하므로 아래 항목을 먼저 확인하세요.")}
 
@@ -133,7 +133,7 @@ PAGES.append(page(
   "중동역 주변에서 방문형 서비스를 찾는 사용자가 정확한 위치와 이용 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/bucheon-station/">부천역</a> · <a href="/bucheon/station/sinjungdong-station/">신중동역</a> · <a href="/bucheon/station/songnae-station/">송내역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/bucheon-station/">부천역</a> · <a href="/station/sinjungdong-station/">신중동역</a> · <a href="/station/songnae-station/">송내역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """
@@ -150,7 +150,7 @@ _faq, _head = faq_block([
      "아니요. 출구는 방향만 다를 뿐 안내 기준이 같으므로 역명 기준 한 개 페이지로 관리합니다."),
 ])
 PAGES.append(page(
-    path="bucheon/station/sinjungdong-station/",
+    path="station/sinjungdong-station/",
     title="신중동역 역세권 출장마사지｜7호선 상권·오피스텔 안내",
     desc="신중동역 출장마사지·홈타이 예약 전 7호선 중동·신중동 상권·오피스텔을 확인하세요.",
     h1="신중동역 역세권 출장마사지 · 7호선 상권·오피스텔 안내",
@@ -165,29 +165,29 @@ PAGES.append(page(
 <p>신중동역 일대는 오피스텔 비중이 높아, 공동현관·엘리베이터 카드·관리실 운영 시간 같은 출입 조건이 건물마다 다릅니다. 1호선 중동역과 이름이 비슷하지만 다른 역이므로, 예약 전에 7호선 신중동역 기준임을 함께 확인하면 도착 안내가 정확해집니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>신중동역 역세권은 행정구역상 <a href="/bucheon/wonmi-gu/">원미구</a> 중동 일대에 속합니다. 부천 상권의 중심에 해당하며, 동쪽 상동·부천시청 방면과 이어집니다.</p></section>
+<p>신중동역 역세권은 행정구역상 <a href="/wonmi-gu/">원미구</a> 중동 일대에 속합니다. 부천 상권의 중심에 해당하며, 동쪽 상동·부천시청 방면과 이어집니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/wonmi-gu/jung-dong/">중동</a> — 신중동역 중심 상권·오피스텔 생활권</li>
-<li><a href="/bucheon/wonmi-gu/sang-dong/">상동</a> — 역 동측 신도시 연접 생활권</li>
-<li><a href="/bucheon/wonmi-gu/chunui-dong/">춘의동</a> — 역 북측 연접 생활권</li>
+<li><a href="/wonmi-gu/jung-dong/">중동</a> — 신중동역 중심 상권·오피스텔 생활권</li>
+<li><a href="/wonmi-gu/sang-dong/">상동</a> — 역 동측 신도시 연접 생활권</li>
+<li><a href="/wonmi-gu/chunui-dong/">춘의동</a> — 역 북측 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>신중동역 역세권은 <a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동 생활권</a>의 7호선 상권 중심에 해당하며, 동쪽 <a href="/bucheon/life/sangdong-bucheon-cityhall/">상동·부천시청 생활권</a>과 신도시 상권으로 이어집니다.</p></section>
+<p>신중동역 역세권은 <a href="/life/jungdong-sinjungdong/">중동·신중동 생활권</a>의 7호선 상권 중심에 해당하며, 동쪽 <a href="/life/sangdong-bucheon-cityhall/">상동·부천시청 생활권</a>과 신도시 상권으로 이어집니다.</p></section>
 
 <section><h2>환승 여부</h2>
-<p>신중동역은 7호선 단일 노선 역으로 환승은 없습니다. 1호선이 필요하면 인근 <a href="/bucheon/station/bucheon-station/">부천역</a>이나 <a href="/bucheon/station/jungdong-station/">중동역</a> 방면으로 이동해야 하므로, 노선 환승이 필요한 경우 가까운 1호선 역을 함께 확인하세요.</p></section>
+<p>신중동역은 7호선 단일 노선 역으로 환승은 없습니다. 1호선이 필요하면 인근 <a href="/station/bucheon-station/">부천역</a>이나 <a href="/station/jungdong-station/">중동역</a> 방면으로 이동해야 하므로, 노선 환승이 필요한 경우 가까운 1호선 역을 함께 확인하세요.</p></section>
 
 <section><h2>출구별 페이지를 만들지 않는 이유</h2>
 <p>신중동역은 상업지구 특성상 출구가 여러 방향으로 나 있지만, 출구는 방향만 다를 뿐 방문 주소·건물 출입·이동 기준이 동일합니다. 출구별 페이지는 중복 안내가 되기 쉬워, 신중동역은 역명 기준 한 개 페이지로 관리하고 정확한 위치는 건물명과 동·호수로 안내합니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>신중동역 역세권은 오피스텔 비중이 높아 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 시 공동현관·엘리베이터 카드·관리실 운영 시간을 먼저 확인하는 것이 중요합니다. 출장·여행 방문은 <a href="/bucheon/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를, 배후 주거지 방문은 <a href="/bucheon/use/home/">자택 이용</a> 시 동·호수와 출입 방식을 확인하세요.</p></section>
+<p>신중동역 역세권은 오피스텔 비중이 높아 <a href="/use/officetel/">오피스텔 이용</a> 시 공동현관·엘리베이터 카드·관리실 운영 시간을 먼저 확인하는 것이 중요합니다. 출장·여행 방문은 <a href="/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를, 배후 주거지 방문은 <a href="/use/home/">자택 이용</a> 시 동·호수와 출입 방식을 확인하세요.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>신중동역은 7호선으로 서울 강남·강서 방면과 인천 부평 방면 양쪽으로 연결됩니다. 방문 주소가 상동 방면 경계에 가까운 경우 인접권 성격이 더해지므로, <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
+<p>신중동역은 7호선으로 서울 강남·강서 방면과 인천 부평 방면 양쪽으로 연결됩니다. 방문 주소가 상동 방면 경계에 가까운 경우 인접권 성격이 더해지므로, <a href="/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
 
 {checklist("신중동역 역세권은 오피스텔·상업 빌딩이 많아 출입 조건이 다양하므로 아래 항목을 먼저 확인하세요.")}
 
@@ -198,7 +198,7 @@ PAGES.append(page(
   "신중동역 주변 상권·오피스텔에서 방문형 서비스를 찾는 사용자가 정확한 위치와 이용 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/bucheon-cityhall-station/">부천시청역</a> · <a href="/bucheon/station/jungdong-station/">중동역</a> · <a href="/bucheon/station/chunui-station/">춘의역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/bucheon-cityhall-station/">부천시청역</a> · <a href="/station/jungdong-station/">중동역</a> · <a href="/station/chunui-station/">춘의역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """
@@ -215,7 +215,7 @@ _faq, _head = faq_block([
      "아니요. 출구는 방향만 다를 뿐 안내 기준이 동일하므로 역명 기준 한 개 페이지로 관리합니다."),
 ])
 PAGES.append(page(
-    path="bucheon/station/bucheon-cityhall-station/",
+    path="station/bucheon-cityhall-station/",
     title="부천시청역 역세권 출장마사지｜상동·중동 행정·상권 안내",
     desc="부천시청역 출장마사지·홈타이 예약 전 7호선 상동·중동 행정·상권 중심을 확인하세요.",
     h1="부천시청역 역세권 출장마사지 · 상동·중동 행정·상권 중심 안내",
@@ -230,29 +230,29 @@ PAGES.append(page(
 <p>부천시청역 일대는 도로와 광장이 잘 정비되어 있어 위치 안내가 비교적 수월한 편이지만, 업무 빌딩과 주거 건물의 출입 조건이 서로 다릅니다. 예약 전에 건물명과 층·호수, 공동현관 방식을 함께 확인하면 도착 안내가 정확해집니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>부천시청역 역세권은 행정구역상 <a href="/bucheon/wonmi-gu/">원미구</a> 상동·중동 일대에 속합니다. 부천의 행정 중심에 해당하며, 동쪽 상동신도시와 서쪽 중동 상권을 함께 끼고 있습니다.</p></section>
+<p>부천시청역 역세권은 행정구역상 <a href="/wonmi-gu/">원미구</a> 상동·중동 일대에 속합니다. 부천의 행정 중심에 해당하며, 동쪽 상동신도시와 서쪽 중동 상권을 함께 끼고 있습니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/wonmi-gu/sang-dong/">상동</a> — 부천시청역 중심 행정·신도시 생활권</li>
-<li><a href="/bucheon/wonmi-gu/jung-dong/">중동</a> — 역 서측 상권 연접 생활권</li>
-<li><a href="/bucheon/wonmi-gu/chunui-dong/">춘의동</a> — 역 북측 연접 생활권</li>
+<li><a href="/wonmi-gu/sang-dong/">상동</a> — 부천시청역 중심 행정·신도시 생활권</li>
+<li><a href="/wonmi-gu/jung-dong/">중동</a> — 역 서측 상권 연접 생활권</li>
+<li><a href="/wonmi-gu/chunui-dong/">춘의동</a> — 역 북측 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>부천시청역 역세권은 <a href="/bucheon/life/sangdong-bucheon-cityhall/">상동·부천시청 생활권</a>의 행정·상권 중심에 해당하며, 서쪽 <a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동 생활권</a> 상권, 동쪽 <a href="/bucheon/life/sangdong-newtown/">상동신도시 생활권</a>과 이어집니다.</p></section>
+<p>부천시청역 역세권은 <a href="/life/sangdong-bucheon-cityhall/">상동·부천시청 생활권</a>의 행정·상권 중심에 해당하며, 서쪽 <a href="/life/jungdong-sinjungdong/">중동·신중동 생활권</a> 상권, 동쪽 <a href="/life/sangdong-newtown/">상동신도시 생활권</a>과 이어집니다.</p></section>
 
 <section><h2>환승 여부</h2>
-<p>부천시청역은 7호선 단일 노선 역으로 환승은 없습니다. 1호선이 필요하면 인근 <a href="/bucheon/station/bucheon-station/">부천역</a> 방면으로 이동해야 하므로, 노선 환승이 필요한 경우 가까운 1호선 역을 함께 확인하세요.</p></section>
+<p>부천시청역은 7호선 단일 노선 역으로 환승은 없습니다. 1호선이 필요하면 인근 <a href="/station/bucheon-station/">부천역</a> 방면으로 이동해야 하므로, 노선 환승이 필요한 경우 가까운 1호선 역을 함께 확인하세요.</p></section>
 
 <section><h2>출구별 페이지를 만들지 않는 이유</h2>
 <p>부천시청역은 광장과 출구가 여러 방향으로 나 있지만, 출구는 방향만 다를 뿐 방문 주소·건물 출입·이동 기준이 동일합니다. 출구별 페이지는 중복 안내가 되기 쉬워, 부천시청역은 역명 기준 한 개 페이지로 관리하고 정확한 위치는 건물명과 층·호수로 안내합니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>부천시청역 역세권은 신도시 주거와 오피스텔이 많아 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 시 공동현관·관리실 규정을 먼저 확인하는 것이 좋습니다. 아파트 방문은 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명과 동·호수를, 신도시권 방문은 <a href="/bucheon/use/newtown/">신도시 이용</a> 기준에 따라 단지 출입 동선을 함께 확인하세요.</p></section>
+<p>부천시청역 역세권은 신도시 주거와 오피스텔이 많아 <a href="/use/officetel/">오피스텔 이용</a> 시 공동현관·관리실 규정을 먼저 확인하는 것이 좋습니다. 아파트 방문은 <a href="/use/home/">자택 이용</a> 시 단지명과 동·호수를, 신도시권 방문은 <a href="/use/newtown/">신도시 이용</a> 기준에 따라 단지 출입 동선을 함께 확인하세요.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>부천시청역은 7호선으로 서울 강남·강서와 인천 부평 양방향으로 연결됩니다. 상동 동측은 부평과 인접하므로, 경계 방면 방문은 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
+<p>부천시청역은 7호선으로 서울 강남·강서와 인천 부평 양방향으로 연결됩니다. 상동 동측은 부평과 인접하므로, 경계 방면 방문은 <a href="/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
 
 {checklist("부천시청역 역세권은 행정·업무·주거가 섞여 건물 유형이 다양하므로 아래 항목을 먼저 확인하세요.")}
 
@@ -263,7 +263,7 @@ PAGES.append(page(
   "부천시청역 주변에서 방문형 서비스를 찾는 사용자가 정확한 위치와 이용 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/sinjungdong-station/">신중동역</a> · <a href="/bucheon/station/sangdong-station/">상동역</a> · <a href="/bucheon/station/chunui-station/">춘의역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/sinjungdong-station/">신중동역</a> · <a href="/station/sangdong-station/">상동역</a> · <a href="/station/chunui-station/">춘의역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """
@@ -280,7 +280,7 @@ _faq, _head = faq_block([
      "상동 동측은 인천 부평과 인접해 7호선으로 연결됩니다. 경계 방면 방문은 추가 이동비 기준을 함께 확인하는 것이 좋습니다."),
 ])
 PAGES.append(page(
-    path="bucheon/station/sangdong-station/",
+    path="station/sangdong-station/",
     title="상동역 역세권 출장마사지｜상동신도시·부평 인접 안내",
     desc="상동역 출장마사지·홈타이 예약 전 7호선 상동신도시·부평 인접권을 확인하세요.",
     h1="상동역 역세권 출장마사지 · 상동신도시·부평 인접 안내",
@@ -295,28 +295,28 @@ PAGES.append(page(
 <p>상동역 동측은 인천 부평과 인접해 행정구역상으로는 부천이지만 생활권이 부평으로 이어지는 경우가 있습니다. 신도시 구역은 단지 출입 게이트와 방문 차량 동선이 정해져 있는 곳이 많아, 예약 전에 단지 출입 방식과 가까운 출구를 함께 확인하면 한결 수월합니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>상동역 역세권은 행정구역상 <a href="/bucheon/wonmi-gu/">원미구</a> 상동 일대에 속합니다. 부천 신도시 생활권의 동쪽 끝에 해당하며, 인천 부평과 경계를 맞댑니다.</p></section>
+<p>상동역 역세권은 행정구역상 <a href="/wonmi-gu/">원미구</a> 상동 일대에 속합니다. 부천 신도시 생활권의 동쪽 끝에 해당하며, 인천 부평과 경계를 맞댑니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/wonmi-gu/sang-dong/">상동</a> — 상동역 중심 신도시 주거·상권 생활권</li>
-<li><a href="/bucheon/wonmi-gu/jung-dong/">중동</a> — 역 서측 연접 생활권</li>
+<li><a href="/wonmi-gu/sang-dong/">상동</a> — 상동역 중심 신도시 주거·상권 생활권</li>
+<li><a href="/wonmi-gu/jung-dong/">중동</a> — 역 서측 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>상동역 역세권은 <a href="/bucheon/life/sangdong-newtown/">상동신도시 생활권</a>의 중심에 해당하며, <a href="/bucheon/life/sangdong-bucheon-cityhall/">상동·부천시청 생활권</a>, 그리고 부평과 이어지는 <a href="/bucheon/life/incheon-adjacent/">인천 인접권</a>과 함께 보면 위치가 분명해집니다.</p></section>
+<p>상동역 역세권은 <a href="/life/sangdong-newtown/">상동신도시 생활권</a>의 중심에 해당하며, <a href="/life/sangdong-bucheon-cityhall/">상동·부천시청 생활권</a>, 그리고 부평과 이어지는 <a href="/life/incheon-adjacent/">인천 인접권</a>과 함께 보면 위치가 분명해집니다.</p></section>
 
 <section><h2>환승 여부</h2>
-<p>상동역은 7호선 단일 노선 역으로 환승은 없습니다. 1호선이 필요하면 <a href="/bucheon/station/songnae-station/">송내역</a>이나 <a href="/bucheon/station/bucheon-station/">부천역</a> 방면으로 이동해야 하므로, 노선 환승이 필요한 경우 가까운 1호선 역을 함께 확인하세요.</p></section>
+<p>상동역은 7호선 단일 노선 역으로 환승은 없습니다. 1호선이 필요하면 <a href="/station/songnae-station/">송내역</a>이나 <a href="/station/bucheon-station/">부천역</a> 방면으로 이동해야 하므로, 노선 환승이 필요한 경우 가까운 1호선 역을 함께 확인하세요.</p></section>
 
 <section><h2>출구별 페이지를 만들지 않는 이유</h2>
 <p>상동역은 신도시 특성상 넓은 광장과 여러 출구가 있지만, 출구는 방향만 다를 뿐 방문 주소·단지 출입·이동 기준이 동일합니다. 출구별 페이지는 중복 안내가 되기 쉬워, 상동역은 역명 기준 한 개 페이지로 관리하고 정확한 위치는 단지명과 동·호수로 안내합니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>상동역 역세권은 대단지 아파트가 많아 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명·동·호수와 단지 출입 게이트 방식을 먼저 확인하는 것이 중요합니다. 신도시 구역 방문은 <a href="/bucheon/use/newtown/">신도시 이용</a> 기준에 따라 방문 차량 동선을, 오피스텔·상가 방문은 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 시 공동현관 방식을 함께 확인하세요.</p></section>
+<p>상동역 역세권은 대단지 아파트가 많아 <a href="/use/home/">자택 이용</a> 시 단지명·동·호수와 단지 출입 게이트 방식을 먼저 확인하는 것이 중요합니다. 신도시 구역 방문은 <a href="/use/newtown/">신도시 이용</a> 기준에 따라 방문 차량 동선을, 오피스텔·상가 방문은 <a href="/use/officetel/">오피스텔 이용</a> 시 공동현관 방식을 함께 확인하세요.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>상동역 동측은 인천 부평과 인접해 생활 동선이 부평으로 이어지는 경우가 많습니다. 경계 방면 방문은 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
+<p>상동역 동측은 인천 부평과 인접해 생활 동선이 부평으로 이어지는 경우가 많습니다. 경계 방면 방문은 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 <a href="/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
 
 {checklist("상동역 역세권은 신도시 대단지가 많아 단지 출입 동선 확인이 중요하므로 아래 항목을 먼저 확인하세요.")}
 
@@ -327,7 +327,7 @@ PAGES.append(page(
   "상동역 주변 신도시에서 방문형 서비스를 찾는 사용자가 정확한 위치와 이용 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/bucheon-cityhall-station/">부천시청역</a> · <a href="/bucheon/station/songnae-station/">송내역</a> · <a href="/bucheon/station/sinjungdong-station/">신중동역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/bucheon-cityhall-station/">부천시청역</a> · <a href="/station/songnae-station/">송내역</a> · <a href="/station/sinjungdong-station/">신중동역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """
@@ -344,7 +344,7 @@ _faq, _head = faq_block([
      "네. 송내 일대는 인천 부평구와 인접해 생활권이 이어지는 경우가 많습니다. 경계 방면 방문은 추가 이동비 기준을 함께 확인하세요."),
 ])
 PAGES.append(page(
-    path="bucheon/station/songnae-station/",
+    path="station/songnae-station/",
     title="송내역 역세권 출장마사지｜1호선 송내·인천 인접 안내",
     desc="송내역 출장마사지·홈타이 예약 전 1호선 송내 주거·상권, 인천 인접권을 확인하세요.",
     h1="송내역 역세권 출장마사지 · 1호선 송내·인천 인접 안내",
@@ -359,28 +359,28 @@ PAGES.append(page(
 <p>송내 일대는 인천 부평구와 매우 가까워, 행정구역상 부천이라도 생활권이 인천 쪽으로 이어지는 경우가 많습니다. 예약 전에 방문 주소가 부천 송내 쪽인지 부평 경계 쪽인지 함께 확인하면 이동 안내가 정확해집니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>송내역 역세권은 행정구역상 <a href="/bucheon/sosa-gu/">소사구</a> 송내 일대에 속합니다. 부천 남동부 주거 생활권의 중심이며, 인천 부평과 경계를 맞댑니다.</p></section>
+<p>송내역 역세권은 행정구역상 <a href="/sosa-gu/">소사구</a> 송내 일대에 속합니다. 부천 남동부 주거 생활권의 중심이며, 인천 부평과 경계를 맞댑니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/sosa-gu/songnae-1-dong/">송내1동</a> · <a href="/bucheon/sosa-gu/songnae-2-dong/">송내2동</a> — 송내역 중심 주거·상권 생활권</li>
-<li><a href="/bucheon/sosa-gu/sosabon-dong/">소사본동</a> — 역 서측 연접 생활권</li>
+<li><a href="/sosa-gu/songnae-1-dong/">송내1동</a> · <a href="/sosa-gu/songnae-2-dong/">송내2동</a> — 송내역 중심 주거·상권 생활권</li>
+<li><a href="/sosa-gu/sosabon-dong/">소사본동</a> — 역 서측 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>송내역 역세권은 <a href="/bucheon/life/songnae/">송내 생활권</a>(1호선·주거·상권)의 중심에 해당하며, 인천과 이어지는 <a href="/bucheon/life/incheon-adjacent/">인천 인접권</a>과 함께 보면 위치가 분명해집니다.</p></section>
+<p>송내역 역세권은 <a href="/life/songnae/">송내 생활권</a>(1호선·주거·상권)의 중심에 해당하며, 인천과 이어지는 <a href="/life/incheon-adjacent/">인천 인접권</a>과 함께 보면 위치가 분명해집니다.</p></section>
 
 <section><h2>환승 여부</h2>
-<p>송내역은 1호선 단일 노선 역으로 지하철 환승은 없지만, 광역·시내버스 환승이 활발한 교통 결절점입니다. 7호선이 필요하면 <a href="/bucheon/station/sangdong-station/">상동역</a> 방면으로 이동하는 것이 일반적이므로, 노선 접근이 필요한 경우 가까운 7호선 역을 함께 확인하세요.</p></section>
+<p>송내역은 1호선 단일 노선 역으로 지하철 환승은 없지만, 광역·시내버스 환승이 활발한 교통 결절점입니다. 7호선이 필요하면 <a href="/station/sangdong-station/">상동역</a> 방면으로 이동하는 것이 일반적이므로, 노선 접근이 필요한 경우 가까운 7호선 역을 함께 확인하세요.</p></section>
 
 <section><h2>출구별 페이지를 만들지 않는 이유</h2>
 <p>송내역은 환승 동선이 복잡하고 출구가 여러 방향으로 나 있지만, 출구는 방향만 다를 뿐 방문 주소·건물 출입·이동 기준이 동일합니다. 출구별 페이지는 중복 안내가 되기 쉬워, 송내역은 역명 기준 한 개 페이지로 관리하고 정확한 위치는 단지명과 동·호수로 안내합니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>송내역 역세권은 아파트·다세대 주거가 많아 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명·동·호수와 공동현관 방식을 먼저 확인하는 것이 중요합니다. 역 앞 상권·오피스텔 방문은 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 시 관리실 규정을, 인천 경계 방면은 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하세요.</p></section>
+<p>송내역 역세권은 아파트·다세대 주거가 많아 <a href="/use/home/">자택 이용</a> 시 단지명·동·호수와 공동현관 방식을 먼저 확인하는 것이 중요합니다. 역 앞 상권·오피스텔 방문은 <a href="/use/officetel/">오피스텔 이용</a> 시 관리실 규정을, 인천 경계 방면은 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하세요.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>송내 일대는 인천 부평과 인접해 실제 이동 동선이 인천 쪽으로 이어지는 경우가 많습니다. 경계 방면 방문은 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하면 이동 안내가 명확합니다.</p></section>
+<p>송내 일대는 인천 부평과 인접해 실제 이동 동선이 인천 쪽으로 이어지는 경우가 많습니다. 경계 방면 방문은 <a href="/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하면 이동 안내가 명확합니다.</p></section>
 
 {checklist("송내역 역세권은 인천 인접 주거권 특성이 있어 경계 확인이 중요하므로 아래 항목을 먼저 확인하세요.")}
 
@@ -391,7 +391,7 @@ PAGES.append(page(
   "송내역 주변에서 방문형 서비스를 찾는 사용자가 정확한 위치와 이용 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/sangdong-station/">상동역</a> · <a href="/bucheon/station/jungdong-station/">중동역</a> · <a href="/bucheon/station/sosa-station/">소사역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/sangdong-station/">상동역</a> · <a href="/station/jungdong-station/">중동역</a> · <a href="/station/sosa-station/">소사역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """
@@ -408,7 +408,7 @@ _faq, _head = faq_block([
      "역곡 동측은 서울 구로구·온수와 인접해 1호선으로 바로 연결됩니다. 경계 방면 방문은 추가 이동비 기준을 함께 확인하세요."),
 ])
 PAGES.append(page(
-    path="bucheon/station/yeokgok-station/",
+    path="station/yeokgok-station/",
     title="역곡역 역세권 출장마사지｜1호선 역곡·서울 인접 안내",
     desc="역곡역 출장마사지·홈타이 예약 전 1호선 역곡 생활권, 서울 구로·온수 인접권을 확인하세요.",
     h1="역곡역 역세권 출장마사지 · 1호선 역곡·서울 인접 안내",
@@ -423,17 +423,17 @@ PAGES.append(page(
 <p>역곡 일대는 서울 구로구·온수와 매우 가까워, 행정구역상 부천이라도 생활권이 서울 쪽으로 이어지는 경우가 많습니다. 또한 역곡역 일대는 부천 원미구 역곡동과 소사구 역곡3동에 걸쳐 있어, 예약 전에 방문 주소가 어느 구·동인지 함께 확인하면 안내가 정확해집니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>역곡역 역세권은 행정구역상 <a href="/bucheon/wonmi-gu/">원미구</a> 역곡 일대와 <a href="/bucheon/sosa-gu/">소사구</a> 역곡3동에 걸쳐 있습니다. 부천 동부 생활권의 끝이며, 서울 구로·온수와 경계를 맞댑니다.</p></section>
+<p>역곡역 역세권은 행정구역상 <a href="/wonmi-gu/">원미구</a> 역곡 일대와 <a href="/sosa-gu/">소사구</a> 역곡3동에 걸쳐 있습니다. 부천 동부 생활권의 끝이며, 서울 구로·온수와 경계를 맞댑니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/wonmi-gu/yeokgok-1-dong/">역곡1동</a> · <a href="/bucheon/wonmi-gu/yeokgok-2-dong/">역곡2동</a> — 역 북측 주거·상권 생활권</li>
-<li><a href="/bucheon/sosa-gu/yeokgok-3-dong/">역곡3동</a> — 역 남측 서울 인접 생활권</li>
-<li><a href="/bucheon/sosa-gu/goean-dong/">괴안동</a> — 역 남서측 연접 생활권</li>
+<li><a href="/wonmi-gu/yeokgok-1-dong/">역곡1동</a> · <a href="/wonmi-gu/yeokgok-2-dong/">역곡2동</a> — 역 북측 주거·상권 생활권</li>
+<li><a href="/sosa-gu/yeokgok-3-dong/">역곡3동</a> — 역 남측 서울 인접 생활권</li>
+<li><a href="/sosa-gu/goean-dong/">괴안동</a> — 역 남서측 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>역곡역 역세권은 <a href="/bucheon/life/yeokgok/">역곡 생활권</a>(1호선·주거·상권)의 중심에 해당하며, 서울과 이어지는 <a href="/bucheon/life/seoul-adjacent/">서울 인접권</a>과 함께 보면 위치가 분명해집니다.</p></section>
+<p>역곡역 역세권은 <a href="/life/yeokgok/">역곡 생활권</a>(1호선·주거·상권)의 중심에 해당하며, 서울과 이어지는 <a href="/life/seoul-adjacent/">서울 인접권</a>과 함께 보면 위치가 분명해집니다.</p></section>
 
 <section><h2>환승 여부</h2>
 <p>역곡역은 1호선 단일 노선 역으로 환승은 없습니다. 7호선이 필요하면 서울 온수역(7호선 환승) 방면으로 이동하는 경우가 많으므로, 노선 접근이 필요하면 가까운 환승역과 이동 동선을 함께 확인하세요.</p></section>
@@ -442,10 +442,10 @@ PAGES.append(page(
 <p>역곡역은 남북 양측에 상권과 출구가 나뉘어 있지만, 출구는 방향만 다를 뿐 방문 주소·건물 출입·이동 기준이 동일합니다. 출구별 페이지는 중복 안내가 되기 쉬워, 역곡역은 역명 기준 한 개 페이지로 관리하고 정확한 위치는 건물명과 동·호수로 안내합니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>역곡역 역세권은 다세대·원룸과 아파트가 섞여 있어 <a href="/bucheon/use/home/">자택 이용</a> 시 건물 유형과 정확한 동·호수, 공동현관 방식을 먼저 확인하는 것이 중요합니다. 상권 쪽 방문은 <a href="/bucheon/use/station-area/">역세권 이용</a> 기준에 따라 건물명을, 서울 경계 방면은 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하세요.</p></section>
+<p>역곡역 역세권은 다세대·원룸과 아파트가 섞여 있어 <a href="/use/home/">자택 이용</a> 시 건물 유형과 정확한 동·호수, 공동현관 방식을 먼저 확인하는 것이 중요합니다. 상권 쪽 방문은 <a href="/use/station-area/">역세권 이용</a> 기준에 따라 건물명을, 서울 경계 방면은 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하세요.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>역곡 일대는 서울 구로구·온수와 인접해 실제 이동 동선이 서울 쪽으로 이어지는 경우가 많습니다. 경계 방면 방문은 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하면 이동 안내가 명확합니다.</p></section>
+<p>역곡 일대는 서울 구로구·온수와 인접해 실제 이동 동선이 서울 쪽으로 이어지는 경우가 많습니다. 경계 방면 방문은 <a href="/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하면 이동 안내가 명확합니다.</p></section>
 
 {checklist("역곡역 역세권은 서울 인접권이자 두 구에 걸쳐 있어 구·동 확인이 중요하므로 아래 항목을 먼저 확인하세요.")}
 
@@ -456,7 +456,7 @@ PAGES.append(page(
   "역곡역 주변에서 방문형 서비스를 찾는 사용자가 정확한 위치와 이용 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/sosa-station/">소사역</a> · <a href="/bucheon/station/bucheon-station/">부천역</a> · <a href="/bucheon/station/songnae-station/">송내역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/sosa-station/">소사역</a> · <a href="/station/bucheon-station/">부천역</a> · <a href="/station/songnae-station/">송내역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """
@@ -473,7 +473,7 @@ _faq, _head = faq_block([
      "원도심 상권과 주거지가 함께 있고 환승으로 유동 인구가 많습니다. 건물 유형과 정확한 동·호수 확인이 중요합니다."),
 ])
 PAGES.append(page(
-    path="bucheon/station/sosa-station/",
+    path="station/sosa-station/",
     title="소사역 역세권 출장마사지｜1호선·서해선 소사·소사본 안내",
     desc="소사역 출장마사지·홈타이 예약 전 1호선·서해선 환승 소사·소사본 생활권을 확인하세요.",
     h1="소사역 역세권 출장마사지 · 1호선·서해선 소사·소사본 안내",
@@ -488,17 +488,17 @@ PAGES.append(page(
 <p>소사역은 서해선이 더해지면서 시흥·안산 방면과 김포공항 방면 접근성이 한결 넓어졌습니다. 환승역이지만 방문 안내 기준은 1호선·서해선 어느 쪽이든 동일하므로, 노선보다는 정확한 건물명과 출구 방향을 기준으로 위치를 좁히는 것이 효율적입니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>소사역 역세권은 행정구역상 <a href="/bucheon/sosa-gu/">소사구</a> 소사·소사본 일대에 속합니다. 부천 남부 생활권의 중심이며, 부천역 상권과 송내·역곡 방면을 함께 끼고 있습니다.</p></section>
+<p>소사역 역세권은 행정구역상 <a href="/sosa-gu/">소사구</a> 소사·소사본 일대에 속합니다. 부천 남부 생활권의 중심이며, 부천역 상권과 송내·역곡 방면을 함께 끼고 있습니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/sosa-gu/sosabon-dong/">소사본동</a> — 소사역 중심 상권·주거 생활권</li>
-<li><a href="/bucheon/sosa-gu/simgokbon-dong/">심곡본동</a> — 역 북측 부천역 연접 생활권</li>
-<li><a href="/bucheon/sosa-gu/beombak-dong/">범박동</a> — 역 남측 주거 연접 생활권</li>
+<li><a href="/sosa-gu/sosabon-dong/">소사본동</a> — 소사역 중심 상권·주거 생활권</li>
+<li><a href="/sosa-gu/simgokbon-dong/">심곡본동</a> — 역 북측 부천역 연접 생활권</li>
+<li><a href="/sosa-gu/beombak-dong/">범박동</a> — 역 남측 주거 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>소사역 역세권은 <a href="/bucheon/life/sosa-sosabon/">소사·소사본 생활권</a>(1호선·서해선 환승)의 중심에 해당하며, 북쪽 <a href="/bucheon/life/bucheon-station-simgok/">부천역·심곡 생활권</a>, 남쪽 <a href="/bucheon/life/beombak-okgil/">범박·옥길 생활권</a>과 이어집니다.</p></section>
+<p>소사역 역세권은 <a href="/life/sosa-sosabon/">소사·소사본 생활권</a>(1호선·서해선 환승)의 중심에 해당하며, 북쪽 <a href="/life/bucheon-station-simgok/">부천역·심곡 생활권</a>, 남쪽 <a href="/life/beombak-okgil/">범박·옥길 생활권</a>과 이어집니다.</p></section>
 
 <section><h2>환승 여부 — 노선별·출구별로 나누지 않는 이유</h2>
 <p>소사역은 1호선과 서해선이 만나는 환승역이지만, 노선별·출구별로 페이지를 따로 만들지 않고 <strong>역명 기준 한 개 페이지로 관리</strong>합니다. 어느 노선으로 도착하든, 어느 출구로 나오든 방문 주소 확인·건물 출입·이동 기준은 동일하기 때문입니다. 노선과 출구별로 페이지를 나누면 같은 안내가 여러 번 반복되어 오히려 확인이 번거로워지므로, 소사역은 한 페이지에서 안내하고 정확한 위치는 건물명과 동·호수로 좁힙니다.</p></section>
@@ -507,10 +507,10 @@ PAGES.append(page(
 <p>위와 같은 이유로 소사역은 출구별 페이지도 만들지 않습니다. 출구는 같은 역세권 안에서 방향만 다를 뿐이며, 방문 안내에 필요한 정보는 출구가 아니라 건물명·동·호수입니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>소사역 역세권은 원도심 주거와 상가가 섞여 있어 <a href="/bucheon/use/home/">자택 이용</a> 시 건물 유형과 정확한 동·호수, 공동현관 방식을 먼저 확인하는 것이 중요합니다. 상권 쪽 방문은 <a href="/bucheon/use/station-area/">역세권 이용</a> 기준에 따라 건물명과 출구 방향을, 신축 건물은 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 시 관리실 규정을 함께 확인하세요.</p></section>
+<p>소사역 역세권은 원도심 주거와 상가가 섞여 있어 <a href="/use/home/">자택 이용</a> 시 건물 유형과 정확한 동·호수, 공동현관 방식을 먼저 확인하는 것이 중요합니다. 상권 쪽 방문은 <a href="/use/station-area/">역세권 이용</a> 기준에 따라 건물명과 출구 방향을, 신축 건물은 <a href="/use/officetel/">오피스텔 이용</a> 시 관리실 규정을 함께 확인하세요.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>소사역은 서해선으로 김포공항·시흥 방면, 1호선으로 서울 구로·인천 부평 방면과 연결되는 결절점입니다. 방문 주소가 경계·외곽 방면이면 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
+<p>소사역은 서해선으로 김포공항·시흥 방면, 1호선으로 서울 구로·인천 부평 방면과 연결되는 결절점입니다. 방문 주소가 경계·외곽 방면이면 <a href="/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
 
 {checklist("소사역 역세권은 환승 결절점이라 유동 동선이 복잡하므로 아래 항목을 먼저 확인하세요.")}
 
@@ -521,7 +521,7 @@ PAGES.append(page(
   "소사역 주변에서 방문형 서비스를 찾는 사용자가 노선·출구에 헷갈리지 않고 정확한 위치와 이용 기준을 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/bucheon-station/">부천역</a> · <a href="/bucheon/station/yeokgok-station/">역곡역</a> · <a href="/bucheon/station/songnae-station/">송내역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/bucheon-station/">부천역</a> · <a href="/station/yeokgok-station/">역곡역</a> · <a href="/station/songnae-station/">송내역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """
@@ -538,7 +538,7 @@ _faq, _head = faq_block([
      "체육시설과 주거지, 업무 구역이 섞여 있고 환승으로 광역 이동이 편리합니다. 건물 유형과 출입 동선 확인이 중요합니다."),
 ])
 PAGES.append(page(
-    path="bucheon/station/bucheon-stadium-station/",
+    path="station/bucheon-stadium-station/",
     title="부천종합운동장역 역세권 출장마사지｜7호선·서해선 춘의·원미 안내",
     desc="부천종합운동장역 출장마사지·홈타이 예약 전 7호선·서해선 환승 춘의·원미 생활권을 확인하세요.",
     h1="부천종합운동장역 역세권 출장마사지 · 7호선·서해선 춘의·원미 안내",
@@ -553,17 +553,17 @@ PAGES.append(page(
 <p>이 역은 서해선이 더해지면서 김포공항·시흥 방면 광역 이동이 편리해졌고, 7호선으로 서울 강남·강서 방면과도 연결됩니다. 환승역이지만 방문 안내 기준은 노선과 무관하게 동일하므로, 노선보다는 건물명과 출구 방향을 기준으로 위치를 좁히는 것이 효율적입니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>부천종합운동장역 역세권은 행정구역상 <a href="/bucheon/wonmi-gu/">원미구</a> 춘의 일대에 속하며, 북쪽으로 <a href="/bucheon/ojeong-gu/">오정구</a> 방면과도 이어집니다. 두 구의 경계를 끼는 구간이 있으므로 방문 주소의 구·동을 함께 확인하면 좋습니다.</p></section>
+<p>부천종합운동장역 역세권은 행정구역상 <a href="/wonmi-gu/">원미구</a> 춘의 일대에 속하며, 북쪽으로 <a href="/ojeong-gu/">오정구</a> 방면과도 이어집니다. 두 구의 경계를 끼는 구간이 있으므로 방문 주소의 구·동을 함께 확인하면 좋습니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/wonmi-gu/chunui-dong/">춘의동</a> — 역 중심 주거·업무 연접 생활권</li>
-<li><a href="/bucheon/wonmi-gu/jung-dong/">중동</a> — 역 동측 상권 연접 생활권</li>
-<li><a href="/bucheon/ojeong-gu/seonggok-dong/">성곡동</a> — 역 북측 녹지·주거 연접 생활권</li>
+<li><a href="/wonmi-gu/chunui-dong/">춘의동</a> — 역 중심 주거·업무 연접 생활권</li>
+<li><a href="/wonmi-gu/jung-dong/">중동</a> — 역 동측 상권 연접 생활권</li>
+<li><a href="/ojeong-gu/seonggok-dong/">성곡동</a> — 역 북측 녹지·주거 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>부천종합운동장역 역세권은 <a href="/bucheon/life/chunui-bucheon-stadium/">춘의·부천종합운동장 생활권</a>(환승·차량 이동)의 중심에 해당하며, 동쪽 <a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동 생활권</a>, 북쪽 <a href="/bucheon/life/kkachiwool-seonggok/">까치울·성곡 생활권</a>과 이어집니다.</p></section>
+<p>부천종합운동장역 역세권은 <a href="/life/chunui-bucheon-stadium/">춘의·부천종합운동장 생활권</a>(환승·차량 이동)의 중심에 해당하며, 동쪽 <a href="/life/jungdong-sinjungdong/">중동·신중동 생활권</a>, 북쪽 <a href="/life/kkachiwool-seonggok/">까치울·성곡 생활권</a>과 이어집니다.</p></section>
 
 <section><h2>환승 여부 — 노선별·출구별로 나누지 않는 이유</h2>
 <p>부천종합운동장역은 7호선과 서해선이 만나는 환승역이지만, 노선별·출구별로 페이지를 따로 만들지 않고 <strong>역명 기준 한 개 페이지로 관리</strong>합니다. 어느 노선으로 도착하든, 어느 출구로 나오든 방문 주소 확인·건물 출입·이동 기준은 동일하기 때문입니다. 노선과 출구별로 페이지를 나누면 같은 안내가 여러 번 반복되어 오히려 확인이 번거로워지므로, 이 역은 한 페이지에서 안내하고 정확한 위치는 건물명과 동·호수로 좁힙니다.</p></section>
@@ -572,10 +572,10 @@ PAGES.append(page(
 <p>위와 같은 이유로 부천종합운동장역은 출구별 페이지도 만들지 않습니다. 출구는 같은 역세권 안에서 방향만 다를 뿐이며, 방문 안내에 필요한 정보는 출구가 아니라 건물명·동·호수와 출입 동선입니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>부천종합운동장역 역세권은 주거지와 업무 구역이 섞여 있어 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명·동·호수와 공동현관 방식을 먼저 확인하는 것이 중요합니다. 오피스텔·업무 빌딩 방문은 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 시 관리실 운영 시간을, 역과 거리가 있는 외곽 방면은 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준과 차량 동선을 함께 확인하세요.</p></section>
+<p>부천종합운동장역 역세권은 주거지와 업무 구역이 섞여 있어 <a href="/use/home/">자택 이용</a> 시 단지명·동·호수와 공동현관 방식을 먼저 확인하는 것이 중요합니다. 오피스텔·업무 빌딩 방문은 <a href="/use/officetel/">오피스텔 이용</a> 시 관리실 운영 시간을, 역과 거리가 있는 외곽 방면은 <a href="/use/outer-area/">외곽 지역 이용</a> 기준과 차량 동선을 함께 확인하세요.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>이 역은 서해선으로 김포공항·시흥 방면, 7호선으로 서울 강서·강남 방면과 연결됩니다. 방문 주소가 오정구 경계나 외곽 방면이면 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
+<p>이 역은 서해선으로 김포공항·시흥 방면, 7호선으로 서울 강서·강남 방면과 연결됩니다. 방문 주소가 오정구 경계나 외곽 방면이면 <a href="/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 이동 안내가 명확합니다.</p></section>
 
 {checklist("부천종합운동장역 역세권은 체육·주거·업무 구역이 섞여 있어 건물 유형 확인이 중요하므로 아래 항목을 먼저 확인하세요.")}
 
@@ -586,7 +586,7 @@ PAGES.append(page(
   "부천종합운동장역 주변에서 방문형 서비스를 찾는 사용자가 노선·출구에 헷갈리지 않고 정확한 위치와 이용 기준을 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/chunui-station/">춘의역</a> · <a href="/bucheon/station/sinjungdong-station/">신중동역</a> · <a href="/bucheon/station/kkachiwool-station/">까치울역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/chunui-station/">춘의역</a> · <a href="/station/sinjungdong-station/">신중동역</a> · <a href="/station/kkachiwool-station/">까치울역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """
@@ -603,7 +603,7 @@ _faq, _head = faq_block([
      "춘의역은 7호선 단일 노선입니다. 서해선 환승이 필요하면 인근 부천종합운동장역 방면으로 이동하세요."),
 ])
 PAGES.append(page(
-    path="bucheon/station/chunui-station/",
+    path="station/chunui-station/",
     title="춘의역 역세권 출장마사지｜7호선 춘의동 생활권 안내",
     desc="춘의역 출장마사지·홈타이 예약 전 7호선 춘의동 주거·근린 상가 생활권을 확인하세요.",
     h1="춘의역 역세권 출장마사지 · 7호선 춘의동 생활권 안내",
@@ -618,29 +618,29 @@ PAGES.append(page(
 <p>춘의역은 7호선을 통해 부천 상권 중심과 종합운동장 환승 결절점 양쪽으로 쉽게 이동할 수 있는 위치입니다. 다만 큰 상업시설보다 생활형 건물이 많아, 예약 전에 건물명과 공동현관 방식을 함께 확인하면 도착 안내가 정확해집니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>춘의역 역세권은 행정구역상 <a href="/bucheon/wonmi-gu/">원미구</a> 춘의동 일대에 속합니다. 부천 중부 생활권에 해당하며, 북쪽 성곡·까치울 방면과 이어집니다.</p></section>
+<p>춘의역 역세권은 행정구역상 <a href="/wonmi-gu/">원미구</a> 춘의동 일대에 속합니다. 부천 중부 생활권에 해당하며, 북쪽 성곡·까치울 방면과 이어집니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/wonmi-gu/chunui-dong/">춘의동</a> — 춘의역 중심 주거·근린 상가 생활권</li>
-<li><a href="/bucheon/wonmi-gu/jung-dong/">중동</a> — 역 남측 상권 연접 생활권</li>
-<li><a href="/bucheon/ojeong-gu/seonggok-dong/">성곡동</a> — 역 북측 녹지·주거 연접 생활권</li>
+<li><a href="/wonmi-gu/chunui-dong/">춘의동</a> — 춘의역 중심 주거·근린 상가 생활권</li>
+<li><a href="/wonmi-gu/jung-dong/">중동</a> — 역 남측 상권 연접 생활권</li>
+<li><a href="/ojeong-gu/seonggok-dong/">성곡동</a> — 역 북측 녹지·주거 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>춘의역 역세권은 <a href="/bucheon/life/chunui-bucheon-stadium/">춘의·부천종합운동장 생활권</a>의 중심에 해당하며, 남쪽 <a href="/bucheon/life/jungdong-sinjungdong/">중동·신중동 생활권</a>, 북쪽 <a href="/bucheon/life/kkachiwool-seonggok/">까치울·성곡 생활권</a>과 이어집니다.</p></section>
+<p>춘의역 역세권은 <a href="/life/chunui-bucheon-stadium/">춘의·부천종합운동장 생활권</a>의 중심에 해당하며, 남쪽 <a href="/life/jungdong-sinjungdong/">중동·신중동 생활권</a>, 북쪽 <a href="/life/kkachiwool-seonggok/">까치울·성곡 생활권</a>과 이어집니다.</p></section>
 
 <section><h2>환승 여부</h2>
-<p>춘의역은 7호선 단일 노선 역으로 환승은 없습니다. 서해선이 필요하면 인근 <a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> 방면으로 이동하면 되므로, 광역 이동이 필요한 경우 가까운 환승역을 함께 확인하세요.</p></section>
+<p>춘의역은 7호선 단일 노선 역으로 환승은 없습니다. 서해선이 필요하면 인근 <a href="/station/bucheon-stadium-station/">부천종합운동장역</a> 방면으로 이동하면 되므로, 광역 이동이 필요한 경우 가까운 환승역을 함께 확인하세요.</p></section>
 
 <section><h2>출구별 페이지를 만들지 않는 이유</h2>
 <p>춘의역도 출구가 여러 방향으로 나 있지만, 출구는 방향만 다를 뿐 방문 주소·건물 출입·이동 기준이 동일합니다. 출구별 페이지는 중복 안내가 되기 쉬워, 춘의역은 역명 기준 한 개 페이지로 관리하고 정확한 위치는 건물명과 동·호수로 안내합니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>춘의역 역세권은 아파트·다세대 주거가 많아 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명·동·호수와 공동현관 방식을 먼저 확인하는 것이 중요합니다. 일부 오피스텔·업무 건물 방문은 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 시 관리실 규정을, 역과 거리가 있는 구간은 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준을 함께 확인하세요.</p></section>
+<p>춘의역 역세권은 아파트·다세대 주거가 많아 <a href="/use/home/">자택 이용</a> 시 단지명·동·호수와 공동현관 방식을 먼저 확인하는 것이 중요합니다. 일부 오피스텔·업무 건물 방문은 <a href="/use/officetel/">오피스텔 이용</a> 시 관리실 규정을, 역과 거리가 있는 구간은 <a href="/use/outer-area/">외곽 지역 이용</a> 기준을 함께 확인하세요.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>춘의역은 7호선으로 서울 강서·강남 방면과 연결됩니다. 부천종합운동장역 환승을 거치면 서해선으로 김포공항·시흥 방면 이동도 가능하므로, 광역 방문이라면 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 좋습니다.</p></section>
+<p>춘의역은 7호선으로 서울 강서·강남 방면과 연결됩니다. 부천종합운동장역 환승을 거치면 서해선으로 김포공항·시흥 방면 이동도 가능하므로, 광역 방문이라면 <a href="/check/travel-fee/">추가 이동비 기준</a>을 함께 확인하면 좋습니다.</p></section>
 
 {checklist("춘의역 역세권은 주거·근린 상가 중심이라 건물 유형 확인이 중요하므로 아래 항목을 먼저 확인하세요.")}
 
@@ -651,7 +651,7 @@ PAGES.append(page(
   "춘의역 주변에서 방문형 서비스를 찾는 사용자가 정확한 위치와 이용 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> · <a href="/bucheon/station/sinjungdong-station/">신중동역</a> · <a href="/bucheon/station/kkachiwool-station/">까치울역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/bucheon-stadium-station/">부천종합운동장역</a> · <a href="/station/sinjungdong-station/">신중동역</a> · <a href="/station/kkachiwool-station/">까치울역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """
@@ -668,7 +668,7 @@ _faq, _head = faq_block([
      "까치울역은 7호선 단일 노선입니다. 서해선 환승이 필요하면 부천종합운동장역 방면으로 이동하세요."),
 ])
 PAGES.append(page(
-    path="bucheon/station/kkachiwool-station/",
+    path="station/kkachiwool-station/",
     title="까치울역 역세권 출장마사지｜7호선 까치울·성곡 녹지·주거 안내",
     desc="까치울역 출장마사지·홈타이 예약 전 7호선 까치울·성곡 녹지·주거 생활권을 확인하세요.",
     h1="까치울역 역세권 출장마사지 · 7호선 까치울·성곡 녹지·주거 안내",
@@ -683,29 +683,29 @@ PAGES.append(page(
 <p>까치울역 일대는 녹지와 주거 위주라 역에서 조금만 벗어나도 도보보다 차량 이동이 편한 구간이 있습니다. 예약 전에 방문 주소가 역과 얼마나 떨어져 있는지, 단지 출입 동선이 어떤지 함께 확인하면 방문 안내가 정확해집니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>까치울역 역세권은 행정구역상 <a href="/bucheon/ojeong-gu/">오정구</a> 성곡 일대와 <a href="/bucheon/wonmi-gu/">원미구</a> 경계에 걸쳐 있습니다. 부천 북서부 녹지·주거 생활권에 해당하며, 서울 방면과도 가깝습니다.</p></section>
+<p>까치울역 역세권은 행정구역상 <a href="/ojeong-gu/">오정구</a> 성곡 일대와 <a href="/wonmi-gu/">원미구</a> 경계에 걸쳐 있습니다. 부천 북서부 녹지·주거 생활권에 해당하며, 서울 방면과도 가깝습니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/ojeong-gu/seonggok-dong/">성곡동</a> — 까치울역 중심 녹지·주거 생활권</li>
-<li><a href="/bucheon/wonmi-gu/chunui-dong/">춘의동</a> — 역 남측 연접 생활권</li>
-<li><a href="/bucheon/ojeong-gu/ojeong-dong/">오정동</a> — 역 북측 산업·주거 연접 생활권</li>
+<li><a href="/ojeong-gu/seonggok-dong/">성곡동</a> — 까치울역 중심 녹지·주거 생활권</li>
+<li><a href="/wonmi-gu/chunui-dong/">춘의동</a> — 역 남측 연접 생활권</li>
+<li><a href="/ojeong-gu/ojeong-dong/">오정동</a> — 역 북측 산업·주거 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>까치울역 역세권은 <a href="/bucheon/life/kkachiwool-seonggok/">까치울·성곡 생활권</a>(녹지·주거)의 중심에 해당하며, 남쪽 <a href="/bucheon/life/chunui-bucheon-stadium/">춘의·부천종합운동장 생활권</a>, 북쪽 <a href="/bucheon/life/ojeong-sinheung/">오정·신흥 생활권</a>과 이어집니다.</p></section>
+<p>까치울역 역세권은 <a href="/life/kkachiwool-seonggok/">까치울·성곡 생활권</a>(녹지·주거)의 중심에 해당하며, 남쪽 <a href="/life/chunui-bucheon-stadium/">춘의·부천종합운동장 생활권</a>, 북쪽 <a href="/life/ojeong-sinheung/">오정·신흥 생활권</a>과 이어집니다.</p></section>
 
 <section><h2>환승 여부</h2>
-<p>까치울역은 7호선 단일 노선 역으로 환승은 없습니다. 서해선이 필요하면 인근 <a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> 방면으로 이동하면 되므로, 광역 이동이 필요한 경우 가까운 환승역을 함께 확인하세요.</p></section>
+<p>까치울역은 7호선 단일 노선 역으로 환승은 없습니다. 서해선이 필요하면 인근 <a href="/station/bucheon-stadium-station/">부천종합운동장역</a> 방면으로 이동하면 되므로, 광역 이동이 필요한 경우 가까운 환승역을 함께 확인하세요.</p></section>
 
 <section><h2>출구별 페이지를 만들지 않는 이유</h2>
 <p>까치울역은 출구가 많지 않지만, 출구는 방향만 다를 뿐 방문 주소·건물 출입·이동 기준이 동일합니다. 출구별 페이지는 중복 안내가 되기 쉬워, 까치울역은 역명 기준 한 개 페이지로 관리하고 정확한 위치는 단지명과 동·호수로 안내합니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>까치울역 역세권은 아파트·주택 주거가 많아 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명·동·호수와 공동현관·단지 출입 방식을 먼저 확인하는 것이 중요합니다. 역과 거리가 있는 녹지·외곽 방면은 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준과 차량 이동 동선을 함께 확인하세요.</p></section>
+<p>까치울역 역세권은 아파트·주택 주거가 많아 <a href="/use/home/">자택 이용</a> 시 단지명·동·호수와 공동현관·단지 출입 방식을 먼저 확인하는 것이 중요합니다. 역과 거리가 있는 녹지·외곽 방면은 <a href="/use/outer-area/">외곽 지역 이용</a> 기준과 차량 이동 동선을 함께 확인하세요.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>까치울역 일대는 서울 방면과 가깝고 외곽 구간이 섞여 있어, 방문 주소에 따라 이동 거리가 달라집니다. 경계·외곽 방면 방문은 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하면 이동 안내가 명확합니다.</p></section>
+<p>까치울역 일대는 서울 방면과 가깝고 외곽 구간이 섞여 있어, 방문 주소에 따라 이동 거리가 달라집니다. 경계·외곽 방면 방문은 <a href="/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하면 이동 안내가 명확합니다.</p></section>
 
 {checklist("까치울역 역세권은 녹지·주거 위주라 역과의 거리와 차량 동선 확인이 중요하므로 아래 항목을 먼저 확인하세요.")}
 
@@ -716,7 +716,7 @@ PAGES.append(page(
   "까치울역 주변에서 방문형 서비스를 찾는 사용자가 정확한 위치와 이용 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/chunui-station/">춘의역</a> · <a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> · <a href="/bucheon/station/wonjong-station/">원종역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/chunui-station/">춘의역</a> · <a href="/station/bucheon-stadium-station/">부천종합운동장역</a> · <a href="/station/wonjong-station/">원종역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """
@@ -733,7 +733,7 @@ _faq, _head = faq_block([
      "원종역은 서해선 단일 노선입니다. 7호선·1호선이 필요하면 부천종합운동장역이나 소사역 방면으로 환승 이동하세요."),
 ])
 PAGES.append(page(
-    path="bucheon/station/wonjong-station/",
+    path="station/wonjong-station/",
     title="원종역 역세권 출장마사지｜서해선 원종·오정구 생활권 안내",
     desc="원종역 출장마사지·홈타이 예약 전 서해선 원종·오정구 주거 생활권을 확인하세요.",
     h1="원종역 역세권 출장마사지 · 서해선 원종·오정구 생활권 안내",
@@ -748,29 +748,29 @@ PAGES.append(page(
 <p>오정구는 부천의 세 구 가운데 지하철역이 가장 적은 편이라, 원종역은 이 일대의 중요한 교통 거점입니다. 다만 역에서 조금만 벗어나면 차량 이동이 편한 구간이 있으므로, 예약 전에 방문 주소가 역과 얼마나 떨어져 있는지, 차량 이동 동선이 어떤지 함께 확인하면 방문 안내가 정확해집니다.</p></section>
 
 <section><h2>상위 구</h2>
-<p>원종역 역세권은 행정구역상 <a href="/bucheon/ojeong-gu/">오정구</a> 원종 일대에 속합니다. 오정구 생활권의 중심 거점이며, 서쪽 고강 방면과 동쪽 오정·신흥 방면을 함께 끼고 있습니다.</p></section>
+<p>원종역 역세권은 행정구역상 <a href="/ojeong-gu/">오정구</a> 원종 일대에 속합니다. 오정구 생활권의 중심 거점이며, 서쪽 고강 방면과 동쪽 오정·신흥 방면을 함께 끼고 있습니다.</p></section>
 
 <section><h2>가까운 행정동</h2>
 <ul>
-<li><a href="/bucheon/ojeong-gu/wonjong-1-dong/">원종1동</a> · <a href="/bucheon/ojeong-gu/wonjong-2-dong/">원종2동</a> — 원종역 중심 주거·상가 생활권</li>
-<li><a href="/bucheon/ojeong-gu/gogangbon-dong/">고강본동</a> — 역 서측 서울 강서 인접 생활권</li>
-<li><a href="/bucheon/ojeong-gu/ojeong-dong/">오정동</a> — 역 동측 산업·주거 연접 생활권</li>
+<li><a href="/ojeong-gu/wonjong-1-dong/">원종1동</a> · <a href="/ojeong-gu/wonjong-2-dong/">원종2동</a> — 원종역 중심 주거·상가 생활권</li>
+<li><a href="/ojeong-gu/gogangbon-dong/">고강본동</a> — 역 서측 서울 강서 인접 생활권</li>
+<li><a href="/ojeong-gu/ojeong-dong/">오정동</a> — 역 동측 산업·주거 연접 생활권</li>
 </ul></section>
 
 <section><h2>관련 생활권</h2>
-<p>원종역 역세권은 <a href="/bucheon/life/wonjong-gogang/">원종·고강 생활권</a>(서해선·서울 강서 인접·차량 이동)의 중심에 해당하며, 동쪽 <a href="/bucheon/life/ojeong-sinheung/">오정·신흥 생활권</a>과 이어집니다.</p></section>
+<p>원종역 역세권은 <a href="/life/wonjong-gogang/">원종·고강 생활권</a>(서해선·서울 강서 인접·차량 이동)의 중심에 해당하며, 동쪽 <a href="/life/ojeong-sinheung/">오정·신흥 생활권</a>과 이어집니다.</p></section>
 
 <section><h2>환승 여부</h2>
-<p>원종역은 서해선 단일 노선 역으로 환승은 없습니다. 7호선이 필요하면 <a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a>, 1호선이 필요하면 <a href="/bucheon/station/sosa-station/">소사역</a> 방면으로 환승 이동하면 되므로, 다른 노선 접근이 필요한 경우 가까운 환승역을 함께 확인하세요.</p></section>
+<p>원종역은 서해선 단일 노선 역으로 환승은 없습니다. 7호선이 필요하면 <a href="/station/bucheon-stadium-station/">부천종합운동장역</a>, 1호선이 필요하면 <a href="/station/sosa-station/">소사역</a> 방면으로 환승 이동하면 되므로, 다른 노선 접근이 필요한 경우 가까운 환승역을 함께 확인하세요.</p></section>
 
 <section><h2>출구별 페이지를 만들지 않는 이유</h2>
 <p>원종역은 출구가 많지 않지만, 출구는 방향만 다를 뿐 방문 주소·건물 출입·이동 기준이 동일합니다. 출구별 페이지는 중복 안내가 되기 쉬워, 원종역은 역명 기준 한 개 페이지로 관리하고 정확한 위치는 단지명과 동·호수로 안내합니다.</p></section>
 
 <section><h2>자택·호텔·오피스텔 이용 기준</h2>
-<p>원종역 역세권은 아파트·다세대 주거가 많아 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명·동·호수와 공동현관 방식을 먼저 확인하는 것이 중요합니다. 일부 신축 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 구간은 관리실 규정을, 역과 거리가 있는 방면은 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준과 차량 이동 동선을 함께 확인하세요.</p></section>
+<p>원종역 역세권은 아파트·다세대 주거가 많아 <a href="/use/home/">자택 이용</a> 시 단지명·동·호수와 공동현관 방식을 먼저 확인하는 것이 중요합니다. 일부 신축 <a href="/use/officetel/">오피스텔 이용</a> 구간은 관리실 규정을, 역과 거리가 있는 방면은 <a href="/use/outer-area/">외곽 지역 이용</a> 기준과 차량 이동 동선을 함께 확인하세요.</p></section>
 
 <section><h2>서울·인천 이동 기준</h2>
-<p>원종역은 서해선으로 김포공항·서울 강서 방면 접근이 편리하며, 고강 방면은 서울 강서구와 인접합니다. 방문 주소가 서울 경계나 외곽 방면이면 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하면 이동 안내가 명확합니다.</p></section>
+<p>원종역은 서해선으로 김포공항·서울 강서 방면 접근이 편리하며, 고강 방면은 서울 강서구와 인접합니다. 방문 주소가 서울 경계나 외곽 방면이면 <a href="/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하면 이동 안내가 명확합니다.</p></section>
 
 {checklist("원종역 역세권은 오정구 거점 역이지만 역과 거리가 있는 구간이 많으므로 아래 항목을 먼저 확인하세요.")}
 
@@ -781,7 +781,7 @@ PAGES.append(page(
   "원종역 주변에서 방문형 서비스를 찾는 사용자가 정확한 위치와 이용 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p>인접 역세권 — <a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> · <a href="/bucheon/station/kkachiwool-station/">까치울역</a> · <a href="/bucheon/station/sosa-station/">소사역</a> · <a href="/bucheon/">부천 전체 안내</a></p></section>
+<p>인접 역세권 — <a href="/station/bucheon-stadium-station/">부천종합운동장역</a> · <a href="/station/kkachiwool-station/">까치울역</a> · <a href="/station/sosa-station/">소사역</a> · <a href="/">부천 전체 안내</a></p></section>
 
 {_faq}
 """

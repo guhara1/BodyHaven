@@ -4,7 +4,7 @@ from .site import BRAND, PHONE
 
 PAGES = []
 
-_BC = lambda name: [("부천", "/bucheon/"), ("운영 기준", "/bucheon/policy/authors/"), (name, "")]
+_BC = lambda name: [("부천", "/"), ("운영 기준", "/policy/authors/"), (name, "")]
 
 
 # ───────── 1. 개인정보 처리방침 ─────────
@@ -19,7 +19,7 @@ _priv_faq, _priv_head = faq_block([
      f"가능합니다. 전화 {PHONE}로 열람·정정·삭제·처리정지를 요청하면 관계 법령이 정한 기간 내에 처리합니다."),
 ])
 PAGES.append(page(
-    path="bucheon/policy/privacy/",
+    path="policy/privacy/",
     title="개인정보 처리방침｜간다GO 부천 운영 기준",
     desc="간다GO 부천 방문 관리 개인정보 처리방침 — 수집 항목·이용 목적·보관·파기·이용자 권리 안내.",
     h1="개인정보 처리방침",
@@ -60,7 +60,7 @@ PAGES.append(page(
 <p>이용자는 본인의 개인정보에 대해 열람, 정정, 삭제, 처리정지를 요청할 수 있습니다. 회사는 이러한 요청을 받으면 관계 법령이 정한 기간 내에 지체 없이 처리하며, 처리 결과를 안내합니다. 권리 행사는 아래 문의처를 통해 직접 요청할 수 있습니다.</p></section>
 
 <section><h2>안전성 확보 조치 및 문의처</h2>
-<p>회사는 안내받은 정보가 분실·도난·유출되지 않도록 접근을 응대 담당자로 제한하고, 목적 종료 시 즉시 파기하는 절차를 운영합니다. 개인정보 처리에 관한 문의·요청은 전화 <a href="tel:{PHONE}">{PHONE}</a>로 접수할 수 있습니다. 예약 단계에서의 개인정보 확인은 <a href="/bucheon/check/privacy/">개인정보 처리 기준(예약 전 확인)</a> 페이지에서, 서비스 운영 원칙은 <a href="/bucheon/policy/service-policy/">불법·선정적 서비스 불가 안내</a>에서 함께 확인할 수 있습니다.</p>
+<p>회사는 안내받은 정보가 분실·도난·유출되지 않도록 접근을 응대 담당자로 제한하고, 목적 종료 시 즉시 파기하는 절차를 운영합니다. 개인정보 처리에 관한 문의·요청은 전화 <a href="tel:{PHONE}">{PHONE}</a>로 접수할 수 있습니다. 예약 단계에서의 개인정보 확인은 <a href="/check/privacy/">개인정보 처리 기준(예약 전 확인)</a> 페이지에서, 서비스 운영 원칙은 <a href="/policy/service-policy/">불법·선정적 서비스 불가 안내</a>에서 함께 확인할 수 있습니다.</p>
 <p>본 방침의 내용이 변경될 경우 변경 사항을 본 페이지를 통해 안내합니다.</p></section>
 
 {who_how_why(
@@ -69,7 +69,7 @@ PAGES.append(page(
   "이용자가 예약 과정에서 자신의 정보가 어떻게 다뤄지는지 분명히 알고 안심하고 문의할 수 있도록 하기 위해 작성했습니다.")}
 
 <section><h2>함께 보기</h2>
-<p><a href="/bucheon/check/privacy/">개인정보 처리 기준(예약 전 확인)</a> · <a href="/bucheon/policy/service-policy/">불법·선정적 서비스 불가 안내</a> · <a href="/bucheon/policy/sitemap/">사이트맵</a></p></section>
+<p><a href="/check/privacy/">개인정보 처리 기준(예약 전 확인)</a> · <a href="/policy/service-policy/">불법·선정적 서비스 불가 안내</a> · <a href="/policy/sitemap/">사이트맵</a></p></section>
 
 {_priv_faq}
 """
@@ -88,7 +88,7 @@ _svc_faq, _svc_head = faq_block([
      "방문 시 위생 수칙을 지키고, 이용자와 담당자 모두의 안전을 우선하는 범위에서 관리가 진행됩니다."),
 ])
 PAGES.append(page(
-    path="bucheon/policy/service-policy/",
+    path="policy/service-policy/",
     title="불법·선정적 서비스 불가 안내｜간다GO 부천 운영 기준",
     desc="간다GO는 건전한 방문 관리만 제공하며 불법·선정적 요청은 거부합니다. 운영 원칙을 안내합니다.",
     h1="불법·선정적 서비스 불가 안내",
@@ -109,17 +109,17 @@ PAGES.append(page(
 <p>회사는 공중위생관리 관련 기준과 그 밖의 관계 법령을 준수합니다. 법령에 어긋나는 영업 형태나 중개를 하지 않으며, 이용자에게도 법령과 사회 통념에 맞는 범위에서 서비스를 이용할 것을 안내합니다. 법령에 위반되는 요청은 어떤 형태로도 수용하지 않습니다.</p></section>
 
 <section><h2>위생·안전 기준</h2>
-<p>방문 관리는 위생 수칙을 지키는 범위에서 진행됩니다. 회사는 청결한 상태에서 관리가 이뤄지도록 기본 위생을 관리하며, 이용자와 담당자 양측의 안전을 우선합니다. 방문 시에는 건물 출입과 동선 안내가 안전하게 이뤄지도록 이용자에게 정확한 주소와 출입 방식 확인을 요청하며, 자세한 사항은 <a href="/bucheon/check/building-access/">건물 출입 방식</a> 페이지에서 확인할 수 있습니다.</p></section>
+<p>방문 관리는 위생 수칙을 지키는 범위에서 진행됩니다. 회사는 청결한 상태에서 관리가 이뤄지도록 기본 위생을 관리하며, 이용자와 담당자 양측의 안전을 우선합니다. 방문 시에는 건물 출입과 동선 안내가 안전하게 이뤄지도록 이용자에게 정확한 주소와 출입 방식 확인을 요청하며, 자세한 사항은 <a href="/check/building-access/">건물 출입 방식</a> 페이지에서 확인할 수 있습니다.</p></section>
 
 <section><h2>이용자 협조 안내</h2>
 <p>안전하고 원활한 방문을 위해 이용자께서는 정확한 방문 주소와 연락처를 안내해 주시고, 예약 시 합의된 관리 범위 안에서 이용해 주시기 바랍니다. 부적절한 요청이나 안전을 위협하는 상황이 발생하면 회사는 이용자 보호와 담당자 보호를 위해 서비스 진행을 중단할 수 있습니다. 이러한 기준은 모든 이용자에게 동일하게 적용됩니다.</p>
 <p>회사는 예약 단계에서 정확한 동선 안내를 위해 방문 주소와 건물 출입 방식만을 확인하며, 그 밖의 사적인 정보를 요구하지 않습니다. 이용자께서 안내된 기준을 함께 지켜 주실 때 방문이 안전하고 원활하게 진행되며, 회사 또한 동일한 기준을 일관되게 적용해 신뢰할 수 있는 서비스를 유지합니다.</p></section>
 
 <section><h2>광고·표현 기준</h2>
-<p>회사는 안내와 광고 어디에서도 선정적이거나 오해를 부르는 표현을 사용하지 않습니다. 실제 제공하는 건전한 관리 범위와 다른 기대를 갖게 하는 문구, 과장된 표현, 순위·후기를 가장한 문구는 쓰지 않습니다. 이는 이용자가 정확한 정보를 바탕으로 판단하도록 돕고, 서비스의 신뢰를 지키기 위한 기준입니다. 콘텐츠 표현에 관한 세부 원칙은 <a href="/bucheon/policy/content-standard/">콘텐츠 작성 기준</a>에서 함께 확인할 수 있습니다.</p></section>
+<p>회사는 안내와 광고 어디에서도 선정적이거나 오해를 부르는 표현을 사용하지 않습니다. 실제 제공하는 건전한 관리 범위와 다른 기대를 갖게 하는 문구, 과장된 표현, 순위·후기를 가장한 문구는 쓰지 않습니다. 이는 이용자가 정확한 정보를 바탕으로 판단하도록 돕고, 서비스의 신뢰를 지키기 위한 기준입니다. 콘텐츠 표현에 관한 세부 원칙은 <a href="/policy/content-standard/">콘텐츠 작성 기준</a>에서 함께 확인할 수 있습니다.</p></section>
 
 <section><h2>문의</h2>
-<p>서비스 운영 기준에 관한 문의는 전화 <a href="tel:{PHONE}">{PHONE}</a>로 접수할 수 있습니다. 개인정보 처리 기준은 <a href="/bucheon/policy/privacy/">개인정보 처리방침</a>에서, 예약 단계 유의사항은 <a href="/bucheon/check/customer-notice/">고객 유의사항</a>에서 함께 확인하세요.</p></section>
+<p>서비스 운영 기준에 관한 문의는 전화 <a href="tel:{PHONE}">{PHONE}</a>로 접수할 수 있습니다. 개인정보 처리 기준은 <a href="/policy/privacy/">개인정보 처리방침</a>에서, 예약 단계 유의사항은 <a href="/check/customer-notice/">고객 유의사항</a>에서 함께 확인하세요.</p></section>
 
 {who_how_why(
   "이 페이지는 부천 지역 방문형 관리 서비스 안내 콘텐츠 담당자가 작성하고 운영 책임자가 검수합니다.",
@@ -127,7 +127,7 @@ PAGES.append(page(
   "이용자와 담당자 모두가 안전하고 신뢰할 수 있는 기준 위에서 서비스를 이용하도록 하기 위해 작성했습니다.")}
 
 <section><h2>함께 보기</h2>
-<p><a href="/bucheon/check/service-policy/">불법·선정적 서비스 불가(예약 전 확인)</a> · <a href="/bucheon/policy/privacy/">개인정보 처리방침</a> · <a href="/bucheon/policy/sitemap/">사이트맵</a></p></section>
+<p><a href="/check/service-policy/">불법·선정적 서비스 불가(예약 전 확인)</a> · <a href="/policy/privacy/">개인정보 처리방침</a> · <a href="/policy/sitemap/">사이트맵</a></p></section>
 
 {_svc_faq}
 """
@@ -146,7 +146,7 @@ _cs_faq, _cs_head = faq_block([
      "분량과 정보가 충분하지 않은 페이지는 색인하지 않고 noindex로 처리해, 검색에는 정보가 충실한 페이지만 노출되도록 합니다."),
 ])
 PAGES.append(page(
-    path="bucheon/policy/content-standard/",
+    path="policy/content-standard/",
     title="콘텐츠 작성 기준｜간다GO 부천 운영 기준",
     desc="부천 행정구역·생활권·역 기준 작성, 복제 금지, noindex 정책, E-E-A-T 반영 등 콘텐츠 작성 기준 안내.",
     h1="콘텐츠 작성 기준",
@@ -169,10 +169,10 @@ PAGES.append(page(
 <p>색인 대상 페이지는 본문(태그 제외 기준) 2,000~2,500자 분량을 기준으로 충실히 작성합니다. 정보가 부족해 기준 분량에 미치지 못하는 페이지는 색인하지 않고 noindex로 처리합니다. 이는 검색 결과에 정보가 충실한 페이지만 노출되도록 하여, 이용자가 얕은 페이지에 도달하지 않게 하기 위한 정책입니다. 상위 구·생활권으로의 연결만 필요한 보조 페이지는 짧게 두되 정확한 내부 링크로 연결합니다.</p></section>
 
 <section><h2>신뢰성(E-E-A-T)과 Who·How·Why</h2>
-<p>모든 색인 페이지에는 작성 주체와 작성·검수 방식, 작성 이유를 밝히는 Who·How·Why 블록과 작성자·검수자 바이라인을 둡니다. 이는 경험(Experience)·전문성(Expertise)·권위(Authoritativeness)·신뢰(Trust)를 신호로 드러내, 누가 어떤 근거로 어떤 목적에서 작성했는지를 이용자가 확인하도록 하기 위함입니다. 작성자·검수자에 관한 자세한 내용은 <a href="/bucheon/policy/authors/">작성자·검수자 안내</a>에서 확인할 수 있습니다.</p></section>
+<p>모든 색인 페이지에는 작성 주체와 작성·검수 방식, 작성 이유를 밝히는 Who·How·Why 블록과 작성자·검수자 바이라인을 둡니다. 이는 경험(Experience)·전문성(Expertise)·권위(Authoritativeness)·신뢰(Trust)를 신호로 드러내, 누가 어떤 근거로 어떤 목적에서 작성했는지를 이용자가 확인하도록 하기 위함입니다. 작성자·검수자에 관한 자세한 내용은 <a href="/policy/authors/">작성자·검수자 안내</a>에서 확인할 수 있습니다.</p></section>
 
 <section><h2>금지 사항</h2>
-<p>콘텐츠는 가짜 후기나 가짜 평점을 사용하지 않으며, 후기·평점 스키마도 적용하지 않습니다. 최상급·순위 조작 표현, 과장된 가격 문구, 구체적 가격 숫자, 선정적 표현, 키워드 반복(스터핑)은 사용하지 않습니다. 가격은 숫자로 표기하지 않고 예약 시 전화로 확인하도록만 안내합니다. 이러한 금지 기준은 <a href="/bucheon/policy/service-policy/">불법·선정적 서비스 불가 안내</a>의 운영 원칙과 같은 맥락에서 적용됩니다.</p></section>
+<p>콘텐츠는 가짜 후기나 가짜 평점을 사용하지 않으며, 후기·평점 스키마도 적용하지 않습니다. 최상급·순위 조작 표현, 과장된 가격 문구, 구체적 가격 숫자, 선정적 표현, 키워드 반복(스터핑)은 사용하지 않습니다. 가격은 숫자로 표기하지 않고 예약 시 전화로 확인하도록만 안내합니다. 이러한 금지 기준은 <a href="/policy/service-policy/">불법·선정적 서비스 불가 안내</a>의 운영 원칙과 같은 맥락에서 적용됩니다.</p></section>
 
 {who_how_why(
   "이 페이지는 부천 지역 방문형 관리 서비스 안내 콘텐츠 담당자가 작성하고 운영 책임자가 검수합니다.",
@@ -180,7 +180,7 @@ PAGES.append(page(
   "모든 페이지가 일관된 품질과 신뢰 수준을 유지하고, 이용자가 자신의 생활권에 맞는 정확한 정보를 얻도록 하기 위해 작성했습니다.")}
 
 <section><h2>함께 보기</h2>
-<p><a href="/bucheon/policy/authors/">작성자·검수자 안내</a> · <a href="/bucheon/policy/privacy/">개인정보 처리방침</a> · <a href="/bucheon/policy/sitemap/">사이트맵</a></p></section>
+<p><a href="/policy/authors/">작성자·검수자 안내</a> · <a href="/policy/privacy/">개인정보 처리방침</a> · <a href="/policy/sitemap/">사이트맵</a></p></section>
 
 {_cs_faq}
 """
@@ -189,7 +189,7 @@ PAGES.append(page(
 
 # ───────── 4. 작성자·검수자 안내 ─────────
 PAGES.append(page(
-    path="bucheon/policy/authors/",
+    path="policy/authors/",
     title="작성자·검수자 안내｜간다GO 부천 운영 기준",
     desc="간다GO 부천 안내 콘텐츠의 작성자·검수자, 작성·검수·업데이트 기준과 지역 경험을 소개합니다.",
     h1="작성자·검수자 안내",
@@ -208,7 +208,7 @@ PAGES.append(page(
 <p>검수자는 <strong>{REVIEWER}</strong>입니다. 검수자는 작성된 콘텐츠가 부천시 행정구역 정보와 어긋나지 않는지, 지역명만 바꾼 복제가 아닌지, 금지 표현이나 과장·선정적 표현이 없는지를 확인합니다. 또한 가격 숫자가 노출되지 않았는지, 개인정보·서비스 운영 기준 안내가 정확히 연결되어 있는지를 점검한 뒤 게시 여부를 판단합니다. 정보가 부족한 페이지는 색인하지 않도록 noindex로 분류하는 것도 검수자의 역할입니다.</p></section>
 
 <section><h2>작성·검수·업데이트 기준</h2>
-<p>콘텐츠는 부천시의 실제 행정구역과 생활권을 1차 근거로 삼아 작성합니다. 작성자가 초안을 만들면 검수자가 사실관계와 표현, 내부 링크를 점검하고, 필요한 경우 수정 후 게시합니다. 행정동 개편, 지하철 노선 변화, 생활권 변동 등 지역 정보에 변화가 있으면 해당 페이지를 다시 검토해 업데이트합니다. 자세한 작성 규칙은 <a href="/bucheon/policy/content-standard/">콘텐츠 작성 기준</a>에서 확인할 수 있습니다.</p></section>
+<p>콘텐츠는 부천시의 실제 행정구역과 생활권을 1차 근거로 삼아 작성합니다. 작성자가 초안을 만들면 검수자가 사실관계와 표현, 내부 링크를 점검하고, 필요한 경우 수정 후 게시합니다. 행정동 개편, 지하철 노선 변화, 생활권 변동 등 지역 정보에 변화가 있으면 해당 페이지를 다시 검토해 업데이트합니다. 자세한 작성 규칙은 <a href="/policy/content-standard/">콘텐츠 작성 기준</a>에서 확인할 수 있습니다.</p></section>
 
 <section><h2>경험과 전문성</h2>
 <p>작성자와 검수자는 부천 생활권의 특성을 바탕으로 콘텐츠를 만듭니다. 같은 부천이라도 7호선 상권인 신중동과 1호선 원도심인 부천역은 건물 형태와 이동 동선이 다르고, 신도시인 상동·중동신도시와 외곽 주거지인 범박·옥길은 방문 동선이 크게 다릅니다. 이러한 생활권 차이를 이해한 경험을 바탕으로, 이용자가 자신의 위치에 맞춰 방문 주소·건물 출입·이동 기준을 확인할 수 있도록 안내를 정리합니다. 이는 경험·전문성·권위·신뢰를 핵심으로 하는 E-E-A-T 기준을 콘텐츠에 반영하기 위한 것입니다.</p>
@@ -218,7 +218,7 @@ PAGES.append(page(
 <p>작성자와 검수자는 콘텐츠의 정확성에 책임을 지며, 잘못된 정보나 오해의 소지가 확인되면 신속히 수정합니다. 이용자가 콘텐츠에서 사실과 다른 부분을 발견하거나 추가로 확인이 필요한 사항이 있을 때는 문의를 통해 알릴 수 있으며, 회사는 이를 검토해 반영합니다. 이러한 작성·검수·갱신의 순환을 통해 부천 안내 콘텐츠의 신뢰 수준을 유지합니다.</p></section>
 
 <section><h2>문의</h2>
-<p>콘텐츠 내용이나 작성·검수 기준에 관한 문의는 전화 <a href="tel:{PHONE}">{PHONE}</a>로 접수할 수 있습니다. 개인정보 처리는 <a href="/bucheon/policy/privacy/">개인정보 처리방침</a>에서, 서비스 운영 원칙은 <a href="/bucheon/policy/service-policy/">불법·선정적 서비스 불가 안내</a>에서, 전체 페이지 구성은 <a href="/bucheon/policy/sitemap/">사이트맵</a>에서 확인할 수 있습니다.</p></section>
+<p>콘텐츠 내용이나 작성·검수 기준에 관한 문의는 전화 <a href="tel:{PHONE}">{PHONE}</a>로 접수할 수 있습니다. 개인정보 처리는 <a href="/policy/privacy/">개인정보 처리방침</a>에서, 서비스 운영 원칙은 <a href="/policy/service-policy/">불법·선정적 서비스 불가 안내</a>에서, 전체 페이지 구성은 <a href="/policy/sitemap/">사이트맵</a>에서 확인할 수 있습니다.</p></section>
 
 {who_how_why(
   "이 페이지는 부천 지역 방문형 관리 서비스 안내 콘텐츠 담당자가 작성하고 운영 책임자가 검수합니다.",
@@ -287,14 +287,14 @@ _POLICY = [
     ("authors", "작성자·검수자 안내"),
 ]
 
-_life_li = "".join(f'<li><a href="/bucheon/life/{s}/">{n}</a></li>' for s, n in _LIFE)
-_station_li = "".join(f'<li><a href="/bucheon/station/{s}/">{n}</a></li>' for s, n in _STATION)
-_use_li = "".join(f'<li><a href="/bucheon/use/{s}/">{n}</a></li>' for s, n in _USE)
-_check_li = "".join(f'<li><a href="/bucheon/check/{s}/">{n}</a></li>' for s, n in _CHECK)
-_policy_li = "".join(f'<li><a href="/bucheon/policy/{s}/">{n}</a></li>' for s, n in _POLICY)
+_life_li = "".join(f'<li><a href="/life/{s}/">{n}</a></li>' for s, n in _LIFE)
+_station_li = "".join(f'<li><a href="/station/{s}/">{n}</a></li>' for s, n in _STATION)
+_use_li = "".join(f'<li><a href="/use/{s}/">{n}</a></li>' for s, n in _USE)
+_check_li = "".join(f'<li><a href="/check/{s}/">{n}</a></li>' for s, n in _CHECK)
+_policy_li = "".join(f'<li><a href="/policy/{s}/">{n}</a></li>' for s, n in _POLICY)
 
 PAGES.append(page(
-    path="bucheon/policy/sitemap/",
+    path="policy/sitemap/",
     title="사이트맵｜간다GO 부천 방문 관리 안내",
     desc="간다GO 부천 안내의 전체 페이지 모음 — 구·생활권·지하철역·이용 장소·예약 전 확인·운영 기준.",
     h1="사이트맵",
@@ -309,10 +309,10 @@ PAGES.append(page(
 <section><h2>부천 홈과 구별 안내</h2>
 <p>부천 안내의 시작점입니다. 부천 전체 안내에서 3개 구로, 다시 생활권과 행정동으로 좁혀 들어갈 수 있습니다. 부천은 원미구·소사구·오정구 3개 구로 나뉘며, 같은 부천이라도 구마다 노선과 상권·주거 성격이 다릅니다.</p>
 <ul>
-<li><a href="/bucheon/">부천 홈 — 부천 전체 방문 관리 안내</a></li>
-<li><a href="/bucheon/wonmi-gu/">원미구 — 중동·상동·신중동·부천역 생활권</a></li>
-<li><a href="/bucheon/sosa-gu/">소사구 — 부천역·송내·소사·범박·옥길 생활권</a></li>
-<li><a href="/bucheon/ojeong-gu/">오정구 — 원종·고강·오정·신흥·성곡 생활권</a></li>
+<li><a href="/">부천 홈 — 부천 전체 방문 관리 안내</a></li>
+<li><a href="/wonmi-gu/">원미구 — 중동·상동·신중동·부천역 생활권</a></li>
+<li><a href="/sosa-gu/">소사구 — 부천역·송내·소사·범박·옥길 생활권</a></li>
+<li><a href="/ojeong-gu/">오정구 — 원종·고강·오정·신흥·성곡 생활권</a></li>
 </ul></section>
 
 <section><h2>주요 생활권</h2>
