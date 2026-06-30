@@ -463,73 +463,73 @@ def _stub(path, dong_name, gu_label, life_url, life_label, rep_dong_url, rep_don
     )
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/jung-1-dong/", "중1동", "원미구",
+    "wonmi-gu/jung-1-dong/", "중1동", "원미구",
     "/life/jungdong-sinjungdong/", "중동·신중동 생활권",
     "/wonmi-gu/jung-dong/", "중동 안내",
     "중1동은 7호선 신중동역 상권과 가까운 행정동으로, 상업시설과 오피스텔이 인접한 중동·신중동 생활권 안에 위치합니다."))
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/jung-2-dong/", "중2동", "원미구",
+    "wonmi-gu/jung-2-dong/", "중2동", "원미구",
     "/life/jungdong-sinjungdong/", "중동·신중동 생활권",
     "/wonmi-gu/jung-dong/", "중동 안내",
     "중2동은 중동 상권과 주거가 어우러진 행정동으로, 신중동역 상권 생활권과 이어지는 중동·신중동 생활권에 속합니다."))
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/jung-3-dong/", "중3동", "원미구",
+    "wonmi-gu/jung-3-dong/", "중3동", "원미구",
     "/life/jungdong-sinjungdong/", "중동·신중동 생활권",
     "/wonmi-gu/jung-dong/", "중동 안내",
     "중3동은 신중동 상권 외곽의 주거 구간을 포함하는 행정동으로, 중동·신중동 생활권 기준으로 위치를 확인하는 것이 좋습니다."))
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/jung-4-dong/", "중4동", "원미구",
+    "wonmi-gu/jung-4-dong/", "중4동", "원미구",
     "/life/jungdong-sinjungdong/", "중동·신중동 생활권",
     "/wonmi-gu/jung-dong/", "중동 안내",
     "중4동은 중동신도시 주거와 신중동 상권이 만나는 구간의 행정동으로, 중동·신중동 생활권 안에서 위치를 좁혀 보면 정확합니다."))
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/sang-1-dong/", "상1동", "원미구",
+    "wonmi-gu/sang-1-dong/", "상1동", "원미구",
     "/life/sangdong-bucheon-cityhall/", "상동·부천시청 생활권",
     "/wonmi-gu/sang-dong/", "상동 안내",
     "상1동은 상동신도시 단지와 부천시청 생활권에 인접한 행정동으로, 계획형 주거·상권이 어우러진 상동·부천시청 생활권에 속합니다."))
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/sang-2-dong/", "상2동", "원미구",
+    "wonmi-gu/sang-2-dong/", "상2동", "원미구",
     "/life/sangdong-bucheon-cityhall/", "상동·부천시청 생활권",
     "/wonmi-gu/sang-dong/", "상동 안내",
     "상2동은 상동신도시 주거 단지를 중심으로 하는 행정동으로, 부천시청역 생활권과 이어지는 상동·부천시청 생활권에 속합니다."))
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/sang-3-dong/", "상3동", "원미구",
+    "wonmi-gu/sang-3-dong/", "상3동", "원미구",
     "/life/sangdong-bucheon-cityhall/", "상동·부천시청 생활권",
     "/wonmi-gu/sang-dong/", "상동 안내",
     "상3동은 상동신도시 동쪽 인천 부평 인접 구간을 포함하는 행정동으로, 상동·부천시청 생활권 기준으로 위치를 확인하는 것이 좋습니다."))
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/simgok-3-dong/", "심곡3동", "원미구",
+    "wonmi-gu/simgok-3-dong/", "심곡3동", "원미구",
     "/life/bucheon-station-simgok/", "부천역·심곡 생활권",
     "/wonmi-gu/simgok-1-dong/", "심곡1동 안내",
     "심곡3동은 1호선 부천역 원도심 상권과 주거가 섞인 행정동으로, 다세대·상가가 밀집한 부천역·심곡 생활권에 속합니다."))
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/wonmi-1-dong/", "원미1동", "원미구",
+    "wonmi-gu/wonmi-1-dong/", "원미1동", "원미구",
     "/life/bucheon-station-simgok/", "부천역·심곡 생활권",
     "/wonmi-gu/simgok-1-dong/", "심곡1동 안내",
     "원미1동은 부천역 원도심과 중동 사이에 위치한 주거 중심 행정동으로, 부천역·심곡 생활권 기준으로 위치를 좁혀 확인하면 정확합니다."))
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/wonmi-2-dong/", "원미2동", "원미구",
+    "wonmi-gu/wonmi-2-dong/", "원미2동", "원미구",
     "/life/jungdong-sinjungdong/", "중동·신중동 생활권",
     "/wonmi-gu/jung-dong/", "중동 안내",
     "원미2동은 부천역 원도심과 중동 상권 사이의 주거 구간을 포함하는 행정동으로, 중동·신중동 생활권과 부천역 생활권이 함께 닿습니다."))
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/dodang-dong/", "도당동", "원미구",
+    "wonmi-gu/dodang-dong/", "도당동", "원미구",
     "/life/chunui-bucheon-stadium/", "춘의·부천종합운동장 생활권",
     "/wonmi-gu/chunui-dong/", "춘의동 안내",
     "도당동은 부천종합운동장·춘의 일대와 가까운 행정동으로, 환승·차량 이동 성격이 있는 춘의·부천종합운동장 생활권에 속합니다."))
 
 PAGES.append(_stub(
-    "bucheon/wonmi-gu/yakdae-dong/", "약대동", "원미구",
+    "wonmi-gu/yakdae-dong/", "약대동", "원미구",
     "/life/jungdong-sinjungdong/", "중동·신중동 생활권",
     "/wonmi-gu/jung-dong/", "중동 안내",
     "약대동은 중동 상권과 부천역 원도심 사이에 위치한 행정동으로, 중동·신중동 생활권과 부천역 생활권이 함께 닿는 구간입니다."))
