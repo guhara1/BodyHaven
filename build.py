@@ -61,7 +61,7 @@ def render_breadcrumb(crumbs) -> str:
     if not crumbs:
         return ""
     parts = ['<nav class="breadcrumb" aria-label="현재 위치"><ol>']
-    parts.append('<li><a href="/bucheon/">홈</a></li>')
+    parts.append('<li><a href="/">홈</a></li>')
     for label, href in crumbs:
         if href:
             parts.append(f'<li><a href="{href}">{label}</a></li>')
@@ -122,7 +122,7 @@ def make_org_schema() -> dict:
         "@type": "Organization",
         "@id": base + "/#organization",
         "name": BRAND,
-        "url": base + "/bucheon/",
+        "url": base + "/",
         "logo": base + "/assets/apple-touch-icon.png",
         "image": base + DEFAULT_OG_IMAGE,
         "telephone": PHONE,
@@ -144,9 +144,9 @@ def make_breadcrumb_schema(crumbs) -> dict:
         "@type": "ListItem",
         "position": 1,
         "name": "홈",
-        "item": base + "/bucheon/",
+        "item": base + "/",
     }]
-    rest = crumbs[1:] if crumbs and crumbs[0][1] in ("/", "/bucheon/") else crumbs
+    rest = crumbs[1:] if crumbs and crumbs[0][1] in ("/", "/") else crumbs
     for i, (label, href) in enumerate(rest, start=2):
         entry = {"@type": "ListItem", "position": i, "name": label}
         if href:
@@ -331,7 +331,7 @@ def render_page(page: dict) -> str:
   <div class="header-accent" aria-hidden="true"></div>
   <div class="header-top">
     <div class="header-inner">
-      <a class="brand" href="/bucheon/"><span class="brand-mark">G</span> <span class="brand-text">{BRAND}</span></a>
+      <a class="brand" href="/"><span class="brand-mark">G</span> <span class="brand-text">{BRAND}</span></a>
       <p class="header-tagline"><span class="tag-gem">◆</span> {SITE_TAGLINE} <span class="tag-gem">◆</span> 24시간 상담</p>
       <a class="header-call" href="tel:{PHONE}"><span class="call-label">예약전화</span> {PHONE_DISPLAY}</a>
       <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -364,28 +364,28 @@ def render_page(page: dict) -> str:
     <nav class="footer-col" aria-label="지역 안내">
       <p class="footer-title">지역 안내</p>
       <ul>
-        <li><a href="/bucheon/">부천 홈</a></li>
-        <li><a href="/bucheon/wonmi-gu/">원미구 안내</a></li>
-        <li><a href="/bucheon/sosa-gu/">소사구 안내</a></li>
-        <li><a href="/bucheon/ojeong-gu/">오정구 안내</a></li>
+        <li><a href="/">부천 홈</a></li>
+        <li><a href="/wonmi-gu/">원미구 안내</a></li>
+        <li><a href="/sosa-gu/">소사구 안내</a></li>
+        <li><a href="/ojeong-gu/">오정구 안내</a></li>
       </ul>
     </nav>
     <nav class="footer-col" aria-label="이용 안내">
       <p class="footer-title">이용 안내</p>
       <ul>
-        <li><a href="/bucheon/life/jungdong-sinjungdong/">생활권 안내</a></li>
-        <li><a href="/bucheon/station/bucheon-station/">지하철역 안내</a></li>
-        <li><a href="/bucheon/use/home/">이용 장소 안내</a></li>
-        <li><a href="/bucheon/check/address/">예약 전 확인</a></li>
+        <li><a href="/life/jungdong-sinjungdong/">생활권 안내</a></li>
+        <li><a href="/station/bucheon-station/">지하철역 안내</a></li>
+        <li><a href="/use/home/">이용 장소 안내</a></li>
+        <li><a href="/check/address/">예약 전 확인</a></li>
       </ul>
     </nav>
     <nav class="footer-col" aria-label="운영 기준">
       <p class="footer-title">운영 기준</p>
       <ul>
-        <li><a href="/bucheon/policy/privacy/">개인정보 처리방침</a></li>
-        <li><a href="/bucheon/policy/service-policy/">불법·선정적 서비스 불가 안내</a></li>
-        <li><a href="/bucheon/policy/authors/">작성자·검수자 안내</a></li>
-        <li><a href="/bucheon/policy/sitemap/">사이트맵</a></li>
+        <li><a href="/policy/privacy/">개인정보 처리방침</a></li>
+        <li><a href="/policy/service-policy/">불법·선정적 서비스 불가 안내</a></li>
+        <li><a href="/policy/authors/">작성자·검수자 안내</a></li>
+        <li><a href="/policy/sitemap/">사이트맵</a></li>
       </ul>
     </nav>
   </div>
@@ -449,6 +449,10 @@ def build() -> None:
         )
 
     open(os.path.join(PUBLIC_DIR, ".nojekyll"), "w").close()
+
+    # 과거 /bucheon/ 경로로 색인된 URL을 루트 경로로 301 리다이렉트(Netlify)
+    with open(os.path.join(PUBLIC_DIR, "_redirects"), "w", encoding="utf-8") as f:
+        f.write("/bucheon/*  /:splat  301!\n")
 
     width = max(len(p) for p, _, _ in report)
     print(f"{'PATH'.ljust(width)}  CHARS  ROBOTS")

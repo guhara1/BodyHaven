@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bucheon-massage.pages.dev/sitemap.xml
+Sitemap: https://bodyhaven.netlify.app/sitemap.xml

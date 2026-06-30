@@ -14,14 +14,14 @@ _w1_faq, _w1_head = faq_block([
      "서해선 원종역 생활권이라도 단지·주택 위치에 따라 역과 거리가 있어, 방문 주소에 따라 추가 이동비와 차량 이동 동선을 미리 확인하는 것이 좋습니다."),
 ])
 PAGES.append(page(
-    path="bucheon/ojeong-gu/wonjong-1-dong/",
+    path="ojeong-gu/wonjong-1-dong/",
     title="원종1동 출장마사지｜서해선 원종역 생활권 안내",
     desc="원종1동 출장마사지·홈타이 예약 전 서해선 원종역 생활권과 차량 이동 기준을 확인하세요.",
     h1="원종1동 출장마사지 · 서해선 원종역 생활권 안내",
     hero_badge="원종1동 방문 관리 안내",
     hero_lead="서해선 원종역을 낀 주거 생활권 원종1동의 위치, 인접 행정동, 역세권 접근과 차량 이동 기준을 예약 전에 안내합니다.",
     hero_alt="부천 오정구 원종1동 서해선 원종역 생활권 방문형 관리 안내 이미지",
-    breadcrumb=[("부천", "/bucheon/"), ("오정구", "/bucheon/ojeong-gu/"), ("원종1동", "")],
+    breadcrumb=[("부천", "/"), ("오정구", "/ojeong-gu/"), ("원종1동", "")],
     extra_head=_w1_head,
     body=f"""
 <section><h2>원종1동 위치 설명</h2>
@@ -29,38 +29,38 @@ PAGES.append(page(
 <p>오정구는 부천의 다른 두 구에 비해 지하철역이 적은 편이라, 원종1동에서도 역과의 거리와 차량 이동 동선을 함께 보는 것이 예약 시 특히 중요합니다. 원종역 서해선 개통으로 접근성은 한층 나아졌지만, 방문 주소가 역과 떨어진 구간이라면 차량 이동을 기준으로 시간을 가늠하는 편이 정확합니다.</p></section>
 
 <section><h2>상위 구 연결</h2>
-<p>원종1동은 부천 <a href="/bucheon/ojeong-gu/">오정구</a>에 속하며, 오정구는 다시 부천시 전체 <a href="/bucheon/">부천 방문 관리 안내</a>의 한 축을 이룹니다. 같은 오정구 안에서도 고강 서울 인접권, 오정·신흥 산업·주거 혼합권, 성곡 녹지·주거권과 성격이 다르므로, 구 전체 안내와 함께 행정동 단위 위치를 좁혀 확인하면 예약이 한결 수월합니다.</p></section>
+<p>원종1동은 부천 <a href="/ojeong-gu/">오정구</a>에 속하며, 오정구는 다시 부천시 전체 <a href="/">부천 방문 관리 안내</a>의 한 축을 이룹니다. 같은 오정구 안에서도 고강 서울 인접권, 오정·신흥 산업·주거 혼합권, 성곡 녹지·주거권과 성격이 다르므로, 구 전체 안내와 함께 행정동 단위 위치를 좁혀 확인하면 예약이 한결 수월합니다.</p></section>
 
 <section><h2>가까운 생활권</h2>
 <p>원종1동은 아래 생활권과 가깝게 이어집니다.</p>
 <ul>
-<li><a href="/bucheon/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·서울 강서 인접·차량 이동 중심</li>
-<li><a href="/bucheon/life/ojeong-sinheung/">오정·신흥 생활권</a> — 산업·주거 혼합권</li>
+<li><a href="/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·서울 강서 인접·차량 이동 중심</li>
+<li><a href="/life/ojeong-sinheung/">오정·신흥 생활권</a> — 산업·주거 혼합권</li>
 </ul></section>
 
 <section><h2>가까운 지하철역</h2>
 <p>원종1동에서 기준이 되는 역은 다음과 같습니다.</p>
 <ul>
-<li><a href="/bucheon/station/wonjong-station/">원종역</a> (서해선) — 원종1동 생활권의 중심 역</li>
-<li><a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
+<li><a href="/station/wonjong-station/">원종역</a> (서해선) — 원종1동 생활권의 중심 역</li>
+<li><a href="/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
 </ul></section>
 
 <section><h2>인접 행정동</h2>
 <p>원종1동과 맞닿거나 가까운 행정동은 다음과 같습니다.</p>
 <ul>
-<li><a href="/bucheon/ojeong-gu/wonjong-2-dong/">원종2동</a> — 같은 원종 생활권</li>
-<li><a href="/bucheon/ojeong-gu/gogangbon-dong/">고강본동</a> — 서울 강서 인접권</li>
-<li><a href="/bucheon/ojeong-gu/sinheung-dong/">신흥동</a> — 산업·주거 혼합권</li>
+<li><a href="/ojeong-gu/wonjong-2-dong/">원종2동</a> — 같은 원종 생활권</li>
+<li><a href="/ojeong-gu/gogangbon-dong/">고강본동</a> — 서울 강서 인접권</li>
+<li><a href="/ojeong-gu/sinheung-dong/">신흥동</a> — 산업·주거 혼합권</li>
 </ul></section>
 
 <section><h2>자택·오피스텔·호텔 이용 기준</h2>
-<p>원종1동은 아파트 단지와 다세대 주택이 많아 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명·동호수와 공동현관 출입 방식을 먼저 확인하는 것이 좋습니다. 단지 규모가 큰 곳은 동 간 거리가 있어 정확한 동·출입구 안내가 이동 시간을 줄여 줍니다. 오피스텔이나 숙소를 이용한다면 <a href="/bucheon/use/officetel/">오피스텔 이용</a>·<a href="/bucheon/use/hotel/">호텔·숙소 이용</a> 시 객실 출입 가능 여부와 관리 규정을 함께 확인하세요.</p></section>
+<p>원종1동은 아파트 단지와 다세대 주택이 많아 <a href="/use/home/">자택 이용</a> 시 단지명·동호수와 공동현관 출입 방식을 먼저 확인하는 것이 좋습니다. 단지 규모가 큰 곳은 동 간 거리가 있어 정확한 동·출입구 안내가 이동 시간을 줄여 줍니다. 오피스텔이나 숙소를 이용한다면 <a href="/use/officetel/">오피스텔 이용</a>·<a href="/use/hotel/">호텔·숙소 이용</a> 시 객실 출입 가능 여부와 관리 규정을 함께 확인하세요.</p></section>
 
 <section><h2>역세권 접근·차량 이동 기준</h2>
-<p>서해선 원종역과 가까운 구간은 <a href="/bucheon/use/station-area/">역세권 이용</a> 기준으로 출입 동선을 확인하면 됩니다. 다만 역과 떨어진 단지·주택은 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확하며, 거리에 따라 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
+<p>서해선 원종역과 가까운 구간은 <a href="/use/station-area/">역세권 이용</a> 기준으로 출입 동선을 확인하면 됩니다. 다만 역과 떨어진 단지·주택은 <a href="/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확하며, 거리에 따라 <a href="/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>원종1동은 서쪽으로 고강 생활권을 거쳐 서울 강서구·김포공항 방면과 이어지는 동선이 있습니다. 방문 주소가 오정구라도 실제 이동 경로가 서울 쪽을 끼는 경우가 있으므로, 경계 인접 구간은 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 이동 안내가 명확해집니다.</p></section>
+<p>원종1동은 서쪽으로 고강 생활권을 거쳐 서울 강서구·김포공항 방면과 이어지는 동선이 있습니다. 방문 주소가 오정구라도 실제 이동 경로가 서울 쪽을 끼는 경우가 있으므로, 경계 인접 구간은 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 이동 안내가 명확해집니다.</p></section>
 
 {checklist("원종1동은 서해선 역세권과 단지 안쪽 구간의 이동 동선이 달라 아래 항목을 먼저 확인하세요.")}
 
@@ -72,8 +72,8 @@ PAGES.append(page(
   "원종1동에서 방문형 서비스를 찾는 사용자가 자신의 생활권과 이동 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p><a href="/bucheon/ojeong-gu/wonjong-2-dong/">원종2동 안내</a> · <a href="/bucheon/ojeong-gu/gogangbon-dong/">고강본동 안내</a> · <a href="/bucheon/ojeong-gu/">오정구 안내</a> · <a href="/bucheon/">부천 전체 안내</a></p>
-<p>예약 전 <a href="/bucheon/check/address/">방문 주소 확인</a>과 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>도 함께 확인하세요.</p></section>
+<p><a href="/ojeong-gu/wonjong-2-dong/">원종2동 안내</a> · <a href="/ojeong-gu/gogangbon-dong/">고강본동 안내</a> · <a href="/ojeong-gu/">오정구 안내</a> · <a href="/">부천 전체 안내</a></p>
+<p>예약 전 <a href="/check/address/">방문 주소 확인</a>과 <a href="/check/travel-fee/">추가 이동비 기준</a>도 함께 확인하세요.</p></section>
 
 {_w1_faq}
 """
@@ -90,14 +90,14 @@ _w2_faq, _w2_head = faq_block([
      "서쪽 고강 생활권을 거쳐 서울 강서·김포공항 방면과 이어지는 동선이 있어, 경계 인접 구간은 인접권 이용 기준을 함께 확인하는 것이 좋습니다."),
 ])
 PAGES.append(page(
-    path="bucheon/ojeong-gu/wonjong-2-dong/",
+    path="ojeong-gu/wonjong-2-dong/",
     title="원종2동 출장마사지｜서해선 원종 주거 생활권 안내",
     desc="원종2동 출장마사지·홈타이 예약 전 서해선 원종 주거 생활권과 차량 이동 기준을 확인하세요.",
     h1="원종2동 출장마사지 · 서해선 원종 주거 생활권 안내",
     hero_badge="원종2동 방문 관리 안내",
     hero_lead="서해선 원종역 생활권의 주거지 원종2동의 위치, 인접 행정동, 역세권 접근과 차량 이동 기준을 예약 전에 안내합니다.",
     hero_alt="부천 오정구 원종2동 서해선 원종 주거 생활권 방문형 관리 안내 이미지",
-    breadcrumb=[("부천", "/bucheon/"), ("오정구", "/bucheon/ojeong-gu/"), ("원종2동", "")],
+    breadcrumb=[("부천", "/"), ("오정구", "/ojeong-gu/"), ("원종2동", "")],
     extra_head=_w2_head,
     body=f"""
 <section><h2>원종2동 위치 설명</h2>
@@ -105,38 +105,38 @@ PAGES.append(page(
 <p>오정구는 부천의 다른 구에 비해 지하철역이 적어, 원종2동에서도 역과의 거리와 차량 이동 동선을 함께 보는 것이 예약 시 중요합니다. 서해선 원종역과 가까운 구간은 도보 접근이 편리하지만, 단지 안쪽이나 역과 떨어진 구간은 차량 이동을 기준으로 시간을 가늠하는 편이 정확합니다.</p></section>
 
 <section><h2>상위 구 연결</h2>
-<p>원종2동은 부천 <a href="/bucheon/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/bucheon/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 고강 서울 인접권, 오정·신흥 산업·주거 혼합권, 성곡 녹지·주거권과 성격이 다르므로, 구 전체 안내와 함께 행정동 단위 위치를 좁혀 확인하면 예약이 정확해집니다.</p></section>
+<p>원종2동은 부천 <a href="/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 고강 서울 인접권, 오정·신흥 산업·주거 혼합권, 성곡 녹지·주거권과 성격이 다르므로, 구 전체 안내와 함께 행정동 단위 위치를 좁혀 확인하면 예약이 정확해집니다.</p></section>
 
 <section><h2>가까운 생활권</h2>
 <p>원종2동은 아래 생활권과 가깝게 이어집니다.</p>
 <ul>
-<li><a href="/bucheon/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·서울 강서 인접·차량 이동 중심</li>
-<li><a href="/bucheon/life/ojeong-sinheung/">오정·신흥 생활권</a> — 산업·주거 혼합권</li>
+<li><a href="/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·서울 강서 인접·차량 이동 중심</li>
+<li><a href="/life/ojeong-sinheung/">오정·신흥 생활권</a> — 산업·주거 혼합권</li>
 </ul></section>
 
 <section><h2>가까운 지하철역</h2>
 <p>원종2동에서 기준이 되는 역은 다음과 같습니다.</p>
 <ul>
-<li><a href="/bucheon/station/wonjong-station/">원종역</a> (서해선) — 원종2동 생활권의 중심 역</li>
-<li><a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
+<li><a href="/station/wonjong-station/">원종역</a> (서해선) — 원종2동 생활권의 중심 역</li>
+<li><a href="/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
 </ul></section>
 
 <section><h2>인접 행정동</h2>
 <p>원종2동과 맞닿거나 가까운 행정동은 다음과 같습니다.</p>
 <ul>
-<li><a href="/bucheon/ojeong-gu/wonjong-1-dong/">원종1동</a> — 같은 원종 생활권</li>
-<li><a href="/bucheon/ojeong-gu/gogang-1-dong/">고강1동</a> — 서울 강서 인접 주거권</li>
-<li><a href="/bucheon/ojeong-gu/ojeong-dong/">오정동</a> — 산업·주거 혼합권</li>
+<li><a href="/ojeong-gu/wonjong-1-dong/">원종1동</a> — 같은 원종 생활권</li>
+<li><a href="/ojeong-gu/gogang-1-dong/">고강1동</a> — 서울 강서 인접 주거권</li>
+<li><a href="/ojeong-gu/ojeong-dong/">오정동</a> — 산업·주거 혼합권</li>
 </ul></section>
 
 <section><h2>자택·오피스텔·호텔 이용 기준</h2>
-<p>원종2동은 아파트 단지와 다세대 주택이 많아 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명·동호수와 공동현관 출입 방식을 먼저 확인하는 것이 좋습니다. 규모가 큰 단지는 동 간 거리가 있어 정확한 동·출입구 안내가 이동 시간을 줄여 줍니다. 오피스텔·숙소 이용 시에는 <a href="/bucheon/use/officetel/">오피스텔 이용</a>·<a href="/bucheon/use/hotel/">호텔·숙소 이용</a> 시 객실 출입 가능 여부와 관리 규정을 함께 확인하세요.</p></section>
+<p>원종2동은 아파트 단지와 다세대 주택이 많아 <a href="/use/home/">자택 이용</a> 시 단지명·동호수와 공동현관 출입 방식을 먼저 확인하는 것이 좋습니다. 규모가 큰 단지는 동 간 거리가 있어 정확한 동·출입구 안내가 이동 시간을 줄여 줍니다. 오피스텔·숙소 이용 시에는 <a href="/use/officetel/">오피스텔 이용</a>·<a href="/use/hotel/">호텔·숙소 이용</a> 시 객실 출입 가능 여부와 관리 규정을 함께 확인하세요.</p></section>
 
 <section><h2>역세권 접근·차량 이동 기준</h2>
-<p>서해선 원종역과 가까운 구간은 <a href="/bucheon/use/station-area/">역세권 이용</a> 기준으로 출입 동선을 확인하면 됩니다. 역과 떨어진 단지·주택은 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확하며, 거리에 따라 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
+<p>서해선 원종역과 가까운 구간은 <a href="/use/station-area/">역세권 이용</a> 기준으로 출입 동선을 확인하면 됩니다. 역과 떨어진 단지·주택은 <a href="/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확하며, 거리에 따라 <a href="/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>원종2동은 서쪽 고강 생활권을 거쳐 서울 강서구·김포공항 방면과 이어지는 동선이 있습니다. 방문 주소가 오정구라도 실제 이동이 서울 경계를 끼는 경우가 있으므로, 경계 인접 구간은 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 이동 안내가 명확해집니다.</p></section>
+<p>원종2동은 서쪽 고강 생활권을 거쳐 서울 강서구·김포공항 방면과 이어지는 동선이 있습니다. 방문 주소가 오정구라도 실제 이동이 서울 경계를 끼는 경우가 있으므로, 경계 인접 구간은 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 이동 안내가 명확해집니다.</p></section>
 
 {checklist("원종2동은 역세권 구간과 단지 안쪽 구간의 이동 동선이 달라 아래 항목을 먼저 확인하세요.")}
 
@@ -148,8 +148,8 @@ PAGES.append(page(
   "원종2동에서 방문형 서비스를 찾는 사용자가 자신의 생활권과 이동 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p><a href="/bucheon/ojeong-gu/wonjong-1-dong/">원종1동 안내</a> · <a href="/bucheon/ojeong-gu/gogang-1-dong/">고강1동 안내</a> · <a href="/bucheon/ojeong-gu/">오정구 안내</a> · <a href="/bucheon/">부천 전체 안내</a></p>
-<p>예약 전 <a href="/bucheon/check/address/">방문 주소 확인</a>과 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>도 함께 확인하세요.</p></section>
+<p><a href="/ojeong-gu/wonjong-1-dong/">원종1동 안내</a> · <a href="/ojeong-gu/gogang-1-dong/">고강1동 안내</a> · <a href="/ojeong-gu/">오정구 안내</a> · <a href="/">부천 전체 안내</a></p>
+<p>예약 전 <a href="/check/address/">방문 주소 확인</a>과 <a href="/check/travel-fee/">추가 이동비 기준</a>도 함께 확인하세요.</p></section>
 
 {_w2_faq}
 """
@@ -166,14 +166,14 @@ _gb_faq, _gb_head = faq_block([
      "서해선 원종역과 7호선 부천종합운동장역 생활권이 비교적 가깝지만 거리가 있는 편이라, 차량 이동 동선을 함께 확인하는 것이 좋습니다."),
 ])
 PAGES.append(page(
-    path="bucheon/ojeong-gu/gogangbon-dong/",
+    path="ojeong-gu/gogangbon-dong/",
     title="고강본동 출장마사지｜서울 강서·김포공항 인접 안내",
     desc="고강본동 출장마사지·홈타이 예약 전 서울 강서 인접 동선과 차량 이동 기준을 확인하세요.",
     h1="고강본동 출장마사지 · 서울 강서·김포공항 인접 안내",
     hero_badge="고강본동 방문 관리 안내",
     hero_lead="서울 강서구·김포공항과 인접해 차량 이동이 기준이 되는 고강본동의 위치, 인접 행정동, 이동 동선을 예약 전에 안내합니다.",
     hero_alt="부천 오정구 고강본동 서울 강서 인접 차량 이동 안내 이미지",
-    breadcrumb=[("부천", "/bucheon/"), ("오정구", "/bucheon/ojeong-gu/"), ("고강본동", "")],
+    breadcrumb=[("부천", "/"), ("오정구", "/ojeong-gu/"), ("고강본동", "")],
     extra_head=_gb_head,
     body=f"""
 <section><h2>고강본동 위치 설명</h2>
@@ -181,38 +181,38 @@ PAGES.append(page(
 <p>고강본동은 부천 안에서도 지하철역과 거리가 있는 외곽 성격이 강해, 도보 접근보다 차량 이동을 기준으로 보는 편이 정확합니다. 서울 강서·김포공항과 가까운 만큼 실제 이동 경로가 서울 쪽을 끼는 경우도 있어, 경계 인접 동선을 미리 가늠해 두면 방문 시간 안내가 한결 명확해집니다.</p></section>
 
 <section><h2>상위 구 연결</h2>
-<p>고강본동은 부천 <a href="/bucheon/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/bucheon/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 서해선 원종 생활권, 오정·신흥 산업·주거 혼합권, 성곡 녹지·주거권과 성격이 다르며, 고강 일대는 서울 인접·차량 이동 성격이 가장 두드러집니다.</p></section>
+<p>고강본동은 부천 <a href="/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 서해선 원종 생활권, 오정·신흥 산업·주거 혼합권, 성곡 녹지·주거권과 성격이 다르며, 고강 일대는 서울 인접·차량 이동 성격이 가장 두드러집니다.</p></section>
 
 <section><h2>가까운 생활권</h2>
 <p>고강본동은 아래 생활권과 가깝게 이어집니다.</p>
 <ul>
-<li><a href="/bucheon/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·서울 강서 인접·차량 이동 중심</li>
-<li><a href="/bucheon/life/seoul-adjacent/">서울 인접권</a> — 서울 강서·김포공항 방면 경계 이동권</li>
+<li><a href="/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·서울 강서 인접·차량 이동 중심</li>
+<li><a href="/life/seoul-adjacent/">서울 인접권</a> — 서울 강서·김포공항 방면 경계 이동권</li>
 </ul></section>
 
 <section><h2>가까운 지하철역</h2>
 <p>고강본동에서 기준이 되는 역은 다음과 같습니다. 모두 거리가 있어 차량 이동을 함께 확인하세요.</p>
 <ul>
-<li><a href="/bucheon/station/wonjong-station/">원종역</a> (서해선) — 고강에서 가장 가까운 서해선 역</li>
-<li><a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
+<li><a href="/station/wonjong-station/">원종역</a> (서해선) — 고강에서 가장 가까운 서해선 역</li>
+<li><a href="/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
 </ul></section>
 
 <section><h2>인접 행정동</h2>
 <p>고강본동과 맞닿거나 가까운 행정동은 다음과 같습니다.</p>
 <ul>
-<li><a href="/bucheon/ojeong-gu/gogang-1-dong/">고강1동</a> — 같은 고강 주거 생활권</li>
-<li><a href="/bucheon/ojeong-gu/wonjong-1-dong/">원종1동</a> — 서해선 원종 생활권</li>
-<li><a href="/bucheon/ojeong-gu/sinheung-dong/">신흥동</a> — 산업·주거 혼합권</li>
+<li><a href="/ojeong-gu/gogang-1-dong/">고강1동</a> — 같은 고강 주거 생활권</li>
+<li><a href="/ojeong-gu/wonjong-1-dong/">원종1동</a> — 서해선 원종 생활권</li>
+<li><a href="/ojeong-gu/sinheung-dong/">신흥동</a> — 산업·주거 혼합권</li>
 </ul></section>
 
 <section><h2>자택·오피스텔·호텔 이용 기준</h2>
-<p>고강본동은 주택과 다세대·연립이 밀집해 <a href="/bucheon/use/home/">자택 이용</a> 시 도로명·건물 위치와 공동현관 또는 대문 출입 방식을 먼저 확인하는 것이 좋습니다. 골목이 촘촘한 구간은 진입 가능한 출입구 안내가 이동 시간을 줄여 줍니다. 숙소를 이용한다면 <a href="/bucheon/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를 함께 확인하세요.</p></section>
+<p>고강본동은 주택과 다세대·연립이 밀집해 <a href="/use/home/">자택 이용</a> 시 도로명·건물 위치와 공동현관 또는 대문 출입 방식을 먼저 확인하는 것이 좋습니다. 골목이 촘촘한 구간은 진입 가능한 출입구 안내가 이동 시간을 줄여 줍니다. 숙소를 이용한다면 <a href="/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를 함께 확인하세요.</p></section>
 
 <section><h2>역세권 접근·차량 이동 기준</h2>
-<p>고강본동은 지하철역과 거리가 있어 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확합니다. 역세권 인접 구간이라도 도보 동선이 길 수 있으므로, 방문 주소와 거리에 따라 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
+<p>고강본동은 지하철역과 거리가 있어 <a href="/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확합니다. 역세권 인접 구간이라도 도보 동선이 길 수 있으므로, 방문 주소와 거리에 따라 <a href="/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>고강본동은 서울 강서구·김포공항 방면과 인접해, 방문 주소가 부천이라도 실제 이동 경로가 서울 경계를 끼는 경우가 있습니다. 경계 인접 동선은 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 함께 확인하면 이동 시간과 비용 안내가 명확해집니다.</p></section>
+<p>고강본동은 서울 강서구·김포공항 방면과 인접해, 방문 주소가 부천이라도 실제 이동 경로가 서울 경계를 끼는 경우가 있습니다. 경계 인접 동선은 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 함께 확인하면 이동 시간과 비용 안내가 명확해집니다.</p></section>
 
 {checklist("고강본동은 서울 인접·외곽 성격이 강해 차량 이동을 전제로 아래 항목을 먼저 확인하세요.")}
 
@@ -224,8 +224,8 @@ PAGES.append(page(
   "고강본동에서 방문형 서비스를 찾는 사용자가 서울 인접 이동 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p><a href="/bucheon/ojeong-gu/gogang-1-dong/">고강1동 안내</a> · <a href="/bucheon/ojeong-gu/wonjong-1-dong/">원종1동 안내</a> · <a href="/bucheon/ojeong-gu/">오정구 안내</a> · <a href="/bucheon/">부천 전체 안내</a></p>
-<p>예약 전 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>과 <a href="/bucheon/check/address/">방문 주소 확인</a>도 함께 확인하세요.</p></section>
+<p><a href="/ojeong-gu/gogang-1-dong/">고강1동 안내</a> · <a href="/ojeong-gu/wonjong-1-dong/">원종1동 안내</a> · <a href="/ojeong-gu/">오정구 안내</a> · <a href="/">부천 전체 안내</a></p>
+<p>예약 전 <a href="/check/travel-fee/">추가 이동비 기준</a>과 <a href="/check/address/">방문 주소 확인</a>도 함께 확인하세요.</p></section>
 
 {_gb_faq}
 """
@@ -242,14 +242,14 @@ _g1_faq, _g1_head = faq_block([
      "서울 강서구 방면과 가까워 실제 이동 경로가 서울 경계를 끼는 경우가 있어, 경계 인접 구간은 인접권 이용 기준을 함께 확인하세요."),
 ])
 PAGES.append(page(
-    path="bucheon/ojeong-gu/gogang-1-dong/",
+    path="ojeong-gu/gogang-1-dong/",
     title="고강1동 출장마사지｜서울 강서 인접 주거 안내",
     desc="고강1동 출장마사지·홈타이 예약 전 서울 강서 인접 주거 동선과 차량 이동 기준을 확인하세요.",
     h1="고강1동 출장마사지 · 서울 강서 인접 주거 안내",
     hero_badge="고강1동 방문 관리 안내",
     hero_lead="서울 강서구와 인접한 주거지 고강1동의 위치, 인접 행정동, 차량 이동과 서울 인접 동선 기준을 예약 전에 안내합니다.",
     hero_alt="부천 오정구 고강1동 서울 강서 인접 주거 차량 이동 안내 이미지",
-    breadcrumb=[("부천", "/bucheon/"), ("오정구", "/bucheon/ojeong-gu/"), ("고강1동", "")],
+    breadcrumb=[("부천", "/"), ("오정구", "/ojeong-gu/"), ("고강1동", "")],
     extra_head=_g1_head,
     body=f"""
 <section><h2>고강1동 위치 설명</h2>
@@ -257,38 +257,38 @@ PAGES.append(page(
 <p>고강1동은 부천 안에서도 지하철역과 거리가 있어, 도보 접근보다 차량 이동을 기준으로 보는 편이 정확합니다. 서울 강서구와 인접한 만큼 실제 이동 경로가 서울 쪽을 끼는 경우도 있으므로, 경계 인접 동선을 미리 가늠해 두면 방문 시간 안내가 명확해집니다.</p></section>
 
 <section><h2>상위 구 연결</h2>
-<p>고강1동은 부천 <a href="/bucheon/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/bucheon/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 서해선 원종 생활권, 오정·신흥 산업·주거 혼합권, 성곡 녹지·주거권과 성격이 다르며, 고강 일대는 서울 인접·차량 이동 성격이 두드러집니다.</p></section>
+<p>고강1동은 부천 <a href="/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 서해선 원종 생활권, 오정·신흥 산업·주거 혼합권, 성곡 녹지·주거권과 성격이 다르며, 고강 일대는 서울 인접·차량 이동 성격이 두드러집니다.</p></section>
 
 <section><h2>가까운 생활권</h2>
 <p>고강1동은 아래 생활권과 가깝게 이어집니다.</p>
 <ul>
-<li><a href="/bucheon/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·서울 강서 인접·차량 이동 중심</li>
-<li><a href="/bucheon/life/seoul-adjacent/">서울 인접권</a> — 서울 강서 방면 경계 이동권</li>
+<li><a href="/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·서울 강서 인접·차량 이동 중심</li>
+<li><a href="/life/seoul-adjacent/">서울 인접권</a> — 서울 강서 방면 경계 이동권</li>
 </ul></section>
 
 <section><h2>가까운 지하철역</h2>
 <p>고강1동에서 기준이 되는 역은 다음과 같습니다. 모두 거리가 있어 차량 이동을 함께 확인하세요.</p>
 <ul>
-<li><a href="/bucheon/station/wonjong-station/">원종역</a> (서해선) — 고강에서 가장 가까운 서해선 역</li>
-<li><a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
+<li><a href="/station/wonjong-station/">원종역</a> (서해선) — 고강에서 가장 가까운 서해선 역</li>
+<li><a href="/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
 </ul></section>
 
 <section><h2>인접 행정동</h2>
 <p>고강1동과 맞닿거나 가까운 행정동은 다음과 같습니다.</p>
 <ul>
-<li><a href="/bucheon/ojeong-gu/gogangbon-dong/">고강본동</a> — 같은 고강 주거 생활권</li>
-<li><a href="/bucheon/ojeong-gu/wonjong-2-dong/">원종2동</a> — 서해선 원종 생활권</li>
-<li><a href="/bucheon/ojeong-gu/sinheung-dong/">신흥동</a> — 산업·주거 혼합권</li>
+<li><a href="/ojeong-gu/gogangbon-dong/">고강본동</a> — 같은 고강 주거 생활권</li>
+<li><a href="/ojeong-gu/wonjong-2-dong/">원종2동</a> — 서해선 원종 생활권</li>
+<li><a href="/ojeong-gu/sinheung-dong/">신흥동</a> — 산업·주거 혼합권</li>
 </ul></section>
 
 <section><h2>자택·오피스텔·호텔 이용 기준</h2>
-<p>고강1동은 주택과 다세대가 많아 <a href="/bucheon/use/home/">자택 이용</a> 시 도로명·건물 위치와 공동현관 또는 대문 출입 방식을 먼저 확인하는 것이 좋습니다. 골목이 촘촘한 구간은 진입 가능한 출입구 안내가 이동 시간을 줄여 줍니다. 숙소 이용 시에는 <a href="/bucheon/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를 함께 확인하세요.</p></section>
+<p>고강1동은 주택과 다세대가 많아 <a href="/use/home/">자택 이용</a> 시 도로명·건물 위치와 공동현관 또는 대문 출입 방식을 먼저 확인하는 것이 좋습니다. 골목이 촘촘한 구간은 진입 가능한 출입구 안내가 이동 시간을 줄여 줍니다. 숙소 이용 시에는 <a href="/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를 함께 확인하세요.</p></section>
 
 <section><h2>역세권 접근·차량 이동 기준</h2>
-<p>고강1동은 지하철역과 거리가 있어 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확합니다. 방문 주소와 거리에 따라 이동 시간이 달라지므로, <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
+<p>고강1동은 지하철역과 거리가 있어 <a href="/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확합니다. 방문 주소와 거리에 따라 이동 시간이 달라지므로, <a href="/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>고강1동은 서울 강서구 방면과 인접해, 방문 주소가 부천이라도 실제 이동 경로가 서울 경계를 끼는 경우가 있습니다. 경계 인접 동선은 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 함께 확인하면 이동 시간과 비용 안내가 명확해집니다.</p></section>
+<p>고강1동은 서울 강서구 방면과 인접해, 방문 주소가 부천이라도 실제 이동 경로가 서울 경계를 끼는 경우가 있습니다. 경계 인접 동선은 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내와 함께 확인하면 이동 시간과 비용 안내가 명확해집니다.</p></section>
 
 {checklist("고강1동은 서울 인접·외곽 성격이 강해 차량 이동을 전제로 아래 항목을 먼저 확인하세요.")}
 
@@ -300,8 +300,8 @@ PAGES.append(page(
   "고강1동에서 방문형 서비스를 찾는 사용자가 서울 인접 이동 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p><a href="/bucheon/ojeong-gu/gogangbon-dong/">고강본동 안내</a> · <a href="/bucheon/ojeong-gu/wonjong-2-dong/">원종2동 안내</a> · <a href="/bucheon/ojeong-gu/">오정구 안내</a> · <a href="/bucheon/">부천 전체 안내</a></p>
-<p>예약 전 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>과 <a href="/bucheon/check/address/">방문 주소 확인</a>도 함께 확인하세요.</p></section>
+<p><a href="/ojeong-gu/gogangbon-dong/">고강본동 안내</a> · <a href="/ojeong-gu/wonjong-2-dong/">원종2동 안내</a> · <a href="/ojeong-gu/">오정구 안내</a> · <a href="/">부천 전체 안내</a></p>
+<p>예약 전 <a href="/check/travel-fee/">추가 이동비 기준</a>과 <a href="/check/address/">방문 주소 확인</a>도 함께 확인하세요.</p></section>
 
 {_g1_faq}
 """
@@ -318,14 +318,14 @@ _oj_faq, _oj_head = faq_block([
      "서해선 원종역과 7호선 부천종합운동장역 생활권이 가까운 편이지만 거리가 있어, 차량 이동 동선을 함께 확인하는 것이 좋습니다."),
 ])
 PAGES.append(page(
-    path="bucheon/ojeong-gu/ojeong-dong/",
+    path="ojeong-gu/ojeong-dong/",
     title="오정동 출장마사지｜산업·주거 혼합 생활권 안내",
     desc="오정동 출장마사지·홈타이 예약 전 산업·주거 혼합 생활권과 차량 이동 기준을 확인하세요.",
     h1="오정동 출장마사지 · 산업·주거 혼합 생활권 안내",
     hero_badge="오정동 방문 관리 안내",
     hero_lead="산업과 주거가 함께 있는 오정동의 위치, 인접 행정동, 건물 유형별 출입과 차량 이동 기준을 예약 전에 안내합니다.",
     hero_alt="부천 오정구 오정동 산업 주거 혼합 생활권 방문형 관리 안내 이미지",
-    breadcrumb=[("부천", "/bucheon/"), ("오정구", "/bucheon/ojeong-gu/"), ("오정동", "")],
+    breadcrumb=[("부천", "/"), ("오정구", "/ojeong-gu/"), ("오정동", "")],
     extra_head=_oj_head,
     body=f"""
 <section><h2>오정동 위치 설명</h2>
@@ -333,38 +333,38 @@ PAGES.append(page(
 <p>오정구는 부천의 다른 구에 비해 지하철역이 적어, 오정동에서도 역과의 거리와 차량 이동 동선을 함께 보는 것이 예약 시 중요합니다. 산업 구간은 진입로와 출입 시간이 정해진 경우가 있어, 방문 주소가 사무동·산업단지 안쪽이라면 진입 가능한 출입구와 시간을 미리 확인하는 편이 정확합니다.</p></section>
 
 <section><h2>상위 구 연결</h2>
-<p>오정동은 부천 <a href="/bucheon/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/bucheon/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 서해선 원종 생활권, 고강 서울 인접권, 성곡 녹지·주거권과 성격이 다르며, 오정·신흥 일대는 산업·주거 혼합 성격이 두드러집니다.</p></section>
+<p>오정동은 부천 <a href="/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 서해선 원종 생활권, 고강 서울 인접권, 성곡 녹지·주거권과 성격이 다르며, 오정·신흥 일대는 산업·주거 혼합 성격이 두드러집니다.</p></section>
 
 <section><h2>가까운 생활권</h2>
 <p>오정동은 아래 생활권과 가깝게 이어집니다.</p>
 <ul>
-<li><a href="/bucheon/life/ojeong-sinheung/">오정·신흥 생활권</a> — 산업·주거 혼합 중심</li>
-<li><a href="/bucheon/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·차량 이동 인접권</li>
+<li><a href="/life/ojeong-sinheung/">오정·신흥 생활권</a> — 산업·주거 혼합 중심</li>
+<li><a href="/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·차량 이동 인접권</li>
 </ul></section>
 
 <section><h2>가까운 지하철역</h2>
 <p>오정동에서 기준이 되는 역은 다음과 같습니다. 거리가 있어 차량 이동을 함께 확인하세요.</p>
 <ul>
-<li><a href="/bucheon/station/wonjong-station/">원종역</a> (서해선) — 서부 생활권 접근 역</li>
-<li><a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
+<li><a href="/station/wonjong-station/">원종역</a> (서해선) — 서부 생활권 접근 역</li>
+<li><a href="/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
 </ul></section>
 
 <section><h2>인접 행정동</h2>
 <p>오정동과 맞닿거나 가까운 행정동은 다음과 같습니다.</p>
 <ul>
-<li><a href="/bucheon/ojeong-gu/sinheung-dong/">신흥동</a> — 같은 산업·주거 혼합권</li>
-<li><a href="/bucheon/ojeong-gu/wonjong-2-dong/">원종2동</a> — 서해선 원종 생활권</li>
-<li><a href="/bucheon/ojeong-gu/seonggok-dong/">성곡동</a> — 녹지·주거 생활권</li>
+<li><a href="/ojeong-gu/sinheung-dong/">신흥동</a> — 같은 산업·주거 혼합권</li>
+<li><a href="/ojeong-gu/wonjong-2-dong/">원종2동</a> — 서해선 원종 생활권</li>
+<li><a href="/ojeong-gu/seonggok-dong/">성곡동</a> — 녹지·주거 생활권</li>
 </ul></section>
 
 <section><h2>자택·오피스텔·호텔 이용 기준</h2>
-<p>오정동은 주택과 산업·사무동이 섞여 있어 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명·동호수와 공동현관 출입 방식을, 사무동·산업 구간은 건물명과 진입 가능한 출입구·시간을 먼저 확인하는 것이 좋습니다. 숙소를 이용한다면 <a href="/bucheon/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를 함께 확인하세요.</p></section>
+<p>오정동은 주택과 산업·사무동이 섞여 있어 <a href="/use/home/">자택 이용</a> 시 단지명·동호수와 공동현관 출입 방식을, 사무동·산업 구간은 건물명과 진입 가능한 출입구·시간을 먼저 확인하는 것이 좋습니다. 숙소를 이용한다면 <a href="/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를 함께 확인하세요.</p></section>
 
 <section><h2>역세권 접근·차량 이동 기준</h2>
-<p>오정동은 지하철역과 거리가 있어 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확합니다. 산업 구간은 진입로가 한정될 수 있으므로, 방문 주소와 거리에 따라 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
+<p>오정동은 지하철역과 거리가 있어 <a href="/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확합니다. 산업 구간은 진입로가 한정될 수 있으므로, 방문 주소와 거리에 따라 <a href="/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>오정동은 서쪽 원종·고강을 거쳐 서울 강서 방면, 북쪽으로 인천 방면 동선과 이어질 수 있습니다. 방문 주소가 오정구라도 실제 이동이 경계를 끼는 경우가 있으므로, 경계 인접 구간은 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 이동 안내가 명확해집니다.</p></section>
+<p>오정동은 서쪽 원종·고강을 거쳐 서울 강서 방면, 북쪽으로 인천 방면 동선과 이어질 수 있습니다. 방문 주소가 오정구라도 실제 이동이 경계를 끼는 경우가 있으므로, 경계 인접 구간은 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 이동 안내가 명확해집니다.</p></section>
 
 {checklist("오정동은 산업·주거가 섞여 건물 유형과 차량 이동이 변수이므로 아래 항목을 먼저 확인하세요.")}
 
@@ -376,8 +376,8 @@ PAGES.append(page(
   "오정동에서 방문형 서비스를 찾는 사용자가 건물 유형과 이동 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p><a href="/bucheon/ojeong-gu/sinheung-dong/">신흥동 안내</a> · <a href="/bucheon/ojeong-gu/seonggok-dong/">성곡동 안내</a> · <a href="/bucheon/ojeong-gu/">오정구 안내</a> · <a href="/bucheon/">부천 전체 안내</a></p>
-<p>예약 전 <a href="/bucheon/check/address/">방문 주소 확인</a>과 <a href="/bucheon/check/building-access/">건물 출입 방식</a>도 함께 확인하세요.</p></section>
+<p><a href="/ojeong-gu/sinheung-dong/">신흥동 안내</a> · <a href="/ojeong-gu/seonggok-dong/">성곡동 안내</a> · <a href="/ojeong-gu/">오정구 안내</a> · <a href="/">부천 전체 안내</a></p>
+<p>예약 전 <a href="/check/address/">방문 주소 확인</a>과 <a href="/check/building-access/">건물 출입 방식</a>도 함께 확인하세요.</p></section>
 
 {_oj_faq}
 """
@@ -394,14 +394,14 @@ _sh_faq, _sh_head = faq_block([
      "서해선 원종역과 7호선 부천종합운동장역 생활권이 가까운 편이지만 거리가 있어, 차량 이동 동선을 함께 확인하는 것이 좋습니다."),
 ])
 PAGES.append(page(
-    path="bucheon/ojeong-gu/sinheung-dong/",
+    path="ojeong-gu/sinheung-dong/",
     title="신흥동 출장마사지｜산업·주거 혼합 생활권 안내",
     desc="신흥동 출장마사지·홈타이 예약 전 산업·주거 혼합 생활권과 차량 이동 기준을 확인하세요.",
     h1="신흥동 출장마사지 · 산업·주거 혼합 생활권 안내",
     hero_badge="신흥동 방문 관리 안내",
     hero_lead="산업과 주거가 함께 있는 신흥동의 위치, 인접 행정동, 건물 유형별 출입과 차량 이동 기준을 예약 전에 안내합니다.",
     hero_alt="부천 오정구 신흥동 산업 주거 혼합 생활권 방문형 관리 안내 이미지",
-    breadcrumb=[("부천", "/bucheon/"), ("오정구", "/bucheon/ojeong-gu/"), ("신흥동", "")],
+    breadcrumb=[("부천", "/"), ("오정구", "/ojeong-gu/"), ("신흥동", "")],
     extra_head=_sh_head,
     body=f"""
 <section><h2>신흥동 위치 설명</h2>
@@ -409,38 +409,38 @@ PAGES.append(page(
 <p>오정구는 부천의 다른 구에 비해 지하철역이 적어, 신흥동에서도 역과의 거리와 차량 이동 동선을 함께 보는 것이 예약 시 중요합니다. 산업 구간은 진입로와 출입 시간이 정해진 경우가 있으므로, 방문 주소가 사무동·산업단지 안쪽이라면 진입 가능한 출입구와 시간을 미리 확인하는 편이 정확합니다.</p></section>
 
 <section><h2>상위 구 연결</h2>
-<p>신흥동은 부천 <a href="/bucheon/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/bucheon/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 서해선 원종 생활권, 고강 서울 인접권, 성곡 녹지·주거권과 성격이 다르며, 오정·신흥 일대는 산업·주거 혼합 성격이 두드러집니다.</p></section>
+<p>신흥동은 부천 <a href="/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 서해선 원종 생활권, 고강 서울 인접권, 성곡 녹지·주거권과 성격이 다르며, 오정·신흥 일대는 산업·주거 혼합 성격이 두드러집니다.</p></section>
 
 <section><h2>가까운 생활권</h2>
 <p>신흥동은 아래 생활권과 가깝게 이어집니다.</p>
 <ul>
-<li><a href="/bucheon/life/ojeong-sinheung/">오정·신흥 생활권</a> — 산업·주거 혼합 중심</li>
-<li><a href="/bucheon/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·차량 이동 인접권</li>
+<li><a href="/life/ojeong-sinheung/">오정·신흥 생활권</a> — 산업·주거 혼합 중심</li>
+<li><a href="/life/wonjong-gogang/">원종·고강 생활권</a> — 서해선·차량 이동 인접권</li>
 </ul></section>
 
 <section><h2>가까운 지하철역</h2>
 <p>신흥동에서 기준이 되는 역은 다음과 같습니다. 거리가 있어 차량 이동을 함께 확인하세요.</p>
 <ul>
-<li><a href="/bucheon/station/wonjong-station/">원종역</a> (서해선) — 서부 생활권 접근 역</li>
-<li><a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
+<li><a href="/station/wonjong-station/">원종역</a> (서해선) — 서부 생활권 접근 역</li>
+<li><a href="/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
 </ul></section>
 
 <section><h2>인접 행정동</h2>
 <p>신흥동과 맞닿거나 가까운 행정동은 다음과 같습니다.</p>
 <ul>
-<li><a href="/bucheon/ojeong-gu/ojeong-dong/">오정동</a> — 같은 산업·주거 혼합권</li>
-<li><a href="/bucheon/ojeong-gu/seonggok-dong/">성곡동</a> — 녹지·주거 생활권</li>
-<li><a href="/bucheon/ojeong-gu/wonjong-1-dong/">원종1동</a> — 서해선 원종 생활권</li>
+<li><a href="/ojeong-gu/ojeong-dong/">오정동</a> — 같은 산업·주거 혼합권</li>
+<li><a href="/ojeong-gu/seonggok-dong/">성곡동</a> — 녹지·주거 생활권</li>
+<li><a href="/ojeong-gu/wonjong-1-dong/">원종1동</a> — 서해선 원종 생활권</li>
 </ul></section>
 
 <section><h2>자택·오피스텔·호텔 이용 기준</h2>
-<p>신흥동은 주택과 산업·사무동이 섞여 있어 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명·동호수와 공동현관 출입 방식을, 사무동·산업 구간은 건물명과 진입 가능한 출입구·시간을 먼저 확인하는 것이 좋습니다. 숙소 이용 시에는 <a href="/bucheon/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를, 사무 공간 방문은 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 기준을 참고하세요.</p></section>
+<p>신흥동은 주택과 산업·사무동이 섞여 있어 <a href="/use/home/">자택 이용</a> 시 단지명·동호수와 공동현관 출입 방식을, 사무동·산업 구간은 건물명과 진입 가능한 출입구·시간을 먼저 확인하는 것이 좋습니다. 숙소 이용 시에는 <a href="/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를, 사무 공간 방문은 <a href="/use/officetel/">오피스텔 이용</a> 기준을 참고하세요.</p></section>
 
 <section><h2>역세권 접근·차량 이동 기준</h2>
-<p>신흥동은 지하철역과 거리가 있어 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확합니다. 산업 구간은 진입로가 한정될 수 있으므로, 방문 주소와 거리에 따라 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
+<p>신흥동은 지하철역과 거리가 있어 <a href="/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확합니다. 산업 구간은 진입로가 한정될 수 있으므로, 방문 주소와 거리에 따라 <a href="/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>신흥동은 서쪽 원종·고강을 거쳐 서울 강서 방면, 북쪽으로 인천 방면 동선과 이어질 수 있습니다. 방문 주소가 오정구라도 실제 이동이 경계를 끼는 경우가 있으므로, 경계 인접 구간은 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 이동 안내가 명확해집니다.</p></section>
+<p>신흥동은 서쪽 원종·고강을 거쳐 서울 강서 방면, 북쪽으로 인천 방면 동선과 이어질 수 있습니다. 방문 주소가 오정구라도 실제 이동이 경계를 끼는 경우가 있으므로, 경계 인접 구간은 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 이동 안내가 명확해집니다.</p></section>
 
 {checklist("신흥동은 산업·주거가 섞여 건물 유형과 차량 이동이 변수이므로 아래 항목을 먼저 확인하세요.")}
 
@@ -452,8 +452,8 @@ PAGES.append(page(
   "신흥동에서 방문형 서비스를 찾는 사용자가 건물 유형과 이동 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p><a href="/bucheon/ojeong-gu/ojeong-dong/">오정동 안내</a> · <a href="/bucheon/ojeong-gu/seonggok-dong/">성곡동 안내</a> · <a href="/bucheon/ojeong-gu/">오정구 안내</a> · <a href="/bucheon/">부천 전체 안내</a></p>
-<p>예약 전 <a href="/bucheon/check/building-access/">건물 출입 방식</a>과 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>도 함께 확인하세요.</p></section>
+<p><a href="/ojeong-gu/ojeong-dong/">오정동 안내</a> · <a href="/ojeong-gu/seonggok-dong/">성곡동 안내</a> · <a href="/ojeong-gu/">오정구 안내</a> · <a href="/">부천 전체 안내</a></p>
+<p>예약 전 <a href="/check/building-access/">건물 출입 방식</a>과 <a href="/check/travel-fee/">추가 이동비 기준</a>도 함께 확인하세요.</p></section>
 
 {_sh_faq}
 """
@@ -470,14 +470,14 @@ _sg_faq, _sg_head = faq_block([
      "단지명·동호수와 공동현관 출입 방식, 그리고 역과의 거리에 따른 차량 이동 기준과 추가 이동비 여부를 함께 확인하는 것이 좋습니다."),
 ])
 PAGES.append(page(
-    path="bucheon/ojeong-gu/seonggok-dong/",
+    path="ojeong-gu/seonggok-dong/",
     title="성곡동 출장마사지｜녹지·주거·까치울 인접 안내",
     desc="성곡동 출장마사지·홈타이 예약 전 까치울 인접 녹지·주거 생활권과 차량 이동 기준을 확인하세요.",
     h1="성곡동 출장마사지 · 녹지·주거·까치울 인접 안내",
     hero_badge="성곡동 방문 관리 안내",
     hero_lead="녹지와 주거가 어우러지고 까치울과 인접한 성곡동의 위치, 인접 행정동, 역세권 접근과 차량 이동 기준을 예약 전에 안내합니다.",
     hero_alt="부천 오정구 성곡동 녹지 주거 까치울 인접 방문형 관리 안내 이미지",
-    breadcrumb=[("부천", "/bucheon/"), ("오정구", "/bucheon/ojeong-gu/"), ("성곡동", "")],
+    breadcrumb=[("부천", "/"), ("오정구", "/ojeong-gu/"), ("성곡동", "")],
     extra_head=_sg_head,
     body=f"""
 <section><h2>성곡동 위치 설명</h2>
@@ -485,38 +485,38 @@ PAGES.append(page(
 <p>성곡동은 오정구 안에서 7호선 까치울역·부천종합운동장역 생활권과 비교적 가깝지만, 단지 위치에 따라 역과 거리가 있는 구간도 있어 차량 이동 동선을 함께 보는 것이 예약 시 정확합니다. 녹지 인접 구간은 진입로가 한정되는 경우가 있어 진입 가능한 출입구를 미리 확인해 두면 이동 시간을 줄일 수 있습니다.</p></section>
 
 <section><h2>상위 구 연결</h2>
-<p>성곡동은 부천 <a href="/bucheon/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/bucheon/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 서해선 원종 생활권, 고강 서울 인접권, 오정·신흥 산업·주거 혼합권과 성격이 다르며, 성곡 일대는 녹지·주거 성격이 두드러집니다.</p></section>
+<p>성곡동은 부천 <a href="/ojeong-gu/">오정구</a>에 속하며, 오정구는 부천시 전체 <a href="/">부천 방문 관리 안내</a>의 한 축입니다. 오정구 안에서도 서해선 원종 생활권, 고강 서울 인접권, 오정·신흥 산업·주거 혼합권과 성격이 다르며, 성곡 일대는 녹지·주거 성격이 두드러집니다.</p></section>
 
 <section><h2>가까운 생활권</h2>
 <p>성곡동은 아래 생활권과 가깝게 이어집니다.</p>
 <ul>
-<li><a href="/bucheon/life/kkachiwool-seonggok/">까치울·성곡 생활권</a> — 녹지·주거 중심</li>
-<li><a href="/bucheon/life/chunui-bucheon-stadium/">춘의·부천종합운동장 생활권</a> — 7호선 환승·차량 이동 인접권</li>
+<li><a href="/life/kkachiwool-seonggok/">까치울·성곡 생활권</a> — 녹지·주거 중심</li>
+<li><a href="/life/chunui-bucheon-stadium/">춘의·부천종합운동장 생활권</a> — 7호선 환승·차량 이동 인접권</li>
 </ul></section>
 
 <section><h2>가까운 지하철역</h2>
 <p>성곡동에서 기준이 되는 역은 다음과 같습니다.</p>
 <ul>
-<li><a href="/bucheon/station/kkachiwool-station/">까치울역</a> (7호선) — 성곡동 생활권의 가까운 역</li>
-<li><a href="/bucheon/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
+<li><a href="/station/kkachiwool-station/">까치울역</a> (7호선) — 성곡동 생활권의 가까운 역</li>
+<li><a href="/station/bucheon-stadium-station/">부천종합운동장역</a> (7호선·서해선 환승) — 환승·차량 이동 기준</li>
 </ul></section>
 
 <section><h2>인접 행정동</h2>
 <p>성곡동과 맞닿거나 가까운 행정동은 다음과 같습니다.</p>
 <ul>
-<li><a href="/bucheon/ojeong-gu/sinheung-dong/">신흥동</a> — 산업·주거 혼합권</li>
-<li><a href="/bucheon/ojeong-gu/ojeong-dong/">오정동</a> — 산업·주거 혼합권</li>
-<li><a href="/bucheon/ojeong-gu/wonjong-2-dong/">원종2동</a> — 서해선 원종 생활권</li>
+<li><a href="/ojeong-gu/sinheung-dong/">신흥동</a> — 산업·주거 혼합권</li>
+<li><a href="/ojeong-gu/ojeong-dong/">오정동</a> — 산업·주거 혼합권</li>
+<li><a href="/ojeong-gu/wonjong-2-dong/">원종2동</a> — 서해선 원종 생활권</li>
 </ul></section>
 
 <section><h2>자택·오피스텔·호텔 이용 기준</h2>
-<p>성곡동은 아파트 단지와 주택이 많아 <a href="/bucheon/use/home/">자택 이용</a> 시 단지명·동호수와 공동현관 출입 방식을 먼저 확인하는 것이 좋습니다. 규모가 큰 단지는 동 간 거리가 있어 정확한 동·출입구 안내가 이동 시간을 줄여 줍니다. 숙소를 이용한다면 <a href="/bucheon/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를, 사무 공간 방문은 <a href="/bucheon/use/officetel/">오피스텔 이용</a> 기준을 함께 확인하세요.</p></section>
+<p>성곡동은 아파트 단지와 주택이 많아 <a href="/use/home/">자택 이용</a> 시 단지명·동호수와 공동현관 출입 방식을 먼저 확인하는 것이 좋습니다. 규모가 큰 단지는 동 간 거리가 있어 정확한 동·출입구 안내가 이동 시간을 줄여 줍니다. 숙소를 이용한다면 <a href="/use/hotel/">호텔·숙소 이용</a> 정책과 객실 출입 가능 여부를, 사무 공간 방문은 <a href="/use/officetel/">오피스텔 이용</a> 기준을 함께 확인하세요.</p></section>
 
 <section><h2>역세권 접근·차량 이동 기준</h2>
-<p>까치울역과 가까운 구간은 <a href="/bucheon/use/station-area/">역세권 이용</a> 기준으로 출입 동선을 확인하면 됩니다. 다만 단지가 역과 떨어진 구간은 <a href="/bucheon/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확하며, 거리에 따라 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
+<p>까치울역과 가까운 구간은 <a href="/use/station-area/">역세권 이용</a> 기준으로 출입 동선을 확인하면 됩니다. 다만 단지가 역과 떨어진 구간은 <a href="/use/outer-area/">외곽 지역 이용</a> 기준에 따라 차량 이동을 전제로 보는 편이 정확하며, 거리에 따라 <a href="/check/travel-fee/">추가 이동비 기준</a>을 예약 전에 확인하는 것이 좋습니다.</p></section>
 
 <section><h2>서울·인천 인접 이동 기준</h2>
-<p>성곡동은 오정구 안에서도 서울 경계와는 거리가 있는 편이지만, 인접한 원종·고강을 거쳐 서울 강서 방면 동선과 이어질 수 있습니다. 방문 주소에 따라 이동 경로가 인접권을 끼는 경우가 있으므로, 필요 시 <a href="/bucheon/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 이동 안내가 명확해집니다.</p></section>
+<p>성곡동은 오정구 안에서도 서울 경계와는 거리가 있는 편이지만, 인접한 원종·고강을 거쳐 서울 강서 방면 동선과 이어질 수 있습니다. 방문 주소에 따라 이동 경로가 인접권을 끼는 경우가 있으므로, 필요 시 <a href="/use/adjacent-area/">서울·인천 인접권 이용</a> 안내를 함께 확인하면 이동 안내가 명확해집니다.</p></section>
 
 {checklist("성곡동은 녹지·단지 구간과 역세권 구간의 이동 동선이 달라 아래 항목을 먼저 확인하세요.")}
 
@@ -528,8 +528,8 @@ PAGES.append(page(
   "성곡동에서 방문형 서비스를 찾는 사용자가 자신의 생활권과 이동 기준을 안전하게 확인하도록 돕기 위해 작성했습니다.")}
 
 <section><h2>관련 지역 보기</h2>
-<p><a href="/bucheon/ojeong-gu/sinheung-dong/">신흥동 안내</a> · <a href="/bucheon/ojeong-gu/ojeong-dong/">오정동 안내</a> · <a href="/bucheon/ojeong-gu/">오정구 안내</a> · <a href="/bucheon/">부천 전체 안내</a></p>
-<p>예약 전 <a href="/bucheon/check/address/">방문 주소 확인</a>과 <a href="/bucheon/check/travel-fee/">추가 이동비 기준</a>도 함께 확인하세요.</p></section>
+<p><a href="/ojeong-gu/sinheung-dong/">신흥동 안내</a> · <a href="/ojeong-gu/ojeong-dong/">오정동 안내</a> · <a href="/ojeong-gu/">오정구 안내</a> · <a href="/">부천 전체 안내</a></p>
+<p>예약 전 <a href="/check/address/">방문 주소 확인</a>과 <a href="/check/travel-fee/">추가 이동비 기준</a>도 함께 확인하세요.</p></section>
 
 {_sg_faq}
 """

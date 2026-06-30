@@ -40,7 +40,7 @@ def who_how_why(who: str, how: str, why: str) -> str:
   <div class="whw-card"><h3>How</h3><p>{how}</p></div>
   <div class="whw-card"><h3>Why</h3><p>{why}</p></div>
 </div>
-<p class="author-box">작성: {AUTHOR} · 검수: {REVIEWER} · 작성 기준은 <a href="/bucheon/policy/authors/">작성자·검수자 안내</a>에서 확인할 수 있습니다.</p>
+<p class="author-box">작성: {AUTHOR} · 검수: {REVIEWER} · 작성 기준은 <a href="/policy/authors/">작성자·검수자 안내</a>에서 확인할 수 있습니다.</p>
 </section>"""
 
 
@@ -92,9 +92,9 @@ def checklist(extra_lead=None, items=None) -> str:
     return (
         '<section id="checklist"><h2>예약 전 체크리스트</h2>'
         f'{lead}<ul class="checklist">{lis}</ul>'
-        '<p>항목별 자세한 기준은 <a href="/bucheon/check/address/">방문 주소 확인</a>, '
-        '<a href="/bucheon/check/building-access/">건물 출입 방식</a>, '
-        '<a href="/bucheon/check/travel-fee/">추가 이동비 기준</a> 페이지에서 확인하세요.</p>'
+        '<p>항목별 자세한 기준은 <a href="/check/address/">방문 주소 확인</a>, '
+        '<a href="/check/building-access/">건물 출입 방식</a>, '
+        '<a href="/check/travel-fee/">추가 이동비 기준</a> 페이지에서 확인하세요.</p>'
         '</section>'
     )
 
@@ -104,9 +104,9 @@ def safety_note() -> str:
     return (
         '<section id="safety"><h2>개인정보·서비스 운영 기준</h2>'
         '<p>예약 확인과 연락에 필요한 최소한의 정보만 안내하며, 자세한 내용은 '
-        '<a href="/bucheon/policy/privacy/">개인정보 처리방침</a>에서 확인할 수 있습니다. '
+        '<a href="/policy/privacy/">개인정보 처리방침</a>에서 확인할 수 있습니다. '
         f'{BRAND}는 건전한 방문 관리 서비스만 안내하며, '
-        '<a href="/bucheon/policy/service-policy/">불법·선정적 서비스</a>는 제공하거나 알선하지 않습니다.</p>'
+        '<a href="/policy/service-policy/">불법·선정적 서비스</a>는 제공하거나 알선하지 않습니다.</p>'
         f'<p>예약·상담 문의: <a href="tel:{PHONE}">{PHONE}</a> (연중무휴 24시간, {AREA_SERVED} 전지역)</p>'
         '</section>'
     )
