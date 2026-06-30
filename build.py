@@ -9,6 +9,8 @@ content/ 패키지의 페이지 정의를 읽어 정적 HTML을 생성한다.
   - 모든 페이지 상단에 우측 4:3 이미지를 가진 히어로 배너를 출력
   - 페이지별 WebPage / BreadcrumbList / Organization / (이미지 보유 시) ImageObject 스키마 자동 주입
 """
+import datetime
+import email.utils
 import html
 import json
 import os
@@ -18,8 +20,30 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from content import PAGES
+from content import reviews as reviews_data
 from content.site import (BASE_URL, BRAND, NAV, PHONE, PHONE_DISPLAY,
-                          AREA_SERVED, TELEGRAM, SITE_TAGLINE, DEFAULT_OG_IMAGE)
+                          AREA_SERVED, TELEGRAM, SITE_TAGLINE, DEFAULT_OG_IMAGE,
+                          NAVER_SITE_VERIFICATION, GOOGLE_SITE_VERIFICATION,
+                          ADDR_REGION, ADDR_LOCALITY, ADDR_COUNTRY,
+                          GEO_LAT, GEO_LNG, PRICE_RANGE, RSS_TITLE, RSS_DESC)
+
+BUILD_DATE = datetime.date.today().isoformat()
+
+# 내부링크 강화용 핵심(필러) 페이지 — 롱테일 앵커 텍스트로 모든 페이지에 노출
+RELATED_PILLARS = [
+    ("/wonmi-gu/", "원미구 중동·상동·신중동 출장마사지 지역 안내"),
+    ("/sosa-gu/", "소사구 부천역·소사·송내 방문 마사지 안내"),
+    ("/ojeong-gu/", "오정구 원종·고강 홈타이 지역 안내"),
+    ("/life/jungdong-sinjungdong/", "중동·신중동 7호선 역세권 생활권 안내"),
+    ("/life/bucheon-station-simgok/", "부천역·심곡 1호선 상권 생활권 안내"),
+    ("/station/bucheon-station/", "부천역 기준 출장 가능 지역·예약 전 확인"),
+    ("/use/home/", "자택 방문 시 공동현관·주차 확인 사항"),
+    ("/use/hotel/", "호텔·숙소 방문 시 객실 출입·정책 확인"),
+    ("/use/night/", "야간 예약 가능 시간과 이동 동선 확인"),
+    ("/check/address/", "예약 전 방문 주소·건물 유형 확인 방법"),
+    ("/check/travel-fee/", "서울·인천 인접권 추가 이동비 기준 확인"),
+    ("/check/time/", "부천 출장마사지 예약 가능 시간 안내"),
+]
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 # Cloudflare Pages / GitHub Pages가 저장소 루트를 그대로 배포하므로
@@ -115,18 +139,66 @@ def _ld(obj: dict) -> str:
     )
 
 
-def make_org_schema() -> dict:
+def _page_reviews(path: str, k: int = 6):
+    """경로 기준으로 후기 풀에서 결정적(deterministic)으로 k개를 선택해
+    페이지마다 보이는 후기에 변화를 준다. (보이는 후기 = 마크업 후기)"""
+    pool = reviews_data.REVIEWS
+    if not pool:
+        return []
+    start = sum(ord(c) for c in path) % len(pool)
+    k = min(k, len(pool))
+    return [pool[(start + i) % len(pool)] for i in range(k)]
+
+
+def make_review_objs(subset):
+    objs = []
+    for r in subset:
+        objs.append({
+            "@type": "Review",
+            "author": {"@type": "Person", "name": r["author"]},
+            "datePublished": r["date"],
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": r["rating"],
+                "bestRating": 5,
+                "worstRating": 1,
+            },
+            "reviewBody": r["body"],
+        })
+    return objs
+
+
+def make_org_schema(review_subset=None) -> dict:
+    """간다GO 사업장(LocalBusiness) 구조화 데이터.
+    평점(aggregateRating)·후기(review)는 페이지에 보이는 후기와 일치한다."""
     base = BASE_URL.rstrip("/")
-    return {
+    agg = reviews_data.aggregate()
+    schema = {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
         "@id": base + "/#organization",
         "name": BRAND,
         "url": base + "/",
         "logo": base + "/assets/apple-touch-icon.png",
         "image": base + DEFAULT_OG_IMAGE,
         "telephone": PHONE,
+        "priceRange": PRICE_RANGE,
+        "currenciesAccepted": "KRW",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": ADDR_REGION,
+            "addressLocality": ADDR_LOCALITY,
+            "addressCountry": ADDR_COUNTRY,
+        },
+        "geo": {"@type": "GeoCoordinates", "latitude": GEO_LAT, "longitude": GEO_LNG},
         "areaServed": {"@type": "AdministrativeArea", "name": AREA_SERVED},
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday",
+                          "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59",
+        }],
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": PHONE,
@@ -136,6 +208,17 @@ def make_org_schema() -> dict:
         },
         "sameAs": [TELEGRAM],
     }
+    if agg["count"]:
+        schema["aggregateRating"] = {
+            "@type": "AggregateRating",
+            "ratingValue": agg["value"],
+            "reviewCount": agg["count"],
+            "bestRating": 5,
+            "worstRating": 1,
+        }
+    if review_subset:
+        schema["review"] = make_review_objs(review_subset)
+    return schema
 
 
 def make_breadcrumb_schema(crumbs) -> dict:
@@ -259,6 +342,68 @@ def render_hero(page) -> str:
     )
 
 
+def render_stars(rating: int) -> str:
+    full = "★" * int(rating)
+    empty = "☆" * (5 - int(rating))
+    return (f'<span class="stars" role="img" aria-label="{rating}점 만점에 5점">'
+            f'<span class="stars-on">{full}</span>'
+            f'<span class="stars-off">{empty}</span></span>')
+
+
+def render_reviews_section(subset) -> str:
+    """페이지에 보이는 이용자 후기 + 평균 평점(구조화 데이터와 일치)."""
+    if not subset:
+        return ""
+    agg = reviews_data.aggregate()
+    cards = []
+    for r in subset:
+        cards.append(
+            '<figure class="review-card">'
+            '<figcaption class="review-head">'
+            f'<span class="review-author">{html.escape(r["author"])}</span>'
+            f'<span class="review-area">{html.escape(r["area"])} · 방문 이용</span>'
+            f'{render_stars(r["rating"])}'
+            '</figcaption>'
+            f'<blockquote class="review-body">{html.escape(r["body"])}</blockquote>'
+            f'<time class="review-date" datetime="{r["date"]}">{r["date"]}</time>'
+            '</figure>'
+        )
+    return (
+        '<section id="reviews" class="reviews" aria-label="이용자 후기">'
+        '<div class="reviews-head">'
+        '<h2>이용자 후기 · 평점</h2>'
+        '<div class="reviews-rating">'
+        f'<span class="reviews-score">{agg["value"]}</span>'
+        f'{render_stars(round(agg["value"]))}'
+        f'<span class="reviews-count">후기 {agg["count"]}건 기준</span>'
+        '</div>'
+        '</div>'
+        '<p class="reviews-note">실제 방문 이용 고객이 남긴 예약 전 안내·시간 준수·위생 관리에 대한 후기입니다.</p>'
+        f'<div class="review-grid">{"".join(cards)}</div>'
+        '</section>'
+    )
+
+
+def render_related(path: str) -> str:
+    """롱테일 앵커 텍스트 기반 내부링크 강화 블록(현재 페이지 제외)."""
+    cur = "/" + path if not path.startswith("/") else path
+    if not cur.endswith("/"):
+        cur += "/"
+    links = [(href, label) for href, label in RELATED_PILLARS if href != cur][:8]
+    if not links:
+        return ""
+    items = "".join(
+        f'<li><a href="{href}">{html.escape(label)}</a></li>' for href, label in links
+    )
+    return (
+        '<section class="related-links" aria-label="관련 지역·이용 안내">'
+        '<h2>함께 보면 좋은 부천 출장마사지 안내</h2>'
+        '<p>가까운 구·생활권·지하철역과 이용 장소별 확인사항을 함께 참고하면 방문 주소와 이동 시간을 더 정확히 안내받을 수 있습니다.</p>'
+        f'<ul class="related-list">{items}</ul>'
+        '</section>'
+    )
+
+
 def render_page(page: dict) -> str:
     path = page["path"]
     title = page["title"]
@@ -279,18 +424,28 @@ def render_page(page: dict) -> str:
     canonical = BASE_URL.rstrip("/") + "/" + path
     og_image = BASE_URL.rstrip("/") + (image or DEFAULT_OG_IMAGE)
 
+    verify_meta = ""
+    if NAVER_SITE_VERIFICATION:
+        verify_meta += f'<meta name="naver-site-verification" content="{NAVER_SITE_VERIFICATION}">\n'
+    if GOOGLE_SITE_VERIFICATION:
+        verify_meta += f'<meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}">\n'
+
     hero_html = render_hero(page)
 
     body, toc_items = inject_toc(body)
     toc_html = render_toc(toc_items)
     layout_cls = "page-layout has-toc" if toc_html else "page-layout"
 
+    # 내부링크 강화 + 이용자 후기(평점/리뷰)를 모든 페이지 본문 하단에 주입
+    review_subset = _page_reviews(path)
+    body = body + render_related(path) + render_reviews_section(review_subset)
+
     # 스키마 자동 주입. 선호 썸네일(ImageObject)은 모든 페이지에 출력하되,
     # 페이지별 4:3 히어로 이미지가 지정되면 그 이미지를(800x600), 없으면 기본 OG 이미지를(1200x630) 사용한다.
     pref_image = image or DEFAULT_OG_IMAGE
     img_w, img_h = (800, 600) if image else (1200, 630)
     blocks = [
-        make_org_schema(),
+        make_org_schema(review_subset),
         make_webpage_schema(title, desc, canonical, pref_image),
     ]
     if crumbs:
@@ -306,8 +461,10 @@ def render_page(page: dict) -> str:
 <title>{title}</title>
 <meta name="description" content="{desc}">
 {robots}
-<link rel="canonical" href="{canonical}">
+{verify_meta}<link rel="canonical" href="{canonical}">
+<link rel="alternate" type="application/rss+xml" title="{BRAND} 부천 지역 안내" href="/rss.xml">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{canonical}">
@@ -410,9 +567,22 @@ def render_page(page: dict) -> str:
 """
 
 
+def _seo_weights(path: str):
+    """경로 깊이에 따른 sitemap priority / changefreq."""
+    depth = path.strip("/").count("/") if path.strip("/") else 0
+    if path == "":
+        return "1.0", "daily"
+    if depth == 0:               # /wonmi-gu/ 같은 구 허브
+        return "0.9", "weekly"
+    if depth == 1:               # /life/..., /station/... 필러
+        return "0.8", "weekly"
+    return "0.7", "monthly"
+
+
 def build() -> None:
     report = []
-    sitemap_urls = []
+    indexed = []
+    base = BASE_URL.rstrip("/")
 
     os.makedirs(PUBLIC_DIR, exist_ok=True)
     seen = set()
@@ -431,21 +601,70 @@ def build() -> None:
         chars = text_length(page["body"])
         noindex = page.get("noindex", False) or chars < MIN_INDEX_CHARS
         if not noindex:
-            sitemap_urls.append(BASE_URL.rstrip("/") + "/" + path)
+            pr, cf = _seo_weights(path)
+            indexed.append({
+                "url": base + "/" + path,
+                "title": re.sub(r"<[^>]+>", "", page["title"]).strip(),
+                "desc": page["desc"],
+                "priority": pr,
+                "changefreq": cf,
+            })
         report.append((path or "/", chars, "noindex" if noindex else "index"))
 
-    urls = "\n".join(f"  <url><loc>{u}</loc></url>" for u in sitemap_urls)
+    # ── sitemap.xml (lastmod / changefreq / priority 포함) ──
+    rows = "\n".join(
+        "  <url>"
+        f"<loc>{e['url']}</loc>"
+        f"<lastmod>{BUILD_DATE}</lastmod>"
+        f"<changefreq>{e['changefreq']}</changefreq>"
+        f"<priority>{e['priority']}</priority>"
+        "</url>"
+        for e in indexed
+    )
     with open(os.path.join(PUBLIC_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(
             '<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-            f"{urls}\n</urlset>\n"
+            f"{rows}\n</urlset>\n"
         )
 
+    # ── rss.xml (네이버 서치어드바이저 RSS 제출 → 색인 가속) ──
+    pubdate = email.utils.format_datetime(
+        datetime.datetime.strptime(BUILD_DATE, "%Y-%m-%d").replace(
+            tzinfo=datetime.timezone(datetime.timedelta(hours=9)))
+    )
+    items = "\n".join(
+        "    <item>"
+        f"<title>{html.escape(e['title'])}</title>"
+        f"<link>{e['url']}</link>"
+        f"<guid isPermaLink=\"true\">{e['url']}</guid>"
+        f"<description>{html.escape(e['desc'])}</description>"
+        f"<pubDate>{pubdate}</pubDate>"
+        "</item>"
+        for e in indexed
+    )
+    with open(os.path.join(PUBLIC_DIR, "rss.xml"), "w", encoding="utf-8") as f:
+        f.write(
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<rss version="2.0">\n  <channel>\n'
+            f"    <title>{html.escape(RSS_TITLE)}</title>\n"
+            f"    <link>{base}/</link>\n"
+            f"    <description>{html.escape(RSS_DESC)}</description>\n"
+            "    <language>ko</language>\n"
+            f"    <lastBuildDate>{pubdate}</lastBuildDate>\n"
+            f"{items}\n  </channel>\n</rss>\n"
+        )
+
+    # ── robots.txt (주요 검색봇 명시 허용 + 사이트맵, 색인 가속) ──
     with open(os.path.join(PUBLIC_DIR, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(
             "User-agent: *\nAllow: /\n\n"
-            f"Sitemap: {BASE_URL.rstrip('/')}/sitemap.xml\n"
+            "User-agent: Googlebot\nAllow: /\n\n"
+            "User-agent: Googlebot-Image\nAllow: /\n\n"
+            "User-agent: Yeti\nAllow: /\n\n"          # 네이버
+            "User-agent: Daumoa\nAllow: /\n\n"        # 다음
+            "User-agent: bingbot\nAllow: /\n\n"
+            f"Sitemap: {base}/sitemap.xml\n"
         )
 
     open(os.path.join(PUBLIC_DIR, ".nojekyll"), "w").close()
