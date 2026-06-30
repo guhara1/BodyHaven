@@ -15,6 +15,23 @@ TELEGRAM = "https://t.me/googleseolab"
 # 기본 OG/대표 이미지(요청 시 실제 파일로 교체)
 DEFAULT_OG_IMAGE = "/assets/og-image.png"
 
+# 검색엔진 사이트 소유확인(네이버 서치어드바이저)
+NAVER_SITE_VERIFICATION = "82d8740a482cd09f5e52c5b65c6449150158383e"
+# 구글 서치콘솔 메타 인증을 쓸 경우 값을 채우세요(없으면 빈 문자열).
+GOOGLE_SITE_VERIFICATION = ""
+
+# LocalBusiness 구조화 데이터용 사업장 정보(실제 정보로 교체 권장)
+ADDR_REGION = "경기도"
+ADDR_LOCALITY = "부천시"
+ADDR_COUNTRY = "KR"
+GEO_LAT = 37.5035   # 부천시청 기준 근사 좌표
+GEO_LNG = 126.7660
+PRICE_RANGE = "₩₩"
+
+# RSS 피드 제목/설명(색인 가속용)
+RSS_TITLE = "간다GO 부천 출장마사지 지역 안내"
+RSS_DESC = "부천시 원미구·소사구·오정구 생활권·지하철역·이용 장소별 방문형 관리 예약 전 안내."
+
 # 상단 메뉴 — 메뉴명에 "출장마사지" 반복 금지(스팸 방지), 지역명·기능명만 표시
 NAV = [
     ("부천 홈", "/", []),
